@@ -11,8 +11,8 @@ import UIKit
 extension UIViewController {
     
     func applyGradientBackground(colors: [CGColor] = [
-        UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0).cgColor,
-        UIColor(red: 1.0, green: 0.917, blue: 0.933, alpha: 1.0).cgColor
+        UIColor(hex: "#FFFFFF").cgColor,
+        UIColor(hex: "#FFEAEE").cgColor
     ]) {
         let gradientLayer = CAGradientLayer()
         gradientLayer.colors = colors
@@ -27,18 +27,6 @@ extension UIViewController {
     func updateGradientFrame() {
         if let gradientLayer = view.layer.sublayers?.first(where: { $0.name == "gradientLayer" }) as? CAGradientLayer {
             gradientLayer.frame = view.bounds
-        }
-    }
-    
-    public func printSystemFonts() {
-        // Use this identifier to filter out the system fonts in the logs.
-        let identifier: String = "[SYSTEM FONTS]"
-        // Here's the functionality that prints all the system fonts.
-        for family in UIFont.familyNames as [String] {
-            debugPrint("\(identifier) FONT FAMILY :  \(family)")
-            for name in UIFont.fontNames(forFamilyName: family) {
-                debugPrint("\(identifier) FONT NAME :  \(name)")
-            }
         }
     }
 }

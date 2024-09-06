@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DAy-V8-xmz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wXg-8n-4YN">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speedo Transfer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ye2-Mp-9Z2">
-                                <rect key="frame" x="71" y="419" width="251" height="39"/>
+                                <rect key="frame" x="71" y="441" width="251" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="39" id="2G7-Qi-AGZ"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="251" id="ddw-iH-oOn"/>
@@ -35,13 +35,14 @@
                             <constraint firstItem="ye2-Mp-9Z2" firstAttribute="centerY" secondItem="ofe-ht-UnA" secondAttribute="centerY" id="3lX-FY-RWX"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Hk7-Ft-Frs"/>
                     <connections>
                         <outlet property="splashLabel" destination="ye2-Mp-9Z2" id="YUf-18-081"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="loV-Ev-six" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4334" y="22"/>
+            <point key="canvasLocation" x="-3408.3969465648852" y="21.83098591549296"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="W5O-U9-9B7">
@@ -101,9 +102,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bcd-dP-oQ8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3538.1679389312976" y="21.83098591549296"/>
+            <point key="canvasLocation" x="603.81679389312978" y="21.83098591549296"/>
         </scene>
-        <!--Sign UpVC-->
+        <!--Sign Up-->
         <scene sceneID="bvF-xf-PEz">
             <objects>
                 <viewController storyboardIdentifier="SignUpVC" id="GpW-ZZ-KNu" customClass="SignUpVC" customModule="Speedo_Transfer" customModuleProvider="target" sceneMemberID="viewController">
@@ -113,10 +114,11 @@
                         <viewLayoutGuide key="safeArea" id="Gli-8q-96o"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Sign Up" id="L9I-hn-RpG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nDU-Rw-ADH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2640" y="22"/>
+            <point key="canvasLocation" x="-2482" y="22"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -131,7 +133,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="102" y="-27"/>
+            <point key="canvasLocation" x="2881.679389312977" y="-27.464788732394368"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Vc4-B2-whZ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o60-eP-D0q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wXg-8n-4YN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gZ1-6x-YpP">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DAy-V8-xmz" kind="relationship" relationship="rootViewController" id="zzu-cq-S9F"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-4335.1145038167933" y="21.83098591549296"/>
         </scene>
     </scenes>
     <resources>
