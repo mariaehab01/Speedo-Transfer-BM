@@ -11,7 +11,16 @@ class SignUpVC: UIViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
-                
+        
+        let titleLabel = UILabel()
+        titleLabel.text = "Sign Up"
+        titleLabel.font = UIFont(name: Fonts.inter, size: 20)
+        titleLabel.textColor = Colors.blackGrayColor
+        self.navigationItem.title = titleLabel.text
+      
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        
+        
         applyGradientBackground()
     }
     

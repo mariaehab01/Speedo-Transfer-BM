@@ -9,5 +9,5 @@ import Foundation
 import UIKit
 
 struct Fonts {
-    static let inter: String = "InterDisplay-Medium"
+    static let inter: String = "Inter-Regular"
 }

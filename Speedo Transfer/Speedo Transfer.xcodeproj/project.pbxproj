@@ -14,9 +14,9 @@
 		847089182C7FD5D100202753 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 847089172C7FD5D100202753 /* Base */; };
 		847089202C7FDA9D00202753 /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8470891F2C7FDA9D00202753 /* SplashScreenVC.swift */; };
 		847089232C7FDBD900202753 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847089222C7FDBD900202753 /* SignUpVC.swift */; };
-		848EF40E2C8B29DF00F8D977 /* InterDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 848EF40D2C8B29DF00F8D977 /* InterDisplay-Medium.ttf */; };
 		848EF4102C8B2CD100F8D977 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848EF40F2C8B2CD100F8D977 /* Colors.swift */; };
 		848EF4152C8B301200F8D977 /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848EF4142C8B301200F8D977 /* UIColor+hex.swift */; };
+		848EF5032C8B54CB00F8D977 /* Inter-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 848EF5022C8B54CB00F8D977 /* Inter-Regular.otf */; };
 		84B4D94E2C8B0CF700DD70A9 /* UIViewController+GradientBg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4D94D2C8B0CF700DD70A9 /* UIViewController+GradientBg.swift */; };
 		84B4D9572C8B138C00DD70A9 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4D9562C8B138C00DD70A9 /* Fonts.swift */; };
 		E9A8A586631C39FBDBD09A85 /* Pods_Speedo_Transfer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1640DDEFBBEE85F5E7C8EE77 /* Pods_Speedo_Transfer.framework */; };
@@ -35,9 +35,9 @@
 		847089192C7FD5D100202753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8470891F2C7FDA9D00202753 /* SplashScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = "<group>"; };
 		847089222C7FDBD900202753 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
-		848EF40D2C8B29DF00F8D977 /* InterDisplay-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "InterDisplay-Medium.ttf"; path = "../../../../../../../Downloads/Inter-4.0/extras/ttf/InterDisplay-Medium.ttf"; sourceTree = "<group>"; };
 		848EF40F2C8B2CD100F8D977 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		848EF4142C8B301200F8D977 /* UIColor+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+hex.swift"; sourceTree = "<group>"; };
+		848EF5022C8B54CB00F8D977 /* Inter-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Regular.otf"; path = "../../../../../../../Downloads/inter/Inter-Regular.otf"; sourceTree = "<group>"; };
 		84B4D94D2C8B0CF700DD70A9 /* UIViewController+GradientBg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+GradientBg.swift"; sourceTree = "<group>"; };
 		84B4D9562C8B138C00DD70A9 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -159,7 +159,7 @@
 		84B4D9502C8B10C400DD70A9 /* Fonts-Files */ = {
 			isa = PBXGroup;
 			children = (
-				848EF40D2C8B29DF00F8D977 /* InterDisplay-Medium.ttf */,
+				848EF5022C8B54CB00F8D977 /* Inter-Regular.otf */,
 			);
 			path = "Fonts-Files";
 			sourceTree = "<group>";
@@ -234,7 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				847089152C7FD5D100202753 /* Assets.xcassets in Resources */,
-				848EF40E2C8B29DF00F8D977 /* InterDisplay-Medium.ttf in Resources */,
+				848EF5032C8B54CB00F8D977 /* Inter-Regular.otf in Resources */,
 				847089182C7FD5D100202753 /* Base in Resources */,
 				847089132C7FD5D000202753 /* Base in Resources */,
 			);
