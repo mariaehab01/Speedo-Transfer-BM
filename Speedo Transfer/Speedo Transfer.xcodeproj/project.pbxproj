@@ -14,6 +14,11 @@
 		847089182C7FD5D100202753 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 847089172C7FD5D100202753 /* Base */; };
 		847089202C7FDA9D00202753 /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8470891F2C7FDA9D00202753 /* SplashScreenVC.swift */; };
 		847089232C7FDBD900202753 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847089222C7FDBD900202753 /* SignUpVC.swift */; };
+		848EF40E2C8B29DF00F8D977 /* InterDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 848EF40D2C8B29DF00F8D977 /* InterDisplay-Medium.ttf */; };
+		848EF4102C8B2CD100F8D977 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848EF40F2C8B2CD100F8D977 /* Colors.swift */; };
+		848EF4152C8B301200F8D977 /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848EF4142C8B301200F8D977 /* UIColor+hex.swift */; };
+		84B4D94E2C8B0CF700DD70A9 /* UIViewController+GradientBg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4D94D2C8B0CF700DD70A9 /* UIViewController+GradientBg.swift */; };
+		84B4D9572C8B138C00DD70A9 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4D9562C8B138C00DD70A9 /* Fonts.swift */; };
 		E9A8A586631C39FBDBD09A85 /* Pods_Speedo_Transfer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1640DDEFBBEE85F5E7C8EE77 /* Pods_Speedo_Transfer.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +35,11 @@
 		847089192C7FD5D100202753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8470891F2C7FDA9D00202753 /* SplashScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = "<group>"; };
 		847089222C7FDBD900202753 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		848EF40D2C8B29DF00F8D977 /* InterDisplay-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "InterDisplay-Medium.ttf"; path = "../../../../../../../Downloads/Inter-4.0/extras/ttf/InterDisplay-Medium.ttf"; sourceTree = "<group>"; };
+		848EF40F2C8B2CD100F8D977 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		848EF4142C8B301200F8D977 /* UIColor+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+hex.swift"; sourceTree = "<group>"; };
+		84B4D94D2C8B0CF700DD70A9 /* UIViewController+GradientBg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+GradientBg.swift"; sourceTree = "<group>"; };
+		84B4D9562C8B138C00DD70A9 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,12 +92,12 @@
 		8470890A2C7FD5D000202753 /* Speedo Transfer */ = {
 			isa = PBXGroup;
 			children = (
+				84B4D9552C8B135C00DD70A9 /* Constants */,
+				84B4D94F2C8B106A00DD70A9 /* Resources */,
+				84B4D94C2C8B0CC900DD70A9 /* Extension */,
 				847089212C7FDAA400202753 /* Controller */,
-				8470890B2C7FD5D000202753 /* AppDelegate.swift */,
+				848EF4122C8B2D1A00F8D977 /* Shared */,
 				8470890F2C7FD5D000202753 /* ViewController.swift */,
-				847089112C7FD5D000202753 /* Main.storyboard */,
-				847089142C7FD5D100202753 /* Assets.xcassets */,
-				847089162C7FD5D100202753 /* LaunchScreen.storyboard */,
 				847089192C7FD5D100202753 /* Info.plist */,
 			);
 			path = "Speedo Transfer";
@@ -100,6 +110,67 @@
 				847089222C7FDBD900202753 /* SignUpVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		848EF4112C8B2D0600F8D977 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				847089142C7FD5D100202753 /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		848EF4122C8B2D1A00F8D977 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				8470890B2C7FD5D000202753 /* AppDelegate.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		848EF4132C8B2D3200F8D977 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				847089112C7FD5D000202753 /* Main.storyboard */,
+				847089162C7FD5D100202753 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		84B4D94C2C8B0CC900DD70A9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				84B4D94D2C8B0CF700DD70A9 /* UIViewController+GradientBg.swift */,
+				848EF4142C8B301200F8D977 /* UIColor+hex.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		84B4D94F2C8B106A00DD70A9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				848EF4132C8B2D3200F8D977 /* Storyboards */,
+				848EF4112C8B2D0600F8D977 /* Images */,
+				84B4D9502C8B10C400DD70A9 /* Fonts-Files */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		84B4D9502C8B10C400DD70A9 /* Fonts-Files */ = {
+			isa = PBXGroup;
+			children = (
+				848EF40D2C8B29DF00F8D977 /* InterDisplay-Medium.ttf */,
+			);
+			path = "Fonts-Files";
+			sourceTree = "<group>";
+		};
+		84B4D9552C8B135C00DD70A9 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				84B4D9562C8B138C00DD70A9 /* Fonts.swift */,
+				848EF40F2C8B2CD100F8D977 /* Colors.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				847089152C7FD5D100202753 /* Assets.xcassets in Resources */,
+				848EF40E2C8B29DF00F8D977 /* InterDisplay-Medium.ttf in Resources */,
 				847089182C7FD5D100202753 /* Base in Resources */,
 				847089132C7FD5D000202753 /* Base in Resources */,
 			);
@@ -217,9 +289,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B4D94E2C8B0CF700DD70A9 /* UIViewController+GradientBg.swift in Sources */,
+				848EF4152C8B301200F8D977 /* UIColor+hex.swift in Sources */,
 				847089232C7FDBD900202753 /* SignUpVC.swift in Sources */,
 				847089202C7FDA9D00202753 /* SplashScreenVC.swift in Sources */,
+				848EF4102C8B2CD100F8D977 /* Colors.swift in Sources */,
 				847089102C7FD5D000202753 /* ViewController.swift in Sources */,
+				84B4D9572C8B138C00DD70A9 /* Fonts.swift in Sources */,
 				8470890C2C7FD5D000202753 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,6 +457,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -410,6 +487,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

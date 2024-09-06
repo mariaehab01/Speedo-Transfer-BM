@@ -7,12 +7,17 @@
 
 import UIKit
 
+// MARK: - Splash Screen
+
 class SplashScreenVC: UIViewController {
 
     @IBOutlet weak var splashLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.backgroundColor = Colors.primaryColor
+        splashLabel.font = UIFont(name: Fonts.inter, size: 32)
         
         animateLabel()
         
