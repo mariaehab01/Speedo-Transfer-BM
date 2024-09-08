@@ -17,20 +17,11 @@ class SignUpVC: UIViewController {
         titleLabel.font = UIFont(name: Fonts.inter, size: 20)
         titleLabel.textColor = Colors.blackGrayColor
         self.navigationItem.title = titleLabel.text
-      
+        
         self.navigationController?.setNavigationBarHidden(false, animated: true)
-        
-        
-        applyGradientBackground()
+        applyGradientBgWhiteToRed()
     }
     
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        
-        updateGradientFrame()
-    }
-     
-
     /*
     // MARK: - Navigation
 

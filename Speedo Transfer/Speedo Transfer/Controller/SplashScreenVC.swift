@@ -35,8 +35,8 @@ class SplashScreenVC: UIViewController {
     }
 
     func moveToNextScreen() {
-        let sb = UIStoryboard(name: "Main", bundle: nil)
-        let signUpVC = sb.instantiateViewController(withIdentifier: "SignUpVC") as! SignUpVC
+        let sb = UIStoryboard(name: Storyboards.main, bundle: nil)
+        let signUpVC = sb.instantiateViewController(withIdentifier: VCS.signUpVC) as! SignUpVC
         let navVC = UINavigationController(rootViewController: signUpVC)
         
         navVC.modalPresentationStyle = .fullScreen
