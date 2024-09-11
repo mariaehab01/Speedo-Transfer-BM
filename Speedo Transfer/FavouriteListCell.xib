@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,11 +13,11 @@
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FavouriteListCell" rowHeight="123" id="tHw-xN-PAg" customClass="FavouriteListCell" customModule="Speedo_Transfer" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="123"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tHw-xN-PAg" id="28d-Ed-ves">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="tHw-xN-PAg" id="28d-Ed-ves">
                 <rect key="frame" x="0.0" y="0.0" width="375" height="123"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A9C-Ek-NDy">
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A9C-Ek-NDy">
                         <rect key="frame" x="16" y="16" width="343" height="91"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Asmaa Dosuky" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLw-iC-GOf">
@@ -28,7 +27,7 @@
                                     <constraint firstAttribute="width" constant="141" id="NOb-A9-xib"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
-                                <color key="textColor" name="FavouriteWordColor"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account xxxx7890" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ku2-Ua-dc9">
@@ -58,10 +57,11 @@
                                 <buttonConfiguration key="configuration" style="plain" image="editt"/>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" name="cellColor"/>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.9137254901960784" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="iiC-OW-cON" firstAttribute="top" secondItem="A9C-Ek-NDy" secondAttribute="top" constant="32" id="04X-Qb-y8c"/>
                             <constraint firstItem="iiC-OW-cON" firstAttribute="baseline" secondItem="RVZ-Fk-tOx" secondAttribute="baseline" id="2DH-7T-AeZ"/>
+                            <constraint firstItem="RVZ-Fk-tOx" firstAttribute="centerY" secondItem="A9C-Ek-NDy" secondAttribute="centerY" id="3Hi-2a-L0I"/>
                             <constraint firstItem="ku2-Ua-dc9" firstAttribute="width" secondItem="PLw-iC-GOf" secondAttribute="width" multiplier="0.953901" id="7CL-1m-O5K"/>
                             <constraint firstItem="zOz-nc-Pn2" firstAttribute="centerY" secondItem="iiC-OW-cON" secondAttribute="centerY" id="B84-a8-ngm"/>
                             <constraint firstItem="zOz-nc-Pn2" firstAttribute="centerY" secondItem="RVZ-Fk-tOx" secondAttribute="centerY" id="DS1-UW-ZVV"/>
@@ -73,6 +73,7 @@
                             <constraint firstItem="iiC-OW-cON" firstAttribute="leading" secondItem="RVZ-Fk-tOx" secondAttribute="trailing" constant="17.5" id="VtX-1S-N5c"/>
                             <constraint firstItem="zOz-nc-Pn2" firstAttribute="top" secondItem="A9C-Ek-NDy" secondAttribute="top" constant="20" id="ZQI-0a-S5a"/>
                             <constraint firstItem="zOz-nc-Pn2" firstAttribute="leading" secondItem="A9C-Ek-NDy" secondAttribute="leading" constant="16" id="euw-Cf-hUi"/>
+                            <constraint firstItem="iiC-OW-cON" firstAttribute="centerY" secondItem="A9C-Ek-NDy" secondAttribute="centerY" id="fWU-II-pGl"/>
                             <constraint firstItem="ku2-Ua-dc9" firstAttribute="height" secondItem="PLw-iC-GOf" secondAttribute="height" multiplier="0.833333" id="y2I-a3-CPk"/>
                         </constraints>
                     </view>
@@ -96,12 +97,6 @@
         <image name="delete" width="24.333333969116211" height="24.333333969116211"/>
         <image name="editt" width="24.333333969116211" height="24.333333969116211"/>
         <namedColor name="AccountColor">
-            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="FavouriteWordColor">
-            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="cellColor">
             <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
