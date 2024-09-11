@@ -17,12 +17,12 @@ class SplashScreenVC: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = Colors.primaryColor
-        splashLabel.font = UIFont(name: Fonts.inter, size: 32)
+        splashLabel.font = UIFont(name: Fonts.regularInter, size: 32)
         
         animateLabel()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            self.moveToNextScreen()
+            self.decideNextScreen()
         }
     }
     
@@ -34,19 +34,36 @@ class SplashScreenVC: UIViewController {
         })
     }
 
-    func moveToNextScreen() {
-        let sb = UIStoryboard(name: "Main", bundle: nil)
-        let signUpVC = sb.instantiateViewController(withIdentifier: "SignUpVC") as! SignUpVC
-        let navVC = UINavigationController(rootViewController: signUpVC)
-        
-        navVC.modalPresentationStyle = .fullScreen
+    func decideNextScreen() {
+        if let hasSeenOnboarding = UserDefaultsManager.shared().hasSeenOnboarding, hasSeenOnboarding {
+            self.moveToRegistrationScreen()
+        } else {
+            self.moveToOnboardingScreen()
+        }
+    }
 
+    func moveToOnboardingScreen() {
+        let sb = UIStoryboard(name: Storyboards.main, bundle: nil)
+        let firstOnboardingVC = sb.instantiateViewController(withIdentifier: VCS.firstOnboardingScreen) as! FirstOnBoardingVC
+        
         UIView.animate(withDuration: 1.0, animations: {
             self.splashLabel.alpha = 0.0
         }, completion: { _ in
-            self.present(navVC, animated: false, completion: nil)
+            self.navigationController?.pushViewController(firstOnboardingVC, animated: true)
         })
     }
+        
+    func moveToRegistrationScreen() {
+        let sb = UIStoryboard(name: Storyboards.main, bundle: nil)
+        let registrationVC = sb.instantiateViewController(withIdentifier: VCS.signUpVC) as! SignUpVC
+        
+        UIView.animate(withDuration: 1.0, animations: {
+            self.splashLabel.alpha = 0.0
+        }, completion: { _ in
+            self.navigationController?.pushViewController(registrationVC, animated: true)
+        })
+    }
+
     
 
     /*
