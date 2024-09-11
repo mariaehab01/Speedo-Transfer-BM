@@ -13,6 +13,12 @@ struct Storyboards {
 }
 
 struct VCS {
-    static let signUpVC = "SignUpVC"
     static let splashScreenVC = "SplashScreenVC"
+    static let firstOnboardingScreen = "FirstOnBoardingVC"
+    static let secondOnboardingScreen = "SecondOnBoardingVC"
+    static let thirdOnboardingScreen = "ThirdOnBoardingVC"
+    static let signUpVC = "SignUpVC"
+    static let completeSignUpVC = "CompleteSignupVC"
+    static let signInVC = "SignInVC"
+    static let backSignInVC = "BackSignInVC"
 }

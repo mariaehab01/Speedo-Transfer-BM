@@ -21,13 +21,32 @@ class UserDefaultsManager {
     
     var isLoggedIn: Bool? {
         set{
-            def.setValue(newValue, forKey: "isLoggedIn")
+            def.setValue(newValue, forKey: Keys.isLoggedIn)
         } get {
-            if def.object(forKey: "isLoggedIn") == nil {
+            if def.object(forKey: Keys.isLoggedIn) == nil {
                 return nil
             } else {
-                return def.bool(forKey: "isLoggedIn")
+                return def.bool(forKey: Keys.isLoggedIn)
             }
         }
+    }
+    
+    var hasSeenOnboarding: Bool? {
+        set {
+            def.setValue(newValue, forKey: Keys.hasSeenOnboarding)
+        }
+        get {
+            if def.object(forKey: Keys.hasSeenOnboarding) == nil {
+                return nil
+            } else {
+                return def.bool(forKey: Keys.hasSeenOnboarding)
+            }
+        }
+    }
+    
+    // MARK: - Keys
+    private struct Keys {
+        static let isLoggedIn = "isLoggedIn"
+        static let hasSeenOnboarding = "hasSeenOnboarding"
     }
 }
