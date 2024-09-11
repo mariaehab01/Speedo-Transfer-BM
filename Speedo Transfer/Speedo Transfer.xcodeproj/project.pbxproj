@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C8903522C9073F1002B8970 /* TransfersHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8903512C9073F1002B8970 /* TransfersHomeVC.swift */; };
+		7C8903542C9098EC002B8970 /* TransfersAmount2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8903532C9098EC002B8970 /* TransfersAmount2VC.swift */; };
+		7CA1805C2C91C96B00D94D68 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA1805A2C91C96B00D94D68 /* HomeTableViewCell.swift */; };
+		7CA1805D2C91C96B00D94D68 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CA1805B2C91C96B00D94D68 /* HomeTableViewCell.xib */; };
+		7CACEEA12C8FAA5F0058F66A /* TransfersAmountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CACEEA02C8FAA5F0058F66A /* TransfersAmountVC.swift */; };
 		8470890C2C7FD5D000202753 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8470890B2C7FD5D000202753 /* AppDelegate.swift */; };
 		847089102C7FD5D000202753 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8470890F2C7FD5D000202753 /* ViewController.swift */; };
 		847089132C7FD5D000202753 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 847089122C7FD5D000202753 /* Base */; };
@@ -16,7 +21,6 @@
 		847089232C7FDBD900202753 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847089222C7FDBD900202753 /* SignUpVC.swift */; };
 		848EF4102C8B2CD100F8D977 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848EF40F2C8B2CD100F8D977 /* Colors.swift */; };
 		848EF4152C8B301200F8D977 /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848EF4142C8B301200F8D977 /* UIColor+hex.swift */; };
-		848EF5032C8B54CB00F8D977 /* Inter-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 848EF5022C8B54CB00F8D977 /* Inter-Regular.otf */; };
 		84B4D94E2C8B0CF700DD70A9 /* UIViewController+GradientBg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4D94D2C8B0CF700DD70A9 /* UIViewController+GradientBg.swift */; };
 		84B4D9572C8B138C00DD70A9 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4D9562C8B138C00DD70A9 /* Fonts.swift */; };
 		84C659752C8CEA850013DDC2 /* Storyboards+VCs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C659742C8CEA850013DDC2 /* Storyboards+VCs.swift */; };
@@ -29,6 +33,12 @@
 		1640DDEFBBEE85F5E7C8EE77 /* Pods_Speedo_Transfer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Speedo_Transfer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A18DCEC83C7DB74A305E82A /* Pods-Speedo Transfer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Speedo Transfer.release.xcconfig"; path = "Target Support Files/Pods-Speedo Transfer/Pods-Speedo Transfer.release.xcconfig"; sourceTree = "<group>"; };
 		4BA42372B8A398814D92C235 /* Pods-Speedo Transfer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Speedo Transfer.debug.xcconfig"; path = "Target Support Files/Pods-Speedo Transfer/Pods-Speedo Transfer.debug.xcconfig"; sourceTree = "<group>"; };
+		7C8903512C9073F1002B8970 /* TransfersHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersHomeVC.swift; sourceTree = "<group>"; };
+		7C8903532C9098EC002B8970 /* TransfersAmount2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersAmount2VC.swift; sourceTree = "<group>"; };
+		7CA1805A2C91C96B00D94D68 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		7CA1805B2C91C96B00D94D68 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		7CA55F0E2C8DD00C00861AE1 /* Inter-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.otf"; sourceTree = "<group>"; };
+		7CACEEA02C8FAA5F0058F66A /* TransfersAmountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersAmountVC.swift; sourceTree = "<group>"; };
 		847089082C7FD5D000202753 /* Speedo Transfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Speedo Transfer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8470890B2C7FD5D000202753 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8470890F2C7FD5D000202753 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +50,6 @@
 		847089222C7FDBD900202753 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		848EF40F2C8B2CD100F8D977 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		848EF4142C8B301200F8D977 /* UIColor+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+hex.swift"; sourceTree = "<group>"; };
-		848EF5022C8B54CB00F8D977 /* Inter-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Regular.otf"; path = "../../../../../../../Downloads/inter/Inter-Regular.otf"; sourceTree = "<group>"; };
 		84B4D94D2C8B0CF700DD70A9 /* UIViewController+GradientBg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+GradientBg.swift"; sourceTree = "<group>"; };
 		84B4D9562C8B138C00DD70A9 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		84C659742C8CEA850013DDC2 /* Storyboards+VCs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboards+VCs.swift"; sourceTree = "<group>"; };
@@ -67,6 +76,18 @@
 				3A18DCEC83C7DB74A305E82A /* Pods-Speedo Transfer.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		7CA55F132C8DD28600861AE1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7CACEEA02C8FAA5F0058F66A /* TransfersAmountVC.swift */,
+				7C8903512C9073F1002B8970 /* TransfersHomeVC.swift */,
+				7C8903532C9098EC002B8970 /* TransfersAmount2VC.swift */,
+				7CA1805A2C91C96B00D94D68 /* HomeTableViewCell.swift */,
+				7CA1805B2C91C96B00D94D68 /* HomeTableViewCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		7FEC0EBE3FDFFCEFAFBFD3DD /* Frameworks */ = {
@@ -98,6 +119,7 @@
 		8470890A2C7FD5D000202753 /* Speedo Transfer */ = {
 			isa = PBXGroup;
 			children = (
+				7CA55F132C8DD28600861AE1 /* Views */,
 				84FD3A802C8DB890008C2373 /* Manager */,
 				84B4D9552C8B135C00DD70A9 /* Constants */,
 				84B4D94F2C8B106A00DD70A9 /* Resources */,
@@ -167,7 +189,7 @@
 		84B4D9502C8B10C400DD70A9 /* Fonts-Files */ = {
 			isa = PBXGroup;
 			children = (
-				848EF5022C8B54CB00F8D977 /* Inter-Regular.otf */,
+				7CA55F0E2C8DD00C00861AE1 /* Inter-Regular.otf */,
 			);
 			path = "Fonts-Files";
 			sourceTree = "<group>";
@@ -251,8 +273,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				847089152C7FD5D100202753 /* Assets.xcassets in Resources */,
-				848EF5032C8B54CB00F8D977 /* Inter-Regular.otf in Resources */,
 				847089182C7FD5D100202753 /* Base in Resources */,
+				7CA1805D2C91C96B00D94D68 /* HomeTableViewCell.xib in Resources */,
 				847089132C7FD5D000202753 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,10 +334,14 @@
 				848EF4152C8B301200F8D977 /* UIColor+hex.swift in Sources */,
 				84FD3A822C8DB8CA008C2373 /* UserDefaultsManager.swift in Sources */,
 				847089232C7FDBD900202753 /* SignUpVC.swift in Sources */,
+				7CA1805C2C91C96B00D94D68 /* HomeTableViewCell.swift in Sources */,
 				847089202C7FDA9D00202753 /* SplashScreenVC.swift in Sources */,
+				7CACEEA12C8FAA5F0058F66A /* TransfersAmountVC.swift in Sources */,
 				848EF4102C8B2CD100F8D977 /* Colors.swift in Sources */,
 				847089102C7FD5D000202753 /* ViewController.swift in Sources */,
+				7C8903542C9098EC002B8970 /* TransfersAmount2VC.swift in Sources */,
 				84B4D9572C8B138C00DD70A9 /* Fonts.swift in Sources */,
+				7C8903522C9073F1002B8970 /* TransfersHomeVC.swift in Sources */,
 				8470890C2C7FD5D000202753 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
