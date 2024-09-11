@@ -10,9 +10,15 @@
 		8413E0212C90DB8C00EB5A59 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8413E0202C90DB8C00EB5A59 /* CustomTextField.swift */; };
 		8423A3A92C8E4846003FA02B /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423A3A82C8E4846003FA02B /* UIViewController+Alert.swift */; };
 		8423A3AB2C8E4BA4003FA02B /* UITextField+icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423A3AA2C8E4BA4003FA02B /* UITextField+icon.swift */; };
-		843B094F2C911797002E50B5 /* Inter-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8413E0312C91150100EB5A59 /* Inter-Regular.otf */; };
-		843B09502C91179A002E50B5 /* InterDisplay-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8413E02F2C9114CB00EB5A59 /* InterDisplay-Medium.otf */; };
 		843B09522C911C74002E50B5 /* UIButton+underline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B09512C911C74002E50B5 /* UIButton+underline.swift */; };
+		843B09542C913189002E50B5 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B09532C913189002E50B5 /* SignInVC.swift */; };
+		843B09562C9139E2002E50B5 /* BackSignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B09552C9139E2002E50B5 /* BackSignInVC.swift */; };
+		843B095B2C913B3F002E50B5 /* Inter-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 843B09572C913B3F002E50B5 /* Inter-Regular.otf */; };
+		843B095C2C913B3F002E50B5 /* Inter-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 843B09582C913B3F002E50B5 /* Inter-Light.otf */; };
+		843B095D2C913B3F002E50B5 /* Inter-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 843B09592C913B3F002E50B5 /* Inter-Medium.otf */; };
+		843B095E2C913B3F002E50B5 /* Inter-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 843B095A2C913B3F002E50B5 /* Inter-SemiBold.otf */; };
+		843B09612C91456A002E50B5 /* ConnectionErrorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B09602C91456A002E50B5 /* ConnectionErrorVC.swift */; };
+		843B09632C91458D002E50B5 /* ErrorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B09622C91458D002E50B5 /* ErrorVC.swift */; };
 		8470890C2C7FD5D000202753 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8470890B2C7FD5D000202753 /* AppDelegate.swift */; };
 		847089132C7FD5D000202753 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 847089122C7FD5D000202753 /* Base */; };
 		847089152C7FD5D100202753 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847089142C7FD5D100202753 /* Assets.xcassets */; };
@@ -40,11 +46,17 @@
 		3A18DCEC83C7DB74A305E82A /* Pods-Speedo Transfer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Speedo Transfer.release.xcconfig"; path = "Target Support Files/Pods-Speedo Transfer/Pods-Speedo Transfer.release.xcconfig"; sourceTree = "<group>"; };
 		4BA42372B8A398814D92C235 /* Pods-Speedo Transfer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Speedo Transfer.debug.xcconfig"; path = "Target Support Files/Pods-Speedo Transfer/Pods-Speedo Transfer.debug.xcconfig"; sourceTree = "<group>"; };
 		8413E0202C90DB8C00EB5A59 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
-		8413E02F2C9114CB00EB5A59 /* InterDisplay-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "InterDisplay-Medium.otf"; path = "../../../../../../../.Trash/InterDisplay-Medium.otf"; sourceTree = "<group>"; };
-		8413E0312C91150100EB5A59 /* Inter-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Regular.otf"; path = "../../../../../../../.Trash/Inter-Regular.otf"; sourceTree = "<group>"; };
 		8423A3A82C8E4846003FA02B /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		8423A3AA2C8E4BA4003FA02B /* UITextField+icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+icon.swift"; sourceTree = "<group>"; };
 		843B09512C911C74002E50B5 /* UIButton+underline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+underline.swift"; sourceTree = "<group>"; };
+		843B09532C913189002E50B5 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		843B09552C9139E2002E50B5 /* BackSignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackSignInVC.swift; sourceTree = "<group>"; };
+		843B09572C913B3F002E50B5 /* Inter-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Regular.otf"; path = "../../../../../../../Downloads/Inter-4.0 (1)/extras/otf/Inter-Regular.otf"; sourceTree = "<group>"; };
+		843B09582C913B3F002E50B5 /* Inter-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Light.otf"; path = "../../../../../../../Downloads/Inter-4.0 (1)/extras/otf/Inter-Light.otf"; sourceTree = "<group>"; };
+		843B09592C913B3F002E50B5 /* Inter-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Medium.otf"; path = "../../../../../../../Downloads/Inter-4.0 (1)/extras/otf/Inter-Medium.otf"; sourceTree = "<group>"; };
+		843B095A2C913B3F002E50B5 /* Inter-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-SemiBold.otf"; path = "../../../../../../../Downloads/Inter-4.0 (1)/extras/otf/Inter-SemiBold.otf"; sourceTree = "<group>"; };
+		843B09602C91456A002E50B5 /* ConnectionErrorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionErrorVC.swift; sourceTree = "<group>"; };
+		843B09622C91458D002E50B5 /* ErrorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorVC.swift; sourceTree = "<group>"; };
 		847089082C7FD5D000202753 /* Speedo Transfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Speedo Transfer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8470890B2C7FD5D000202753 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		847089122C7FD5D000202753 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -139,7 +151,11 @@
 				84FD3A8B2C8DE32A008C2373 /* SecondOnBoardingVC.swift */,
 				84FD3A8D2C8DE346008C2373 /* ThirdOnBoardingVC.swift */,
 				847089222C7FDBD900202753 /* SignUpVC.swift */,
+				843B09532C913189002E50B5 /* SignInVC.swift */,
 				84CE75922C8F9FC40003C8A1 /* CompleteSignupVC.swift */,
+				843B09552C9139E2002E50B5 /* BackSignInVC.swift */,
+				843B09602C91456A002E50B5 /* ConnectionErrorVC.swift */,
+				843B09622C91458D002E50B5 /* ErrorVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -195,8 +211,10 @@
 		84B4D9502C8B10C400DD70A9 /* Fonts-Files */ = {
 			isa = PBXGroup;
 			children = (
-				8413E0312C91150100EB5A59 /* Inter-Regular.otf */,
-				8413E02F2C9114CB00EB5A59 /* InterDisplay-Medium.otf */,
+				843B09582C913B3F002E50B5 /* Inter-Light.otf */,
+				843B09592C913B3F002E50B5 /* Inter-Medium.otf */,
+				843B09572C913B3F002E50B5 /* Inter-Regular.otf */,
+				843B095A2C913B3F002E50B5 /* Inter-SemiBold.otf */,
 			);
 			path = "Fonts-Files";
 			sourceTree = "<group>";
@@ -297,10 +315,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				847089152C7FD5D100202753 /* Assets.xcassets in Resources */,
-				843B094F2C911797002E50B5 /* Inter-Regular.otf in Resources */,
+				843B095C2C913B3F002E50B5 /* Inter-Light.otf in Resources */,
+				843B095B2C913B3F002E50B5 /* Inter-Regular.otf in Resources */,
 				847089182C7FD5D100202753 /* Base in Resources */,
+				843B095E2C913B3F002E50B5 /* Inter-SemiBold.otf in Resources */,
 				847089132C7FD5D000202753 /* Base in Resources */,
-				843B09502C91179A002E50B5 /* InterDisplay-Medium.otf in Resources */,
+				843B095D2C913B3F002E50B5 /* Inter-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,10 +380,14 @@
 				8423A3AB2C8E4BA4003FA02B /* UITextField+icon.swift in Sources */,
 				8413E0212C90DB8C00EB5A59 /* CustomTextField.swift in Sources */,
 				84FD3A822C8DB8CA008C2373 /* UserDefaultsManager.swift in Sources */,
+				843B09612C91456A002E50B5 /* ConnectionErrorVC.swift in Sources */,
 				84FD3A8E2C8DE346008C2373 /* ThirdOnBoardingVC.swift in Sources */,
 				847089232C7FDBD900202753 /* SignUpVC.swift in Sources */,
 				8423A3A92C8E4846003FA02B /* UIViewController+Alert.swift in Sources */,
 				84FD3A902C8DE38E008C2373 /* OnboardingHelper.swift in Sources */,
+				843B09562C9139E2002E50B5 /* BackSignInVC.swift in Sources */,
+				843B09542C913189002E50B5 /* SignInVC.swift in Sources */,
+				843B09632C91458D002E50B5 /* ErrorVC.swift in Sources */,
 				84FD3A8A2C8DE314008C2373 /* FirstOnBoardingVC.swift in Sources */,
 				847089202C7FDA9D00202753 /* SplashScreenVC.swift in Sources */,
 				848EF4102C8B2CD100F8D977 /* Colors.swift in Sources */,

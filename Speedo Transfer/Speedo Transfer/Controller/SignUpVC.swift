@@ -39,19 +39,18 @@ class SignUpVC: UIViewController {
     
     func configureTextFields() {
         
-                nameTextField.addRightIcon(image: UIImage(named: "personImage")!, padding: 16.0)
-                nameTextField.setBorder(color: Colors.textFieldBorderColor)
-                emailTextField.addRightIcon(image: UIImage(named: "emaiImage")!, padding: 16.0)
-                emailTextField.setBorder(color: Colors.textFieldBorderColor)
-                pass1TextField.addRightIcon(image: UIImage(named: "eyeImage")!, padding: 16.0)
-                pass1TextField.setBorder(color: Colors.textFieldBorderColor)
-                pass2TextField.addRightIcon(image: UIImage(named: "eyeImage")!, padding: 16.0)
-                pass2TextField.setBorder(color: Colors.textFieldBorderColor)
-
+        nameTextField.addRightIcon(image: UIImage(named: "personImage")!, padding: 16.0)
+        nameTextField.setBorder(color: Colors.textFieldBorderColor)
+        emailTextField.addRightIcon(image: UIImage(named: "emaiImage")!, padding: 16.0)
+        emailTextField.setBorder(color: Colors.textFieldBorderColor)
+        pass1TextField.addRightIcon(image: UIImage(named: "eyeImage")!, padding: 16.0)
+        pass1TextField.setBorder(color: Colors.textFieldBorderColor)
+        pass2TextField.addRightIcon(image: UIImage(named: "eyeImage")!, padding: 16.0)
+        pass2TextField.setBorder(color: Colors.textFieldBorderColor)
+        
     }
     
     @IBAction func SignUpBtnPressed(_ sender: UIButton) {
-        print("Sign Up button tapped")
         
         if isValidData() {
             let fullName = nameTextField.text?.trimmed ?? ""
@@ -65,8 +64,8 @@ class SignUpVC: UIViewController {
     }
     
     @IBAction func SignInBtnPressed(_ sender: UIButton) {
-//        let signInVC = self.storyboard?.instantiateViewController(withIdentifier: "SignInVC") as! SignInVC
-//        self.navigationController?.pushViewController(signInVC, animated: true)
+        let signInVC = self.storyboard?.instantiateViewController(withIdentifier: "SignInVC") as! SignInVC
+        self.navigationController?.pushViewController(signInVC, animated: true)
     }
     
     private func goToCompleteRegisterScreen(with user: User) {

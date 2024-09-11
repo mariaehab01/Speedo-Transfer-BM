@@ -12,12 +12,12 @@ struct Colors {
     static let primaryColor = UIColor(hex: "#521220")
     static let lightGrayColor = UIColor(hex: "#B0AFAE")
     static let grayColor = UIColor(hex: "#898886")
-    //static let lightPinkColor = UIColor(hex: "#F3E9EB")
     static let blackGrayColor = UIColor(hex: "#24221E")
     static let LightYellowColor = UIColor(hex: "#FFF8E7")
     static let LightRedColor = UIColor(hex: "#FFEAEE")
     static let white = UIColor(hex: "#FFFFFF")
     static let textFieldBorderColor = UIColor(hex: "#B0AFAE")
+    
     
     static var whiteRedGradient: CAGradientLayer {
         let gl = CAGradientLayer()
