@@ -31,8 +31,7 @@ class ChangePasswordVC: UIViewController {
     }
     
     private func setupNavBar() {
-//        self.navigationController?.navigationBar.backIndicatorImage = UIImage(named: "Icon")
-//        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "Icon")
+
         let backButton = UIBarButtonItem()
         self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
         self.navigationController?.navigationBar.tintColor = Colors.backBtnColor
@@ -46,14 +45,5 @@ class ChangePasswordVC: UIViewController {
 //        navigationItem.leftItemsSupplementBackButton = false
 //        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

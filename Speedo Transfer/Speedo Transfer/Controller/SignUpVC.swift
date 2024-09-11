@@ -10,10 +10,10 @@ import UIKit
 class SignUpVC: UIViewController {
     
    
-    @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var pass1TextField: UITextField!
-    @IBOutlet weak var pass2TextField: UITextField!
+    @IBOutlet weak var nameTextField: CustomTextField!
+    @IBOutlet weak var emailTextField: CustomTextField!
+    @IBOutlet weak var pass1TextField: CustomTextField!
+    @IBOutlet weak var pass2TextField: CustomTextField!
     
     
     @IBOutlet weak var speedoTransferLabel: UILabel!
@@ -21,13 +21,13 @@ class SignUpVC: UIViewController {
     @IBOutlet weak var signInButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationItem.hidesBackButton = true
         
         speedoTransferLabel.font = UIFont(name: Fonts.mediumInter, size: 24.0)
         
         signInButton.setUnderlinedTitle(
             text: "Sign In",
-            color: UIColor(red: 0.529, green: 0.118, blue: 0.208, alpha: 1),
+            color: UIColor(hex: "#871E35"),
             font: UIFont(name: Fonts.regularInter, size: 16)!
         )
         
@@ -38,16 +38,13 @@ class SignUpVC: UIViewController {
     }
     
     func configureTextFields() {
+        nameTextField.setType(.name)
         
-        nameTextField.addRightIcon(image: UIImage(named: "personImage")!, padding: 16.0)
-        nameTextField.setBorder(color: Colors.textFieldBorderColor)
-        emailTextField.addRightIcon(image: UIImage(named: "emaiImage")!, padding: 16.0)
-        emailTextField.setBorder(color: Colors.textFieldBorderColor)
-        pass1TextField.addRightIcon(image: UIImage(named: "eyeImage")!, padding: 16.0)
-        pass1TextField.setBorder(color: Colors.textFieldBorderColor)
-        pass2TextField.addRightIcon(image: UIImage(named: "eyeImage")!, padding: 16.0)
-        pass2TextField.setBorder(color: Colors.textFieldBorderColor)
+        emailTextField.setType(.email)
         
+        pass1TextField.setType(.password)
+        
+        pass2TextField.setType(.password)
     }
     
     @IBAction func SignUpBtnPressed(_ sender: UIButton) {
@@ -59,7 +56,19 @@ class SignUpVC: UIViewController {
             let password2 = pass2TextField.text?.trimmed ?? ""
             
             let user = User(name: fullName, email: email, password: password1)
-            goToCompleteRegisterScreen(with: user)
+            saveUserToUserDefaults(user: user)
+            goToCompleteRegisterScreen()
+        }
+    }
+    
+    func saveUserToUserDefaults(user: User) {
+        let def = UserDefaults.standard
+        do {
+            let encodedData = try JSONEncoder().encode(user)
+            
+            def.set(encodedData, forKey: "savedUser")
+        } catch {
+            print("Failed to encode user: \(error)")
         }
     }
     
@@ -68,9 +77,8 @@ class SignUpVC: UIViewController {
         self.navigationController?.pushViewController(signInVC, animated: true)
     }
     
-    private func goToCompleteRegisterScreen(with user: User) {
+    private func goToCompleteRegisterScreen() {
         let completeSignupVC = self.storyboard?.instantiateViewController(withIdentifier: VCS.completeSignUpVC) as! CompleteSignupVC
-        completeSignupVC.user = user
         self.navigationController?.pushViewController(completeSignupVC, animated: true)
     }
     
@@ -88,7 +96,6 @@ class SignUpVC: UIViewController {
             return false
         }
         
-        // Updated password validation according to user story
         let passwordRegex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{6,}$"
         let passwordPredicate = NSPredicate(format: "SELF MATCHES %@", passwordRegex)
         guard let password1 = pass1TextField.text?.trimmed, !password1.isEmpty, passwordPredicate.evaluate(with: password1) else {
@@ -110,17 +117,12 @@ class SignUpVC: UIViewController {
     }
     
     private func setupNavBar() {
-        self.navigationController?.navigationBar.backIndicatorImage = UIImage(named: "back-arrow")
-        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "back-arrow")
         let titleLabel = UILabel()
         titleLabel.text = "Sign Up"
         titleLabel.font = UIFont(name: Fonts.regularInter, size: 20)
         titleLabel.textColor = Colors.blackGrayColor
-        titleLabel.sizeToFit() // Adjusts the size of the label to fit the content
+        titleLabel.sizeToFit()
         self.navigationItem.titleView = titleLabel
-        
-        navigationItem.leftItemsSupplementBackButton = false
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
     }
 }
 

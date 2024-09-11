@@ -8,11 +8,11 @@
 import UIKit
 
 class SignInVC: UIViewController {
-    var user: User?
+    var user: User!
 
     @IBOutlet weak var speedoTransferLabel: UILabel!
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var emailTextField: CustomTextField!
+    @IBOutlet weak var passwordTextField: CustomTextField!
     
     @IBOutlet weak var signUpButton: UIButton!
     override func viewDidLoad() {
@@ -22,10 +22,11 @@ class SignInVC: UIViewController {
         
         signUpButton.setUnderlinedTitle(
             text: "Sign Up",
-            color: UIColor(red: 0.529, green: 0.118, blue: 0.208, alpha: 1),
+            color: UIColor(hex: "#871E35"),
             font: UIFont(name: Fonts.regularInter, size: 16)!
         )
         
+        self.navigationItem.hidesBackButton = true
 
         configureTextFields()
         setupNavBar()
@@ -33,18 +34,31 @@ class SignInVC: UIViewController {
     }
     
     func configureTextFields() {
-
-        emailTextField.addRightIcon(image: UIImage(named: "emaiImage")!, padding: 16.0)
-        emailTextField.setBorder(color: Colors.textFieldBorderColor)
-        passwordTextField.addRightIcon(image: UIImage(named: "eyeImage")!, padding: 16.0)
-        passwordTextField.setBorder(color: Colors.textFieldBorderColor)
-        
+        emailTextField.setType(.email)
+        passwordTextField.setType(.password)
     }
     
     
     @IBAction func signInBtnPressed(_ sender: UIButton) {
-        let backSignInVC = self.storyboard?.instantiateViewController(withIdentifier: VCS.backSignInVC) as! BackSignInVC
-        self.navigationController?.pushViewController(backSignInVC, animated: true)
+        guard let email = emailTextField.text?.trimmed, !email.isEmpty,
+              let password = passwordTextField.text?.trimmed, !password.isEmpty else {
+            showAlert(title: "Sorry", message: "Please fill all fields")
+            return
+        }
+        
+        let def = UserDefaults.standard
+        if let savedUserData = def.data(forKey: "user"),
+           let savedUser = try? JSONDecoder().decode(User.self, from: savedUserData) {
+            if email == savedUser.email && password == savedUser.password {
+                let sb = UIStoryboard(name: Storyboards.main, bundle: nil)
+                let backSignInVC = self.storyboard?.instantiateViewController(withIdentifier: VCS.backSignInVC) as! BackSignInVC
+                self.navigationController?.pushViewController(backSignInVC, animated: true)
+            } else {
+                showAlert(title: "Sorry", message: "Incorrect email or password.")
+            }
+        } else {
+            showAlert(title: "sorry", message: "No user data found.")
+        }
     }
     
     
@@ -54,17 +68,12 @@ class SignInVC: UIViewController {
     }
     
     private func setupNavBar() {
-        self.navigationController?.navigationBar.backIndicatorImage = UIImage(named: "back-arrow")
-        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "back-arrow")
         let titleLabel = UILabel()
         titleLabel.text = "Sign In"
         titleLabel.font = UIFont(name: Fonts.regularInter, size: 20)
         titleLabel.textColor = Colors.blackGrayColor
-        titleLabel.sizeToFit() // Adjusts the size of the label to fit the content
+        titleLabel.sizeToFit()
         self.navigationItem.titleView = titleLabel
-        
-        navigationItem.leftItemsSupplementBackButton = false
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
     }
 
     /*

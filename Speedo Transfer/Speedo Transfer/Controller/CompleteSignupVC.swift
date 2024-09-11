@@ -6,42 +6,86 @@
 //
 
 import UIKit
+import FittedSheets
 
-class CompleteSignupVC: UIViewController {
+class CompleteSignupVC: UIViewController, CountrySelectionDelegate{
     
-    var user: User?
+    var user: User!
 
     @IBOutlet weak var signInButton: UIButton!
-    @IBOutlet weak var countryTextField: UITextField!
-    @IBOutlet weak var dobTextField: UITextField!
+    @IBOutlet weak var countryTextField: CustomTextField!
+    @IBOutlet weak var dobTextField: CustomTextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         applyGradientBgWhiteToRed()
+        
         signInButton.setUnderlinedTitle(
             text: "Sign In",
-            color: UIColor(red: 0.529, green: 0.118, blue: 0.208, alpha: 1),
+            color: UIColor(hex: "#871E35"),
             font: UIFont(name: Fonts.regularInter, size: 16)!
         )
+        
+        countryTextField.isUserInteractionEnabled = true
+        dobTextField.isUserInteractionEnabled = true
 
-        // Do any additional setup after loading the view.
+        
+        configureTextFields()
+        
+    }
+    
+    func configureTextFields() {
+        countryTextField.setType(.country)
+        
+        countryTextField.addTarget(self, action: #selector(showCountryPicker), for: .editingDidBegin)
+        
+        dobTextField.setType(.dateOfBirth)
+        
     }
     
     @IBAction func continueBtnTapped(_ sender: Any) {
+        guard let user = user else {
+            return
+        }
+        
+        let name = user.name
+        let email = user.email
+        let password = user.password
+        let country = countryTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        let dateOfBirth = dobTextField.text ?? ""
+        
+        self.goToSignInScreen()
+
     }
     
 
     @IBAction func signInBtnTapped(_ sender: Any) {
+        goToSignInScreen()
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    private func goToSignInScreen() {
+        let signInVC = self.storyboard?.instantiateViewController(withIdentifier: VCS.signInVC) as! SignInVC
+        self.navigationController?.pushViewController(signInVC, animated: true)
     }
-    */
+    
+    @objc func showCountryPicker() {
+        guard let countrylist = storyboard?.instantiateViewController(withIdentifier: "CountryListVC") as? CountryListVC else {
+            return
+        }
+        
+        countrylist.delegate = self
+        
+        let sheetController = SheetViewController(controller: countrylist, sizes: [.fixed(500), .percent(0.5), .intrinsic])
+        sheetController.cornerRadius = 50
+        sheetController.gripColor = UIColor(named: "LabelColor")
+        self.present(sheetController, animated: true, completion: nil)
+    }
+    
+    func didSelectCountry(country: Country) {
+        countryTextField.text = country.label
+    }
 
 }
+
+

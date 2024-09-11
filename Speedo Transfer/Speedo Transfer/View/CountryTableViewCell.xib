@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CountryTableViewCell" rowHeight="52" id="lnY-fq-Z4e" userLabel="CountryTableViewCell" customClass="CountryTableViewCell" customModule="Speedo_Transfer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="52"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lnY-fq-Z4e" id="qPN-ws-Egp">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="52"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="united states" translatesAutoresizingMaskIntoConstraints="NO" id="31K-PG-cLe">
+                        <rect key="frame" x="5" y="14" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="ZOX-jL-CFy"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6W-Ee-xci">
+                        <rect key="frame" x="35" y="16" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.43921568630000002" green="0.43137254899999999" blue="0.42352941179999998" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="united states" translatesAutoresizingMaskIntoConstraints="NO" id="eiK-xu-CUG">
+                        <rect key="frame" x="288" y="16" width="20" height="20"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eiK-xu-CUG" firstAttribute="width" secondItem="qPN-ws-Egp" secondAttribute="width" multiplier="0.0625" id="3I7-SO-0Q4"/>
+                    <constraint firstItem="U6W-Ee-xci" firstAttribute="top" secondItem="qPN-ws-Egp" secondAttribute="topMargin" constant="-22.5" id="D8w-ZO-ch4"/>
+                    <constraint firstAttribute="bottom" secondItem="31K-PG-cLe" secondAttribute="bottom" constant="14" id="HdT-1r-JCW"/>
+                    <constraint firstItem="eiK-xu-CUG" firstAttribute="centerY" secondItem="U6W-Ee-xci" secondAttribute="centerY" id="Ijb-N8-vFv"/>
+                    <constraint firstAttribute="trailing" secondItem="eiK-xu-CUG" secondAttribute="trailing" constant="12" id="WK6-qd-Lq9"/>
+                    <constraint firstItem="31K-PG-cLe" firstAttribute="top" secondItem="qPN-ws-Egp" secondAttribute="top" constant="14" id="ZZ0-cm-9fl"/>
+                    <constraint firstItem="31K-PG-cLe" firstAttribute="leading" secondItem="qPN-ws-Egp" secondAttribute="leadingMargin" constant="-11" id="azR-QO-oGc"/>
+                    <constraint firstItem="U6W-Ee-xci" firstAttribute="centerY" secondItem="31K-PG-cLe" secondAttribute="centerY" id="dza-Bv-jjJ"/>
+                    <constraint firstItem="U6W-Ee-xci" firstAttribute="leading" secondItem="31K-PG-cLe" secondAttribute="trailing" constant="6" id="shb-uJ-KDu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="hFs-Bs-ORY"/>
+            <connections>
+                <outlet property="cellImg" destination="31K-PG-cLe" id="01o-0j-MhF"/>
+                <outlet property="cellLabel" destination="U6W-Ee-xci" id="CNp-7r-UUe"/>
+                <outlet property="checkMark" destination="eiK-xu-CUG" id="JAF-q0-V1g"/>
+            </connections>
+            <point key="canvasLocation" x="103.81679389312977" y="16.901408450704228"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="united states" width="24" height="24"/>
+    </resources>
+</document>
