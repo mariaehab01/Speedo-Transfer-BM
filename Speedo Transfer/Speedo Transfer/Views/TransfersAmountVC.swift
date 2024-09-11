@@ -7,8 +7,21 @@
 
 import UIKit
 
-class TransfersAmountVC:
-    UIViewController {
+class TransfersAmountVC: UIViewController {
+    
+    @IBAction func FavouriteBtn(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        guard let destinationController = storyboard.instantiateViewController(withIdentifier: "FavouritesVC") as? FavouritesVC else { return }
+
+        if let presentationController = destinationController.presentationController as? UISheetPresentationController {
+            presentationController.detents = [.medium(), .large() ]
+            presentationController.preferredCornerRadius = 50
+            presentationController.prefersGrabberVisible = true
+        }
+        self.present(destinationController, animated: true)
+        
+    }
     
     @IBAction func ContinueBtn(_ sender: Any) {
     }
@@ -39,3 +52,6 @@ class TransfersAmountVC:
     }
 
 }
+
+
+

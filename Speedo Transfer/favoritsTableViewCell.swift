@@ -1,5 +1,5 @@
 //
-//  HomeTableViewCell.swift
+//  favoritsTableViewCell.swift
 //  Speedo Transfer
 //
 //  Created by 1234 on 11/09/2024.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeTableViewCell: UITableViewCell {
+class favoritsTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
