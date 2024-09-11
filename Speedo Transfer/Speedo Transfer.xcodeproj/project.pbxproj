@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+
 		8413E0212C90DB8C00EB5A59 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8413E0202C90DB8C00EB5A59 /* CustomTextField.swift */; };
 		8423A3A92C8E4846003FA02B /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423A3A82C8E4846003FA02B /* UIViewController+Alert.swift */; };
 		8423A3AB2C8E4BA4003FA02B /* UITextField+custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423A3AA2C8E4BA4003FA02B /* UITextField+custom.swift */; };
@@ -19,6 +20,11 @@
 		843B095E2C913B3F002E50B5 /* Inter-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 843B095A2C913B3F002E50B5 /* Inter-SemiBold.otf */; };
 		843B09612C91456A002E50B5 /* ConnectionErrorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B09602C91456A002E50B5 /* ConnectionErrorVC.swift */; };
 		843B09632C91458D002E50B5 /* ErrorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B09622C91458D002E50B5 /* ErrorVC.swift */; };
+		7C8903522C9073F1002B8970 /* TransfersHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8903512C9073F1002B8970 /* TransfersHomeVC.swift */; };
+		7C8903542C9098EC002B8970 /* TransfersAmount2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8903532C9098EC002B8970 /* TransfersAmount2VC.swift */; };
+		7CA1805C2C91C96B00D94D68 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA1805A2C91C96B00D94D68 /* HomeTableViewCell.swift */; };
+		7CA1805D2C91C96B00D94D68 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CA1805B2C91C96B00D94D68 /* HomeTableViewCell.xib */; };
+		7CACEEA12C8FAA5F0058F66A /* TransfersAmountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CACEEA02C8FAA5F0058F66A /* TransfersAmountVC.swift */; };
 		8470890C2C7FD5D000202753 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8470890B2C7FD5D000202753 /* AppDelegate.swift */; };
 		847089132C7FD5D000202753 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 847089122C7FD5D000202753 /* Base */; };
 		847089152C7FD5D100202753 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847089142C7FD5D100202753 /* Assets.xcassets */; };
@@ -61,6 +67,11 @@
 		843B095A2C913B3F002E50B5 /* Inter-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-SemiBold.otf"; path = "../../../../../../../Downloads/Inter-4.0 (1)/extras/otf/Inter-SemiBold.otf"; sourceTree = "<group>"; };
 		843B09602C91456A002E50B5 /* ConnectionErrorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionErrorVC.swift; sourceTree = "<group>"; };
 		843B09622C91458D002E50B5 /* ErrorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorVC.swift; sourceTree = "<group>"; };
+		7C8903512C9073F1002B8970 /* TransfersHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersHomeVC.swift; sourceTree = "<group>"; };
+		7C8903532C9098EC002B8970 /* TransfersAmount2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersAmount2VC.swift; sourceTree = "<group>"; };
+		7CA1805A2C91C96B00D94D68 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		7CA1805B2C91C96B00D94D68 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		7CACEEA02C8FAA5F0058F66A /* TransfersAmountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersAmountVC.swift; sourceTree = "<group>"; };
 		847089082C7FD5D000202753 /* Speedo Transfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Speedo Transfer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8470890B2C7FD5D000202753 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		847089122C7FD5D000202753 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -109,6 +120,18 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		7CA55F132C8DD28600861AE1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7CACEEA02C8FAA5F0058F66A /* TransfersAmountVC.swift */,
+				7C8903512C9073F1002B8970 /* TransfersHomeVC.swift */,
+				7C8903532C9098EC002B8970 /* TransfersAmount2VC.swift */,
+				7CA1805A2C91C96B00D94D68 /* HomeTableViewCell.swift */,
+				7CA1805B2C91C96B00D94D68 /* HomeTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		7FEC0EBE3FDFFCEFAFBFD3DD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +163,7 @@
 			children = (
 				84FD3A912C8DF3E9008C2373 /* Model */,
 				84FD3A922C8DF3FB008C2373 /* View */,
+				7CA55F132C8DD28600861AE1 /* Views */,
 				84FD3A802C8DB890008C2373 /* Manager */,
 				84B4D9552C8B135C00DD70A9 /* Constants */,
 				84B4D94F2C8B106A00DD70A9 /* Resources */,
@@ -225,6 +249,7 @@
 				843B09592C913B3F002E50B5 /* Inter-Medium.otf */,
 				843B09572C913B3F002E50B5 /* Inter-Regular.otf */,
 				843B095A2C913B3F002E50B5 /* Inter-SemiBold.otf */,
+
 			);
 			path = "Fonts-Files";
 			sourceTree = "<group>";
@@ -332,7 +357,7 @@
 				843B095B2C913B3F002E50B5 /* Inter-Regular.otf in Resources */,
 				847089182C7FD5D100202753 /* Base in Resources */,
 				843B095E2C913B3F002E50B5 /* Inter-SemiBold.otf in Resources */,
-				847089132C7FD5D000202753 /* Base in Resources */,
+				7CA1805D2C91C96B00D94D68 /* HomeTableViewCell.xib in Resources */,
 				843B095D2C913B3F002E50B5 /* Inter-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,11 +430,16 @@
 				843B09632C91458D002E50B5 /* ErrorVC.swift in Sources */,
 				84FD3A8A2C8DE314008C2373 /* FirstOnBoardingVC.swift in Sources */,
 				8479CF752C9209C3000D0DFE /* CountryTableViewCell.swift in Sources */,
+				7CA1805C2C91C96B00D94D68 /* HomeTableViewCell.swift in Sources */,
 				847089202C7FDA9D00202753 /* SplashScreenVC.swift in Sources */,
+				7CACEEA12C8FAA5F0058F66A /* TransfersAmountVC.swift in Sources */,
 				848EF4102C8B2CD100F8D977 /* Colors.swift in Sources */,
 				843B09522C911C74002E50B5 /* UIButton+underline.swift in Sources */,
 				84CE75932C8F9FC40003C8A1 /* CompleteSignupVC.swift in Sources */,
+				847089102C7FD5D000202753 /* ViewController.swift in Sources */,
+				7C8903542C9098EC002B8970 /* TransfersAmount2VC.swift in Sources */,
 				84B4D9572C8B138C00DD70A9 /* Fonts.swift in Sources */,
+				7C8903522C9073F1002B8970 /* TransfersHomeVC.swift in Sources */,
 				8470890C2C7FD5D000202753 /* AppDelegate.swift in Sources */,
 				84FD3A8C2C8DE32A008C2373 /* SecondOnBoardingVC.swift in Sources */,
 				84CE75952C8FA37F0003C8A1 /* User.swift in Sources */,
