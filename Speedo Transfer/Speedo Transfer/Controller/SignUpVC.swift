@@ -64,12 +64,12 @@ class SignUpVC: UIViewController {
     }
     
     @IBAction func SignInBtnPressed(_ sender: UIButton) {
-        let signInVC = self.storyboard?.instantiateViewController(withIdentifier: "SignInVC") as! SignInVC
+        let signInVC = self.storyboard?.instantiateViewController(withIdentifier: VCS.signInVC) as! SignInVC
         self.navigationController?.pushViewController(signInVC, animated: true)
     }
     
     private func goToCompleteRegisterScreen(with user: User) {
-        let completeSignupVC = self.storyboard?.instantiateViewController(withIdentifier: "CompleteSignupVC") as! CompleteSignupVC
+        let completeSignupVC = self.storyboard?.instantiateViewController(withIdentifier: VCS.completeSignUpVC) as! CompleteSignupVC
         completeSignupVC.user = user
         self.navigationController?.pushViewController(completeSignupVC, animated: true)
     }

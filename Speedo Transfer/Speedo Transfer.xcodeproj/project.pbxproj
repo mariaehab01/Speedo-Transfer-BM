@@ -33,6 +33,7 @@
 		84C659772C8CECD30013DDC2 /* String+trimm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C659762C8CECD30013DDC2 /* String+trimm.swift */; };
 		84CE75932C8F9FC40003C8A1 /* CompleteSignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CE75922C8F9FC40003C8A1 /* CompleteSignupVC.swift */; };
 		84CE75952C8FA37F0003C8A1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CE75942C8FA37F0003C8A1 /* User.swift */; };
+		84D3A0382C91A85100EE6604 /* ChangePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D3A0372C91A85100EE6604 /* ChangePasswordVC.swift */; };
 		84FD3A822C8DB8CA008C2373 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD3A812C8DB8CA008C2373 /* UserDefaultsManager.swift */; };
 		84FD3A8A2C8DE314008C2373 /* FirstOnBoardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD3A892C8DE314008C2373 /* FirstOnBoardingVC.swift */; };
 		84FD3A8C2C8DE32A008C2373 /* SecondOnBoardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD3A8B2C8DE32A008C2373 /* SecondOnBoardingVC.swift */; };
@@ -73,6 +74,7 @@
 		84C659762C8CECD30013DDC2 /* String+trimm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+trimm.swift"; sourceTree = "<group>"; };
 		84CE75922C8F9FC40003C8A1 /* CompleteSignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteSignupVC.swift; sourceTree = "<group>"; };
 		84CE75942C8FA37F0003C8A1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		84D3A0372C91A85100EE6604 /* ChangePasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC.swift; sourceTree = "<group>"; };
 		84FD3A812C8DB8CA008C2373 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		84FD3A892C8DE314008C2373 /* FirstOnBoardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstOnBoardingVC.swift; sourceTree = "<group>"; };
 		84FD3A8B2C8DE32A008C2373 /* SecondOnBoardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondOnBoardingVC.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				843B09552C9139E2002E50B5 /* BackSignInVC.swift */,
 				843B09602C91456A002E50B5 /* ConnectionErrorVC.swift */,
 				843B09622C91458D002E50B5 /* ErrorVC.swift */,
+				84D3A0372C91A85100EE6604 /* ChangePasswordVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				847089232C7FDBD900202753 /* SignUpVC.swift in Sources */,
 				8423A3A92C8E4846003FA02B /* UIViewController+Alert.swift in Sources */,
 				84FD3A902C8DE38E008C2373 /* OnboardingHelper.swift in Sources */,
+				84D3A0382C91A85100EE6604 /* ChangePasswordVC.swift in Sources */,
 				843B09562C9139E2002E50B5 /* BackSignInVC.swift in Sources */,
 				843B09542C913189002E50B5 /* SignInVC.swift in Sources */,
 				843B09632C91458D002E50B5 /* ErrorVC.swift in Sources */,

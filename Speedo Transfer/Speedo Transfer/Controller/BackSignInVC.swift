@@ -33,6 +33,8 @@ class BackSignInVC: UIViewController {
     }
     
     @IBAction func signInBtnPressed(_ sender: UIButton) {
+        let changePasswordVC = self.storyboard?.instantiateViewController(withIdentifier: "ChangePasswordVC") as! ChangePasswordVC
+        self.navigationController?.pushViewController(changePasswordVC, animated: true)
     }
     
     private func setupNavBar() {
