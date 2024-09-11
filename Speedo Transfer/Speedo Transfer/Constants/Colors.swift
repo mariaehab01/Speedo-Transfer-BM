@@ -17,6 +17,7 @@ struct Colors {
     static let LightYellowColor = UIColor(hex: "#FFF8E7")
     static let LightRedColor = UIColor(hex: "#FFEAEE")
     static let white = UIColor(hex: "#FFFFFF")
+    static let textFieldBorderColor = UIColor(hex: "#B0AFAE")
     
     static var whiteRedGradient: CAGradientLayer {
         let gl = CAGradientLayer()
