@@ -53,6 +53,7 @@ class EditProfileVC: UIViewController, CountrySelectionDelegate {
         configureTextFields()
         applyGradientBgYellowToRed()
         setupNavBar()
+        self.tabBarController?.tabBar.isHidden = true
         
     }
     

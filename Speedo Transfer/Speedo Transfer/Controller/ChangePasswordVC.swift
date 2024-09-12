@@ -18,6 +18,7 @@ class ChangePasswordVC: UIViewController {
         configureTextFields()
         setupNavBar()
         applyGradientBgYellowToRed()
+        self.tabBarController?.tabBar.isHidden = true
         
     }
     
