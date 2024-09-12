@@ -90,7 +90,7 @@ class EditProfileVC: UIViewController, CountrySelectionDelegate {
         
         let sheetController = SheetViewController(controller: countrylist, sizes: [.fixed(500), .percent(0.5), .intrinsic])
         sheetController.cornerRadius = 50
-        sheetController.gripColor = UIColor(named: "LabelColor")
+        sheetController.gripColor = UIColor(hex: "#B0AFAE")
         self.present(sheetController, animated: true, completion: nil)
     }
     

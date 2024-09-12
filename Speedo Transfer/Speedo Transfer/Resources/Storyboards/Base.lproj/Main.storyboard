@@ -1277,7 +1277,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="APq-t4-NLg">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="APq-t4-NLg" customClass="CustomTextField" customModule="Speedo_Transfer" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="27.333333333333329" width="343" height="52"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="52" id="O6B-JW-1R8"/>
@@ -1295,7 +1295,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HJ4-3D-Qm8">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HJ4-3D-Qm8" customClass="CustomTextField" customModule="Speedo_Transfer" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="119.33333333333334" width="343" height="52"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="343" id="Ga1-LW-4Hv"/>
@@ -2929,8 +2929,12 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="vdb-9K-lgZ" firstAttribute="width" secondItem="IBK-Bt-KJa" secondAttribute="width" id="V2s-wB-Fjr"/>
+                                    <constraint firstItem="Drn-cZ-KzH" firstAttribute="width" secondItem="2U8-TN-9f3" secondAttribute="width" id="aXT-E0-Aos"/>
+                                    <constraint firstItem="2U8-TN-9f3" firstAttribute="width" secondItem="vdb-9K-lgZ" secondAttribute="width" id="bmw-Xi-7sV"/>
+                                    <constraint firstItem="Drn-cZ-KzH" firstAttribute="height" secondItem="2U8-TN-9f3" secondAttribute="height" id="cCz-Yx-HOY"/>
                                     <constraint firstAttribute="height" constant="355.32999999999998" id="inb-dv-lhX"/>
                                     <constraint firstItem="vdb-9K-lgZ" firstAttribute="height" secondItem="IBK-Bt-KJa" secondAttribute="height" id="uCz-tz-zO6"/>
+                                    <constraint firstItem="2U8-TN-9f3" firstAttribute="height" secondItem="vdb-9K-lgZ" secondAttribute="height" id="vl9-ba-nai"/>
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K90-9A-crn">
