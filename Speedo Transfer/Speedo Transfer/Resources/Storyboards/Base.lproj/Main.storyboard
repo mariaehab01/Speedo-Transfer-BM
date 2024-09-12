@@ -1478,7 +1478,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="XaJ-Cg-G6g" kind="relationship" relationship="rootViewController" id="EHJ-iM-GMd"/>
+                        <segue destination="XaJ-Cg-G6g" kind="relationship" relationship="rootViewController" id="COM-TU-XEt"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lNT-lX-GRB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
