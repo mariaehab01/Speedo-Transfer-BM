@@ -8,5 +8,6 @@ target 'Speedo Transfer' do
   pod 'Alamofire', '~> 5.9'
   pod 'IQKeyboardManagerSwift'
   pod 'FittedSheets'
+  pod 'RAMAnimatedTabBarController'
 
 end

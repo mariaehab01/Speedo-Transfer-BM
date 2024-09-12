@@ -22,14 +22,14 @@
 		7CACEEA12C8FAA5F0058F66A /* TransfersAmountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CACEEA02C8FAA5F0058F66A /* TransfersAmountVC.swift */; };
 		7CDB467E2C9269F500DD9529 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847089112C7FD5D000202753 /* Main.storyboard */; };
 		7CDB46862C92878B00DD9529 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDB46852C92878B00DD9529 /* TabBarVC.swift */; };
-		7CDB468B2C928C1E00DD9529 /* Inter-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7CDB46882C928C1A00DD9529 /* Inter-Light.otf */; };
-		7CDB468C2C928C2100DD9529 /* Inter-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7CDB46892C928C1A00DD9529 /* Inter-Medium.otf */; };
-		7CDB468D2C928C2500DD9529 /* Inter-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7CDB468A2C928C1A00DD9529 /* Inter-Regular.otf */; };
-		7CDB468E2C928C2B00DD9529 /* Inter-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7CDB46872C928C1A00DD9529 /* Inter-SemiBold.otf */; };
 		8413E0212C90DB8C00EB5A59 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8413E0202C90DB8C00EB5A59 /* CustomTextField.swift */; };
 		841D97012C928A670086A6B3 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D97002C928A670086A6B3 /* ProfileVC.swift */; };
 		841D97032C928CFE0086A6B3 /* PersonalInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D97022C928CFE0086A6B3 /* PersonalInfoVC.swift */; };
 		841D97052C92940F0086A6B3 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D97042C92940F0086A6B3 /* SettingVC.swift */; };
+		841D971D2C92AC520086A6B3 /* Inter-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 841D971A2C92AC500086A6B3 /* Inter-Light.otf */; };
+		841D971E2C92AC520086A6B3 /* Inter-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 841D971B2C92AC500086A6B3 /* Inter-Medium.otf */; };
+		841D971F2C92AC520086A6B3 /* Inter-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 841D971C2C92AC510086A6B3 /* Inter-Regular.otf */; };
+		841D97212C92AD070086A6B3 /* Inter-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 841D97202C92ACFF0086A6B3 /* Inter-SemiBold.otf */; };
 		8423A3A92C8E4846003FA02B /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423A3A82C8E4846003FA02B /* UIViewController+Alert.swift */; };
 		8423A3AB2C8E4BA4003FA02B /* UITextField+custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423A3AA2C8E4BA4003FA02B /* UITextField+custom.swift */; };
 		843B09522C911C74002E50B5 /* UIButton+underline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B09512C911C74002E50B5 /* UIButton+underline.swift */; };
@@ -81,14 +81,14 @@
 		7CA1808A2C924B7B00D94D68 /* FavouriteListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteListCell.xib; sourceTree = "<group>"; };
 		7CACEEA02C8FAA5F0058F66A /* TransfersAmountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersAmountVC.swift; sourceTree = "<group>"; };
 		7CDB46852C92878B00DD9529 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
-		7CDB46872C928C1A00DD9529 /* Inter-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-SemiBold.otf"; path = "../../../../../../../Downloads/Inter-SemiBold.otf"; sourceTree = "<group>"; };
-		7CDB46882C928C1A00DD9529 /* Inter-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Light.otf"; path = "../../../../../../../Downloads/Inter-Light.otf"; sourceTree = "<group>"; };
-		7CDB46892C928C1A00DD9529 /* Inter-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Medium.otf"; path = "../../../../../../../Downloads/Inter-Medium.otf"; sourceTree = "<group>"; };
-		7CDB468A2C928C1A00DD9529 /* Inter-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Regular.otf"; path = "../../../../../../../Downloads/Inter-Regular.otf"; sourceTree = "<group>"; };
 		8413E0202C90DB8C00EB5A59 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		841D97002C928A670086A6B3 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		841D97022C928CFE0086A6B3 /* PersonalInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoVC.swift; sourceTree = "<group>"; };
 		841D97042C92940F0086A6B3 /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
+		841D971A2C92AC500086A6B3 /* Inter-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Light.otf"; path = "../../../../../../../Downloads/Inter-4.0 (1)/extras/otf/Inter-Light.otf"; sourceTree = "<group>"; };
+		841D971B2C92AC500086A6B3 /* Inter-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Medium.otf"; path = "../../../../../../../.Trash/Inter-Medium.otf"; sourceTree = "<group>"; };
+		841D971C2C92AC510086A6B3 /* Inter-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Regular.otf"; path = "../../../../../../../Downloads/Inter-4.0 (1)/extras/otf/Inter-Regular.otf"; sourceTree = "<group>"; };
+		841D97202C92ACFF0086A6B3 /* Inter-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-SemiBold.otf"; path = "../../../../../../../Downloads/Inter-SemiBold.otf"; sourceTree = "<group>"; };
 		8423A3A82C8E4846003FA02B /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		8423A3AA2C8E4BA4003FA02B /* UITextField+custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+custom.swift"; sourceTree = "<group>"; };
 		843B09512C911C74002E50B5 /* UIButton+underline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+underline.swift"; sourceTree = "<group>"; };
@@ -145,41 +145,99 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		7CA1805E2C91F5FC00D94D68 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				7CA1805A2C91C96B00D94D68 /* HomeTableViewCell.swift */,
-				7CA1805B2C91C96B00D94D68 /* HomeTableViewCell.xib */,
-				7CA1807D2C9238B400D94D68 /* favoritsTableViewCell.swift */,
-				7CA1807E2C9238B400D94D68 /* favoritsTableViewCell.xib */,
-				7CA180892C924B7B00D94D68 /* FavouriteListCell.swift */,
-				7CA1808A2C924B7B00D94D68 /* FavouriteListCell.xib */,
-			);
-			name = Cells;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		7CA55F132C8DD28600861AE1 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				7C8903512C9073F1002B8970 /* TransfersHomeVC.swift */,
-				7CACEEA02C8FAA5F0058F66A /* TransfersAmountVC.swift */,
-				7C8903532C9098EC002B8970 /* TransfersAmount2VC.swift */,
-				7CA180612C91F74C00D94D68 /* TransfersAmount3VC.swift */,
-				7CA180652C91FFF100D94D68 /* FavouritesVC.swift */,
-				7CA180812C923CEB00D94D68 /* MoreVC.swift */,
-				7CA180832C9243D800D94D68 /* FavouriteListVC.swift */,
-				7CDB46852C92878B00DD9529 /* TabBarVC.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		7FEC0EBE3FDFFCEFAFBFD3DD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				1640DDEFBBEE85F5E7C8EE77 /* Pods_Speedo_Transfer.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		841D97222C92AF560086A6B3 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				84FD3A892C8DE314008C2373 /* FirstOnBoardingVC.swift */,
+				84FD3A8B2C8DE32A008C2373 /* SecondOnBoardingVC.swift */,
+				84FD3A8D2C8DE346008C2373 /* ThirdOnBoardingVC.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		841D97232C92AF950086A6B3 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				847089222C7FDBD900202753 /* SignUpVC.swift */,
+				843B09532C913189002E50B5 /* SignInVC.swift */,
+				84CE75922C8F9FC40003C8A1 /* CompleteSignupVC.swift */,
+				843B09552C9139E2002E50B5 /* BackSignInVC.swift */,
+				8479CF702C9208C7000D0DFE /* CountryListVC.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		841D97242C92B0170086A6B3 /* Transfer */ = {
+			isa = PBXGroup;
+			children = (
+				7C8903512C9073F1002B8970 /* TransfersHomeVC.swift */,
+				7CACEEA02C8FAA5F0058F66A /* TransfersAmountVC.swift */,
+				7C8903532C9098EC002B8970 /* TransfersAmount2VC.swift */,
+				7CA180612C91F74C00D94D68 /* TransfersAmount3VC.swift */,
+				7CDB46852C92878B00DD9529 /* TabBarVC.swift */,
+			);
+			path = Transfer;
+			sourceTree = "<group>";
+		};
+		841D97252C92B0460086A6B3 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				7CA180652C91FFF100D94D68 /* FavouritesVC.swift */,
+				7CA180812C923CEB00D94D68 /* MoreVC.swift */,
+				7CA180832C9243D800D94D68 /* FavouriteListVC.swift */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		841D97262C92B08E0086A6B3 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				843B09602C91456A002E50B5 /* ConnectionErrorVC.swift */,
+				843B09622C91458D002E50B5 /* ErrorVC.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		841D97272C92B0DF0086A6B3 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				84D3A0372C91A85100EE6604 /* ChangePasswordVC.swift */,
+				8479CF812C927608000D0DFE /* EditProfileVC.swift */,
+				841D97002C928A670086A6B3 /* ProfileVC.swift */,
+				841D97022C928CFE0086A6B3 /* PersonalInfoVC.swift */,
+				841D97042C92940F0086A6B3 /* SettingVC.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		841D97282C92B0F70086A6B3 /* Splash Screen */ = {
+			isa = PBXGroup;
+			children = (
+				8470891F2C7FDA9D00202753 /* SplashScreenVC.swift */,
+			);
+			path = "Splash Screen";
+			sourceTree = "<group>";
+		};
+		841D97292C92B11E0086A6B3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		841D972A2C92B1360086A6B3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		847088FF2C7FD5CF00202753 = {
@@ -203,10 +261,10 @@
 		8470890A2C7FD5D000202753 /* Speedo Transfer */ = {
 			isa = PBXGroup;
 			children = (
-				7CA1805E2C91F5FC00D94D68 /* Cells */,
+				841D972A2C92B1360086A6B3 /* Presenter */,
+				841D97292C92B11E0086A6B3 /* Network */,
 				84FD3A912C8DF3E9008C2373 /* Model */,
 				84FD3A922C8DF3FB008C2373 /* View */,
-				7CA55F132C8DD28600861AE1 /* Views */,
 				84FD3A802C8DB890008C2373 /* Manager */,
 				84B4D9552C8B135C00DD70A9 /* Constants */,
 				84B4D94F2C8B106A00DD70A9 /* Resources */,
@@ -221,22 +279,13 @@
 		847089212C7FDAA400202753 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				8470891F2C7FDA9D00202753 /* SplashScreenVC.swift */,
-				84FD3A892C8DE314008C2373 /* FirstOnBoardingVC.swift */,
-				84FD3A8B2C8DE32A008C2373 /* SecondOnBoardingVC.swift */,
-				84FD3A8D2C8DE346008C2373 /* ThirdOnBoardingVC.swift */,
-				847089222C7FDBD900202753 /* SignUpVC.swift */,
-				843B09532C913189002E50B5 /* SignInVC.swift */,
-				84CE75922C8F9FC40003C8A1 /* CompleteSignupVC.swift */,
-				843B09552C9139E2002E50B5 /* BackSignInVC.swift */,
-				843B09602C91456A002E50B5 /* ConnectionErrorVC.swift */,
-				843B09622C91458D002E50B5 /* ErrorVC.swift */,
-				84D3A0372C91A85100EE6604 /* ChangePasswordVC.swift */,
-				8479CF702C9208C7000D0DFE /* CountryListVC.swift */,
-				8479CF812C927608000D0DFE /* EditProfileVC.swift */,
-				841D97002C928A670086A6B3 /* ProfileVC.swift */,
-				841D97022C928CFE0086A6B3 /* PersonalInfoVC.swift */,
-				841D97042C92940F0086A6B3 /* SettingVC.swift */,
+				841D97242C92B0170086A6B3 /* Transfer */,
+				841D97252C92B0460086A6B3 /* More */,
+				841D97282C92B0F70086A6B3 /* Splash Screen */,
+				841D97222C92AF560086A6B3 /* Onboarding */,
+				841D97232C92AF950086A6B3 /* Authentication */,
+				841D97262C92B08E0086A6B3 /* Error */,
+				841D97272C92B0DF0086A6B3 /* Profile */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -292,10 +341,10 @@
 		84B4D9502C8B10C400DD70A9 /* Fonts-Files */ = {
 			isa = PBXGroup;
 			children = (
-				7CDB46882C928C1A00DD9529 /* Inter-Light.otf */,
-				7CDB46892C928C1A00DD9529 /* Inter-Medium.otf */,
-				7CDB468A2C928C1A00DD9529 /* Inter-Regular.otf */,
-				7CDB46872C928C1A00DD9529 /* Inter-SemiBold.otf */,
+				841D97202C92ACFF0086A6B3 /* Inter-SemiBold.otf */,
+				841D971A2C92AC500086A6B3 /* Inter-Light.otf */,
+				841D971B2C92AC500086A6B3 /* Inter-Medium.otf */,
+				841D971C2C92AC510086A6B3 /* Inter-Regular.otf */,
 			);
 			path = "Fonts-Files";
 			sourceTree = "<group>";
@@ -330,6 +379,12 @@
 		84FD3A922C8DF3FB008C2373 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7CA1805A2C91C96B00D94D68 /* HomeTableViewCell.swift */,
+				7CA1805B2C91C96B00D94D68 /* HomeTableViewCell.xib */,
+				7CA1807D2C9238B400D94D68 /* favoritsTableViewCell.swift */,
+				7CA1807E2C9238B400D94D68 /* favoritsTableViewCell.xib */,
+				7CA180892C924B7B00D94D68 /* FavouriteListCell.swift */,
+				7CA1808A2C924B7B00D94D68 /* FavouriteListCell.xib */,
 				8413E0202C90DB8C00EB5A59 /* CustomTextField.swift */,
 				8479CF722C9209C3000D0DFE /* CountryTableViewCell.swift */,
 				8479CF732C9209C3000D0DFE /* CountryTableViewCell.xib */,
@@ -398,15 +453,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CDB467E2C9269F500DD9529 /* Main.storyboard in Resources */,
-				7CDB468D2C928C2500DD9529 /* Inter-Regular.otf in Resources */,
-				7CDB468E2C928C2B00DD9529 /* Inter-SemiBold.otf in Resources */,
+				841D971F2C92AC520086A6B3 /* Inter-Regular.otf in Resources */,
+				841D97212C92AD070086A6B3 /* Inter-SemiBold.otf in Resources */,
 				7CA180802C9238B400D94D68 /* favoritsTableViewCell.xib in Resources */,
 				8479CF742C9209C3000D0DFE /* CountryTableViewCell.xib in Resources */,
 				847089152C7FD5D100202753 /* Assets.xcassets in Resources */,
 				847089182C7FD5D100202753 /* Base in Resources */,
-				7CDB468B2C928C1E00DD9529 /* Inter-Light.otf in Resources */,
+				841D971D2C92AC520086A6B3 /* Inter-Light.otf in Resources */,
 				7CA1808C2C924B7B00D94D68 /* FavouriteListCell.xib in Resources */,
-				7CDB468C2C928C2100DD9529 /* Inter-Medium.otf in Resources */,
+				841D971E2C92AC520086A6B3 /* Inter-Medium.otf in Resources */,
 				7CA1805D2C91C96B00D94D68 /* HomeTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
