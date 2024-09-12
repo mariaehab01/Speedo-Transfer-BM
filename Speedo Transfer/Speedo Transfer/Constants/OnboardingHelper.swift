@@ -10,7 +10,6 @@ import UIKit
 class OnboardingHelper {
     
     // MARK: - Navigation
-    
     static func skipToSignUp(from viewController: UIViewController) {
         
         UserDefaultsManager.shared().hasSeenOnboarding = true

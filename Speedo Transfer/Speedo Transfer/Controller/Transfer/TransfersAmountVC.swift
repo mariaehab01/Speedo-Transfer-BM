@@ -12,7 +12,7 @@ class TransfersAmountVC: UIViewController {
     @IBAction func FavouriteBtn(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        guard let destinationController = storyboard.instantiateViewController(withIdentifier: "FavouritesVC") as? FavouritesVC else { return }
+        guard let destinationController = storyboard.instantiateViewController(withIdentifier: "FavouritesListVC") as? FavouritesListVC else { return }
 
         if let presentationController = destinationController.presentationController as? UISheetPresentationController {
             presentationController.detents = [.medium(), .large() ]

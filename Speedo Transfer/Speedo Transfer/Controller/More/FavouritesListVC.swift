@@ -7,21 +7,21 @@
 
 import UIKit
 
-class FavouritesVC: UIViewController {
-    @IBOutlet weak var FavTableView: UITableView!
+class FavouritesListVC: UIViewController {
+    @IBOutlet weak var favTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        FavTableView.separatorStyle = .none
-        FavTableView.delegate = self
-        FavTableView.dataSource = self
+        favTableView.separatorStyle = .none
+        favTableView.delegate = self
+        favTableView.dataSource = self
         
-        let nib = UINib(nibName: "favoritsTableViewCell", bundle: nil)
-        FavTableView.register(nib, forCellReuseIdentifier: "favoritsTableViewCell")
+        let nib = UINib(nibName: "FavouritesListCell", bundle: nil)
+        favTableView.register(nib, forCellReuseIdentifier: "FavouritesListCell")
     }
 }
-extension FavouritesVC : UITableViewDelegate , UITableViewDataSource {
+extension FavouritesListVC : UITableViewDelegate , UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
@@ -29,7 +29,7 @@ extension FavouritesVC : UITableViewDelegate , UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "favoritsTableViewCell" , for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FavouritesListCell" , for: indexPath)
         cell.selectionStyle = .none
         return cell
     }

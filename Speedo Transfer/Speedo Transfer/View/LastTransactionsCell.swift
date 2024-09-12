@@ -1,13 +1,13 @@
 //
-//  favoritsTableViewCell.swift
+//  LastTransactionsCell.swift
 //  Speedo Transfer
 //
-//  Created by 1234 on 11/09/2024.
+//  Created by Maria Ehab on 12/09/2024.
 //
 
 import UIKit
 
-class favoritsTableViewCell: UITableViewCell {
+class LastTransactionsCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FavouriteEditCell" rowHeight="123" id="QYb-7E-gNb" userLabel="FavouriteEditCell" customClass="FavouriteEditCell" customModule="Speedo_Transfer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="123"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QYb-7E-gNb" id="jn5-J1-IE8">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="123"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LEg-HD-bDl">
+                        <rect key="frame" x="16" y="16" width="343" height="88"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Asmaa Dosuky" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OtM-F5-Hyk">
+                                <rect key="frame" x="72" y="16" width="141" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="tLt-dI-RNC"/>
+                                    <constraint firstAttribute="width" constant="141" id="yEL-O6-l6D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account xxxx7890" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9um-w6-BOF">
+                                <rect key="frame" x="71.999999999999986" y="48" width="134.66666666666663" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" name="AccountColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bankIcon" translatesAutoresizingMaskIntoConstraints="NO" id="tzo-Sf-xTQ">
+                                <rect key="frame" x="16" y="20" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="7Vz-3B-55I"/>
+                                    <constraint firstAttribute="width" constant="48" id="NSJ-RE-qPg"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRp-nd-3en">
+                                <rect key="frame" x="310.66666666666669" y="32" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="Sl6-gR-xvl"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="delete"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cw9-rk-a5M">
+                                <rect key="frame" x="269" y="32" width="24" height="24"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="editt"/>
+                                <connections>
+                                    <action selector="editButtonTapped:" destination="QYb-7E-gNb" eventType="touchUpInside" id="odj-am-IPW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.91372549020000005" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iRp-nd-3en" firstAttribute="top" secondItem="LEg-HD-bDl" secondAttribute="top" constant="32" id="3ah-be-FEc"/>
+                            <constraint firstItem="tzo-Sf-xTQ" firstAttribute="leading" secondItem="LEg-HD-bDl" secondAttribute="leading" constant="16" id="AeI-Sh-Say"/>
+                            <constraint firstItem="tzo-Sf-xTQ" firstAttribute="centerY" secondItem="Cw9-rk-a5M" secondAttribute="centerY" id="Eyh-oK-pD3"/>
+                            <constraint firstItem="Cw9-rk-a5M" firstAttribute="centerY" secondItem="LEg-HD-bDl" secondAttribute="centerY" id="OHB-gb-YxU"/>
+                            <constraint firstItem="iRp-nd-3en" firstAttribute="baseline" secondItem="Cw9-rk-a5M" secondAttribute="baseline" id="Rvb-lp-ags"/>
+                            <constraint firstItem="iRp-nd-3en" firstAttribute="leading" secondItem="Cw9-rk-a5M" secondAttribute="trailing" constant="17.5" id="U6M-yV-Bcw"/>
+                            <constraint firstItem="9um-w6-BOF" firstAttribute="leading" secondItem="OtM-F5-Hyk" secondAttribute="leading" id="WHx-rr-d0g"/>
+                            <constraint firstItem="9um-w6-BOF" firstAttribute="height" secondItem="OtM-F5-Hyk" secondAttribute="height" multiplier="0.833333" id="a7a-95-Fgz"/>
+                            <constraint firstItem="9um-w6-BOF" firstAttribute="top" secondItem="OtM-F5-Hyk" secondAttribute="bottom" constant="8" symbolic="YES" id="aSZ-C1-9c5"/>
+                            <constraint firstAttribute="trailing" secondItem="iRp-nd-3en" secondAttribute="trailing" constant="8.5" id="jab-CG-lBl"/>
+                            <constraint firstItem="tzo-Sf-xTQ" firstAttribute="bottom" secondItem="9um-w6-BOF" secondAttribute="bottom" id="jye-IQ-fGa"/>
+                            <constraint firstItem="iRp-nd-3en" firstAttribute="centerY" secondItem="LEg-HD-bDl" secondAttribute="centerY" id="nfG-es-cfn"/>
+                            <constraint firstItem="tzo-Sf-xTQ" firstAttribute="centerY" secondItem="iRp-nd-3en" secondAttribute="centerY" id="nuH-Dd-Whg"/>
+                            <constraint firstItem="tzo-Sf-xTQ" firstAttribute="top" secondItem="LEg-HD-bDl" secondAttribute="top" constant="20" id="o2u-ji-h1Q"/>
+                            <constraint firstItem="9um-w6-BOF" firstAttribute="width" secondItem="OtM-F5-Hyk" secondAttribute="width" multiplier="0.953901" id="x5y-ce-wgi"/>
+                            <constraint firstItem="OtM-F5-Hyk" firstAttribute="leading" secondItem="tzo-Sf-xTQ" secondAttribute="trailing" constant="8" symbolic="YES" id="xxL-7s-p2H"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="LEg-HD-bDl" firstAttribute="top" secondItem="jn5-J1-IE8" secondAttribute="top" constant="16" id="R1H-Sx-uph"/>
+                    <constraint firstAttribute="trailing" secondItem="LEg-HD-bDl" secondAttribute="trailing" constant="16" id="c6C-II-mcE"/>
+                    <constraint firstItem="LEg-HD-bDl" firstAttribute="leading" secondItem="jn5-J1-IE8" secondAttribute="leading" constant="16" id="ebK-8H-7HU"/>
+                    <constraint firstAttribute="bottom" secondItem="LEg-HD-bDl" secondAttribute="bottom" constant="16" id="mcN-4T-SQS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="1am-75-ipI"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <point key="canvasLocation" x="113.768115942029" y="48.549107142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bankIcon" width="48" height="48"/>
+        <image name="delete" width="24.333333969116211" height="24.333333969116211"/>
+        <image name="editt" width="24.333333969116211" height="24.333333969116211"/>
+        <namedColor name="AccountColor">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

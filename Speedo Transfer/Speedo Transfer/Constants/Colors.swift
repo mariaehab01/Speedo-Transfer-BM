@@ -23,8 +23,7 @@ struct Colors {
     static let NormalTabBarColor = UIColor(hex: "#7C7A78")
     static let TappedColor = UIColor(hex: "#871E35")
     
-    
-    
+    // MARK: - Gradient
     static var whiteRedGradient: CAGradientLayer {
         let gl = CAGradientLayer()
         gl.colors = [white.cgColor, LightRedColor.cgColor]

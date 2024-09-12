@@ -1,13 +1,13 @@
 //
-//  FavouriteListCell.swift
+//  favoritsTableViewCell.swift
 //  Speedo Transfer
 //
-//  Created by 1234 on 12/09/2024.
+//  Created by 1234 on 11/09/2024.
 //
 
 import UIKit
 
-class FavouriteListCell: UITableViewCell {
+class FavouritesListCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

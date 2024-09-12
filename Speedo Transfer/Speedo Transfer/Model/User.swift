@@ -2,7 +2,7 @@
 //  User.swift
 //  Speedo Transfer
 //
-//  Created by Maria Ehab on 10/09/2024.
+//  Created by Maria Ehab
 //
 
 import Foundation

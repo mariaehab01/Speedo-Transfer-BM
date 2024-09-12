@@ -12,13 +12,11 @@
 		7CA1805C2C91C96B00D94D68 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA1805A2C91C96B00D94D68 /* HomeTableViewCell.swift */; };
 		7CA1805D2C91C96B00D94D68 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CA1805B2C91C96B00D94D68 /* HomeTableViewCell.xib */; };
 		7CA180622C91F74C00D94D68 /* TransfersAmount3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA180612C91F74C00D94D68 /* TransfersAmount3VC.swift */; };
-		7CA180662C91FFF100D94D68 /* FavouritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA180652C91FFF100D94D68 /* FavouritesVC.swift */; };
-		7CA1807F2C9238B400D94D68 /* favoritsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA1807D2C9238B400D94D68 /* favoritsTableViewCell.swift */; };
-		7CA180802C9238B400D94D68 /* favoritsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CA1807E2C9238B400D94D68 /* favoritsTableViewCell.xib */; };
+		7CA180662C91FFF100D94D68 /* FavouritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA180652C91FFF100D94D68 /* FavouritesListVC.swift */; };
+		7CA1807F2C9238B400D94D68 /* FavouritesListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA1807D2C9238B400D94D68 /* FavouritesListCell.swift */; };
+		7CA180802C9238B400D94D68 /* FavouritesListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CA1807E2C9238B400D94D68 /* FavouritesListCell.xib */; };
 		7CA180822C923CEB00D94D68 /* MoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA180812C923CEB00D94D68 /* MoreVC.swift */; };
-		7CA180842C9243D800D94D68 /* FavouriteListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA180832C9243D800D94D68 /* FavouriteListVC.swift */; };
-		7CA1808B2C924B7B00D94D68 /* FavouriteListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA180892C924B7B00D94D68 /* FavouriteListCell.swift */; };
-		7CA1808C2C924B7B00D94D68 /* FavouriteListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CA1808A2C924B7B00D94D68 /* FavouriteListCell.xib */; };
+		7CA180842C9243D800D94D68 /* FavouriteEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA180832C9243D800D94D68 /* FavouriteEditVC.swift */; };
 		7CACEEA12C8FAA5F0058F66A /* TransfersAmountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CACEEA02C8FAA5F0058F66A /* TransfersAmountVC.swift */; };
 		7CDB467E2C9269F500DD9529 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847089112C7FD5D000202753 /* Main.storyboard */; };
 		7CDB46862C92878B00DD9529 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDB46852C92878B00DD9529 /* TabBarVC.swift */; };
@@ -48,6 +46,13 @@
 		8479CF822C927608000D0DFE /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479CF812C927608000D0DFE /* EditProfileVC.swift */; };
 		848EF4102C8B2CD100F8D977 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848EF40F2C8B2CD100F8D977 /* Colors.swift */; };
 		848EF4152C8B301200F8D977 /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848EF4142C8B301200F8D977 /* UIColor+hex.swift */; };
+		848FD9362C92E07600EF9777 /* LastTransactionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FD9342C92E07600EF9777 /* LastTransactionsCell.swift */; };
+		848FD9372C92E07600EF9777 /* LastTransactionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848FD9352C92E07600EF9777 /* LastTransactionsCell.xib */; };
+		848FD93A2C92E14400EF9777 /* LastTransactionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FD9392C92E14400EF9777 /* LastTransactionsVC.swift */; };
+		848FD93C2C92E62900EF9777 /* TransactionsDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FD93B2C92E62900EF9777 /* TransactionsDetails.swift */; };
+		848FD93F2C92FA9300EF9777 /* FavouriteEditCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FD93D2C92FA9300EF9777 /* FavouriteEditCell.swift */; };
+		848FD9402C92FA9300EF9777 /* FavouriteEditCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848FD93E2C92FA9300EF9777 /* FavouriteEditCell.xib */; };
+		848FD9422C92FE4F00EF9777 /* EditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FD9412C92FE4F00EF9777 /* EditVC.swift */; };
 		84B4D94E2C8B0CF700DD70A9 /* UIViewController+GradientBg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4D94D2C8B0CF700DD70A9 /* UIViewController+GradientBg.swift */; };
 		84B4D9572C8B138C00DD70A9 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4D9562C8B138C00DD70A9 /* Fonts.swift */; };
 		84C659752C8CEA850013DDC2 /* Storyboards+VCs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C659742C8CEA850013DDC2 /* Storyboards+VCs.swift */; };
@@ -72,13 +77,11 @@
 		7CA1805A2C91C96B00D94D68 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		7CA1805B2C91C96B00D94D68 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		7CA180612C91F74C00D94D68 /* TransfersAmount3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersAmount3VC.swift; sourceTree = "<group>"; };
-		7CA180652C91FFF100D94D68 /* FavouritesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesVC.swift; sourceTree = "<group>"; };
-		7CA1807D2C9238B400D94D68 /* favoritsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favoritsTableViewCell.swift; sourceTree = "<group>"; };
-		7CA1807E2C9238B400D94D68 /* favoritsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = favoritsTableViewCell.xib; sourceTree = "<group>"; };
+		7CA180652C91FFF100D94D68 /* FavouritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesListVC.swift; sourceTree = "<group>"; };
+		7CA1807D2C9238B400D94D68 /* FavouritesListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesListCell.swift; sourceTree = "<group>"; };
+		7CA1807E2C9238B400D94D68 /* FavouritesListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouritesListCell.xib; sourceTree = "<group>"; };
 		7CA180812C923CEB00D94D68 /* MoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreVC.swift; sourceTree = "<group>"; };
-		7CA180832C9243D800D94D68 /* FavouriteListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteListVC.swift; sourceTree = "<group>"; };
-		7CA180892C924B7B00D94D68 /* FavouriteListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteListCell.swift; sourceTree = "<group>"; };
-		7CA1808A2C924B7B00D94D68 /* FavouriteListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteListCell.xib; sourceTree = "<group>"; };
+		7CA180832C9243D800D94D68 /* FavouriteEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteEditVC.swift; sourceTree = "<group>"; };
 		7CACEEA02C8FAA5F0058F66A /* TransfersAmountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersAmountVC.swift; sourceTree = "<group>"; };
 		7CDB46852C92878B00DD9529 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		8413E0202C90DB8C00EB5A59 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -110,6 +113,13 @@
 		8479CF812C927608000D0DFE /* EditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
 		848EF40F2C8B2CD100F8D977 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		848EF4142C8B301200F8D977 /* UIColor+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+hex.swift"; sourceTree = "<group>"; };
+		848FD9342C92E07600EF9777 /* LastTransactionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastTransactionsCell.swift; sourceTree = "<group>"; };
+		848FD9352C92E07600EF9777 /* LastTransactionsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LastTransactionsCell.xib; sourceTree = "<group>"; };
+		848FD9392C92E14400EF9777 /* LastTransactionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastTransactionsVC.swift; sourceTree = "<group>"; };
+		848FD93B2C92E62900EF9777 /* TransactionsDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsDetails.swift; sourceTree = "<group>"; };
+		848FD93D2C92FA9300EF9777 /* FavouriteEditCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteEditCell.swift; sourceTree = "<group>"; };
+		848FD93E2C92FA9300EF9777 /* FavouriteEditCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteEditCell.xib; sourceTree = "<group>"; };
+		848FD9412C92FE4F00EF9777 /* EditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditVC.swift; sourceTree = "<group>"; };
 		84B4D94D2C8B0CF700DD70A9 /* UIViewController+GradientBg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+GradientBg.swift"; sourceTree = "<group>"; };
 		84B4D9562C8B138C00DD70A9 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		84C659742C8CEA850013DDC2 /* Storyboards+VCs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboards+VCs.swift"; sourceTree = "<group>"; };
@@ -178,11 +188,11 @@
 		841D97242C92B0170086A6B3 /* Transfer */ = {
 			isa = PBXGroup;
 			children = (
+				7CDB46852C92878B00DD9529 /* TabBarVC.swift */,
 				7C8903512C9073F1002B8970 /* TransfersHomeVC.swift */,
 				7CACEEA02C8FAA5F0058F66A /* TransfersAmountVC.swift */,
 				7C8903532C9098EC002B8970 /* TransfersAmount2VC.swift */,
 				7CA180612C91F74C00D94D68 /* TransfersAmount3VC.swift */,
-				7CDB46852C92878B00DD9529 /* TabBarVC.swift */,
 			);
 			path = Transfer;
 			sourceTree = "<group>";
@@ -190,9 +200,10 @@
 		841D97252C92B0460086A6B3 /* More */ = {
 			isa = PBXGroup;
 			children = (
-				7CA180652C91FFF100D94D68 /* FavouritesVC.swift */,
+				7CA180652C91FFF100D94D68 /* FavouritesListVC.swift */,
 				7CA180812C923CEB00D94D68 /* MoreVC.swift */,
-				7CA180832C9243D800D94D68 /* FavouriteListVC.swift */,
+				7CA180832C9243D800D94D68 /* FavouriteEditVC.swift */,
+				848FD9412C92FE4F00EF9777 /* EditVC.swift */,
 			);
 			path = More;
 			sourceTree = "<group>";
@@ -279,6 +290,7 @@
 		847089212C7FDAA400202753 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				848FD9382C92E12300EF9777 /* Transactions */,
 				841D97242C92B0170086A6B3 /* Transfer */,
 				841D97252C92B0460086A6B3 /* More */,
 				841D97282C92B0F70086A6B3 /* Splash Screen */,
@@ -313,6 +325,15 @@
 				847089162C7FD5D100202753 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		848FD9382C92E12300EF9777 /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				848FD9392C92E14400EF9777 /* LastTransactionsVC.swift */,
+				848FD93B2C92E62900EF9777 /* TransactionsDetails.swift */,
+			);
+			path = Transactions;
 			sourceTree = "<group>";
 		};
 		84B4D94C2C8B0CC900DD70A9 /* Extension */ = {
@@ -381,13 +402,15 @@
 			children = (
 				7CA1805A2C91C96B00D94D68 /* HomeTableViewCell.swift */,
 				7CA1805B2C91C96B00D94D68 /* HomeTableViewCell.xib */,
-				7CA1807D2C9238B400D94D68 /* favoritsTableViewCell.swift */,
-				7CA1807E2C9238B400D94D68 /* favoritsTableViewCell.xib */,
-				7CA180892C924B7B00D94D68 /* FavouriteListCell.swift */,
-				7CA1808A2C924B7B00D94D68 /* FavouriteListCell.xib */,
+				7CA1807D2C9238B400D94D68 /* FavouritesListCell.swift */,
+				7CA1807E2C9238B400D94D68 /* FavouritesListCell.xib */,
 				8413E0202C90DB8C00EB5A59 /* CustomTextField.swift */,
 				8479CF722C9209C3000D0DFE /* CountryTableViewCell.swift */,
 				8479CF732C9209C3000D0DFE /* CountryTableViewCell.xib */,
+				848FD9342C92E07600EF9777 /* LastTransactionsCell.swift */,
+				848FD9352C92E07600EF9777 /* LastTransactionsCell.xib */,
+				848FD93D2C92FA9300EF9777 /* FavouriteEditCell.swift */,
+				848FD93E2C92FA9300EF9777 /* FavouriteEditCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -453,15 +476,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CDB467E2C9269F500DD9529 /* Main.storyboard in Resources */,
+				848FD9402C92FA9300EF9777 /* FavouriteEditCell.xib in Resources */,
 				841D971F2C92AC520086A6B3 /* Inter-Regular.otf in Resources */,
 				841D97212C92AD070086A6B3 /* Inter-SemiBold.otf in Resources */,
-				7CA180802C9238B400D94D68 /* favoritsTableViewCell.xib in Resources */,
+				7CA180802C9238B400D94D68 /* FavouritesListCell.xib in Resources */,
 				8479CF742C9209C3000D0DFE /* CountryTableViewCell.xib in Resources */,
 				847089152C7FD5D100202753 /* Assets.xcassets in Resources */,
 				847089182C7FD5D100202753 /* Base in Resources */,
 				841D971D2C92AC520086A6B3 /* Inter-Light.otf in Resources */,
-				7CA1808C2C924B7B00D94D68 /* FavouriteListCell.xib in Resources */,
 				841D971E2C92AC520086A6B3 /* Inter-Medium.otf in Resources */,
+				848FD9372C92E07600EF9777 /* LastTransactionsCell.xib in Resources */,
 				7CA1805D2C91C96B00D94D68 /* HomeTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -519,7 +543,7 @@
 				841D97052C92940F0086A6B3 /* SettingVC.swift in Sources */,
 				8479CF712C9208C7000D0DFE /* CountryListVC.swift in Sources */,
 				84B4D94E2C8B0CF700DD70A9 /* UIViewController+GradientBg.swift in Sources */,
-				7CA180842C9243D800D94D68 /* FavouriteListVC.swift in Sources */,
+				7CA180842C9243D800D94D68 /* FavouriteEditVC.swift in Sources */,
 				84C659772C8CECD30013DDC2 /* String+trimm.swift in Sources */,
 				848EF4152C8B301200F8D977 /* UIColor+hex.swift in Sources */,
 				8423A3AB2C8E4BA4003FA02B /* UITextField+custom.swift in Sources */,
@@ -527,15 +551,16 @@
 				84FD3A822C8DB8CA008C2373 /* UserDefaultsManager.swift in Sources */,
 				7CA180622C91F74C00D94D68 /* TransfersAmount3VC.swift in Sources */,
 				847089232C7FDBD900202753 /* SignUpVC.swift in Sources */,
-				7CA1808B2C924B7B00D94D68 /* FavouriteListCell.swift in Sources */,
-				7CA1807F2C9238B400D94D68 /* favoritsTableViewCell.swift in Sources */,
+				7CA1807F2C9238B400D94D68 /* FavouritesListCell.swift in Sources */,
 				7CA180822C923CEB00D94D68 /* MoreVC.swift in Sources */,
-				7CA180662C91FFF100D94D68 /* FavouritesVC.swift in Sources */,
+				7CA180662C91FFF100D94D68 /* FavouritesListVC.swift in Sources */,
+				848FD93F2C92FA9300EF9777 /* FavouriteEditCell.swift in Sources */,
 				843B09612C91456A002E50B5 /* ConnectionErrorVC.swift in Sources */,
 				84FD3A8E2C8DE346008C2373 /* ThirdOnBoardingVC.swift in Sources */,
 				847089232C7FDBD900202753 /* SignUpVC.swift in Sources */,
 				8423A3A92C8E4846003FA02B /* UIViewController+Alert.swift in Sources */,
 				84FD3A902C8DE38E008C2373 /* OnboardingHelper.swift in Sources */,
+				848FD9422C92FE4F00EF9777 /* EditVC.swift in Sources */,
 				841D97012C928A670086A6B3 /* ProfileVC.swift in Sources */,
 				84D3A0382C91A85100EE6604 /* ChangePasswordVC.swift in Sources */,
 				843B09562C9139E2002E50B5 /* BackSignInVC.swift in Sources */,
@@ -544,9 +569,11 @@
 				843B09632C91458D002E50B5 /* ErrorVC.swift in Sources */,
 				84FD3A8A2C8DE314008C2373 /* FirstOnBoardingVC.swift in Sources */,
 				8479CF822C927608000D0DFE /* EditProfileVC.swift in Sources */,
+				848FD93C2C92E62900EF9777 /* TransactionsDetails.swift in Sources */,
 				8479CF752C9209C3000D0DFE /* CountryTableViewCell.swift in Sources */,
 				7CA1805C2C91C96B00D94D68 /* HomeTableViewCell.swift in Sources */,
 				847089202C7FDA9D00202753 /* SplashScreenVC.swift in Sources */,
+				848FD93A2C92E14400EF9777 /* LastTransactionsVC.swift in Sources */,
 				7CACEEA12C8FAA5F0058F66A /* TransfersAmountVC.swift in Sources */,
 				848EF4102C8B2CD100F8D977 /* Colors.swift in Sources */,
 				843B09522C911C74002E50B5 /* UIButton+underline.swift in Sources */,
@@ -557,6 +584,7 @@
 				8470890C2C7FD5D000202753 /* AppDelegate.swift in Sources */,
 				84FD3A8C2C8DE32A008C2373 /* SecondOnBoardingVC.swift in Sources */,
 				84CE75952C8FA37F0003C8A1 /* User.swift in Sources */,
+				848FD9362C92E07600EF9777 /* LastTransactionsCell.swift in Sources */,
 				841D97032C928CFE0086A6B3 /* PersonalInfoVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
