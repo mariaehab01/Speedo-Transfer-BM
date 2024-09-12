@@ -20,6 +20,9 @@ struct Colors {
     static let backBtnColor = UIColor(hex: "#24221E")
     static let countryCellColor = UIColor(hex: "#F3E9EB")
     static let placeHolderColor = UIColor(hex: "#3C3A37")
+    static let NormalTabBarColor = UIColor(hex: "#7C7A78")
+    static let TappedColor = UIColor(hex: "#871E35")
+    
     
     
     static var whiteRedGradient: CAGradientLayer {

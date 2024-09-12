@@ -1368,15 +1368,20 @@
             </objects>
             <point key="canvasLocation" x="3079" y="22"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab BarVC-->
         <scene sceneID="Pdz-P9-FhM">
             <objects>
-                <tabBarController id="dV2-Py-ysu" sceneMemberID="viewController">
+                <tabBarController id="dV2-Py-ysu" customClass="TabBarVC" customModule="Speedo_Transfer" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i8s-Qp-nu8">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.52941176469999995" green="0.1176470588" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.52941176469999995" green="0.1176470588" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="wqb-QM-Lek" kind="relationship" relationship="viewControllers" id="9sr-uN-yVP"/>
@@ -2855,16 +2860,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IuP-j0-sd3">
-                                <rect key="frame" x="16" y="126.99999999999997" width="343" height="355.33333333333326"/>
+                                <rect key="frame" x="16" y="126.99999999999997" width="398" height="355.33333333333326"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nl2-tX-gVb">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="19.333333333333332"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="19.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Cardholder Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IBK-Bt-KJa" customClass="CustomTextField" customModule="Speedo_Transfer" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="27.333333333333343" width="343" height="52"/>
+                                        <rect key="frame" x="0.0" y="27.333333333333343" width="398" height="52"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="343" id="P6V-OH-VWI"/>
                                             <constraint firstAttribute="height" constant="52" id="uGh-iu-4uN"/>
@@ -2873,7 +2878,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="STS-xT-XB7">
-                                        <rect key="frame" x="0.0" y="87.333333333333343" width="343" height="24"/>
+                                        <rect key="frame" x="0.0" y="87.333333333333343" width="398" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="24" id="cZd-8Q-CSC"/>
                                         </constraints>
@@ -2882,7 +2887,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Cardholder Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vdb-9K-lgZ" customClass="CustomTextField" customModule="Speedo_Transfer" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="119.33333333333334" width="343" height="52"/>
+                                        <rect key="frame" x="0.0" y="119.33333333333334" width="398" height="52"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="343" id="qHo-jk-is9"/>
                                             <constraint firstAttribute="height" constant="52" id="tcY-TR-aAA"/>
@@ -2891,7 +2896,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mA-Mb-NCW">
-                                        <rect key="frame" x="0.0" y="179.33333333333331" width="343" height="24"/>
+                                        <rect key="frame" x="0.0" y="179.33333333333331" width="398" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="24" id="SFd-Mw-Lne"/>
                                         </constraints>
@@ -2900,7 +2905,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Egypt" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2U8-TN-9f3" customClass="CustomTextField" customModule="Speedo_Transfer" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="211.33333333333331" width="343" height="52"/>
+                                        <rect key="frame" x="0.0" y="211.33333333333331" width="398" height="52"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="52" id="SRi-dK-Gtk"/>
                                             <constraint firstAttribute="width" constant="343" id="jWl-ng-YXL"/>
@@ -2909,7 +2914,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Of Brith" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YC5-0E-dmd">
-                                        <rect key="frame" x="0.0" y="271.33333333333331" width="343" height="24"/>
+                                        <rect key="frame" x="0.0" y="271.33333333333331" width="398" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="24" id="YgP-se-nZG"/>
                                         </constraints>
@@ -2918,7 +2923,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="12/02/2000" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Drn-cZ-KzH" customClass="CustomTextField" customModule="Speedo_Transfer" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="303.33333333333331" width="343" height="52"/>
+                                        <rect key="frame" x="0.0" y="303.33333333333331" width="398" height="52"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="343" id="2H0-Ka-aNE"/>
                                             <constraint firstAttribute="height" constant="52" id="IhG-Lh-qPc"/>
@@ -2938,7 +2943,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K90-9A-crn">
-                                <rect key="frame" x="16" y="506.33333333333326" width="343" height="51"/>
+                                <rect key="frame" x="43.666666666666657" y="506.33333333333326" width="343" height="51"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="FZr-ZK-hfE"/>
                                     <constraint firstAttribute="height" constant="51" id="yNF-82-KJw"/>

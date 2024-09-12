@@ -21,6 +21,11 @@
 		7CA1808C2C924B7B00D94D68 /* FavouriteListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CA1808A2C924B7B00D94D68 /* FavouriteListCell.xib */; };
 		7CACEEA12C8FAA5F0058F66A /* TransfersAmountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CACEEA02C8FAA5F0058F66A /* TransfersAmountVC.swift */; };
 		7CDB467E2C9269F500DD9529 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847089112C7FD5D000202753 /* Main.storyboard */; };
+		7CDB46862C92878B00DD9529 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDB46852C92878B00DD9529 /* TabBarVC.swift */; };
+		7CDB468B2C928C1E00DD9529 /* Inter-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7CDB46882C928C1A00DD9529 /* Inter-Light.otf */; };
+		7CDB468C2C928C2100DD9529 /* Inter-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7CDB46892C928C1A00DD9529 /* Inter-Medium.otf */; };
+		7CDB468D2C928C2500DD9529 /* Inter-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7CDB468A2C928C1A00DD9529 /* Inter-Regular.otf */; };
+		7CDB468E2C928C2B00DD9529 /* Inter-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7CDB46872C928C1A00DD9529 /* Inter-SemiBold.otf */; };
 		8413E0212C90DB8C00EB5A59 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8413E0202C90DB8C00EB5A59 /* CustomTextField.swift */; };
 		841D97012C928A670086A6B3 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D97002C928A670086A6B3 /* ProfileVC.swift */; };
 		841D97032C928CFE0086A6B3 /* PersonalInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D97022C928CFE0086A6B3 /* PersonalInfoVC.swift */; };
@@ -40,10 +45,6 @@
 		8479CF712C9208C7000D0DFE /* CountryListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479CF702C9208C7000D0DFE /* CountryListVC.swift */; };
 		8479CF742C9209C3000D0DFE /* CountryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8479CF732C9209C3000D0DFE /* CountryTableViewCell.xib */; };
 		8479CF752C9209C3000D0DFE /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479CF722C9209C3000D0DFE /* CountryTableViewCell.swift */; };
-		8479CF7B2C926F82000D0DFE /* Inter-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8479CF772C926F82000D0DFE /* Inter-SemiBold.otf */; };
-		8479CF7C2C926F82000D0DFE /* Inter-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8479CF782C926F82000D0DFE /* Inter-Light.otf */; };
-		8479CF7D2C926F82000D0DFE /* Inter-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8479CF792C926F82000D0DFE /* Inter-Regular.otf */; };
-		8479CF7E2C926F82000D0DFE /* Inter-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8479CF7A2C926F82000D0DFE /* Inter-Medium.otf */; };
 		8479CF822C927608000D0DFE /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479CF812C927608000D0DFE /* EditProfileVC.swift */; };
 		848EF4102C8B2CD100F8D977 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848EF40F2C8B2CD100F8D977 /* Colors.swift */; };
 		848EF4152C8B301200F8D977 /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848EF4142C8B301200F8D977 /* UIColor+hex.swift */; };
@@ -79,6 +80,11 @@
 		7CA180892C924B7B00D94D68 /* FavouriteListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteListCell.swift; sourceTree = "<group>"; };
 		7CA1808A2C924B7B00D94D68 /* FavouriteListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteListCell.xib; sourceTree = "<group>"; };
 		7CACEEA02C8FAA5F0058F66A /* TransfersAmountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersAmountVC.swift; sourceTree = "<group>"; };
+		7CDB46852C92878B00DD9529 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
+		7CDB46872C928C1A00DD9529 /* Inter-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-SemiBold.otf"; path = "../../../../../../../Downloads/Inter-SemiBold.otf"; sourceTree = "<group>"; };
+		7CDB46882C928C1A00DD9529 /* Inter-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Light.otf"; path = "../../../../../../../Downloads/Inter-Light.otf"; sourceTree = "<group>"; };
+		7CDB46892C928C1A00DD9529 /* Inter-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Medium.otf"; path = "../../../../../../../Downloads/Inter-Medium.otf"; sourceTree = "<group>"; };
+		7CDB468A2C928C1A00DD9529 /* Inter-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Regular.otf"; path = "../../../../../../../Downloads/Inter-Regular.otf"; sourceTree = "<group>"; };
 		8413E0202C90DB8C00EB5A59 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		841D97002C928A670086A6B3 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		841D97022C928CFE0086A6B3 /* PersonalInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoVC.swift; sourceTree = "<group>"; };
@@ -101,10 +107,6 @@
 		8479CF702C9208C7000D0DFE /* CountryListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListVC.swift; sourceTree = "<group>"; };
 		8479CF722C9209C3000D0DFE /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
 		8479CF732C9209C3000D0DFE /* CountryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryTableViewCell.xib; sourceTree = "<group>"; };
-		8479CF772C926F82000D0DFE /* Inter-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-SemiBold.otf"; path = "../../../../../../../Downloads/Inter-4.0 (1)/extras/otf/Inter-SemiBold.otf"; sourceTree = "<group>"; };
-		8479CF782C926F82000D0DFE /* Inter-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Light.otf"; path = "../../../../../../../Downloads/Inter-4.0 (1)/extras/otf/Inter-Light.otf"; sourceTree = "<group>"; };
-		8479CF792C926F82000D0DFE /* Inter-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Regular.otf"; path = "../../../../../../../Downloads/Inter-4.0 (1)/extras/otf/Inter-Regular.otf"; sourceTree = "<group>"; };
-		8479CF7A2C926F82000D0DFE /* Inter-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Medium.otf"; path = "../../../../../../../Downloads/Inter-4.0 (1)/extras/otf/Inter-Medium.otf"; sourceTree = "<group>"; };
 		8479CF812C927608000D0DFE /* EditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
 		848EF40F2C8B2CD100F8D977 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		848EF4142C8B301200F8D977 /* UIColor+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+hex.swift"; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				7CA180652C91FFF100D94D68 /* FavouritesVC.swift */,
 				7CA180812C923CEB00D94D68 /* MoreVC.swift */,
 				7CA180832C9243D800D94D68 /* FavouriteListVC.swift */,
+				7CDB46852C92878B00DD9529 /* TabBarVC.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -289,10 +292,10 @@
 		84B4D9502C8B10C400DD70A9 /* Fonts-Files */ = {
 			isa = PBXGroup;
 			children = (
-				8479CF782C926F82000D0DFE /* Inter-Light.otf */,
-				8479CF7A2C926F82000D0DFE /* Inter-Medium.otf */,
-				8479CF792C926F82000D0DFE /* Inter-Regular.otf */,
-				8479CF772C926F82000D0DFE /* Inter-SemiBold.otf */,
+				7CDB46882C928C1A00DD9529 /* Inter-Light.otf */,
+				7CDB46892C928C1A00DD9529 /* Inter-Medium.otf */,
+				7CDB468A2C928C1A00DD9529 /* Inter-Regular.otf */,
+				7CDB46872C928C1A00DD9529 /* Inter-SemiBold.otf */,
 			);
 			path = "Fonts-Files";
 			sourceTree = "<group>";
@@ -395,16 +398,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CDB467E2C9269F500DD9529 /* Main.storyboard in Resources */,
-				8479CF7E2C926F82000D0DFE /* Inter-Medium.otf in Resources */,
-				8479CF7D2C926F82000D0DFE /* Inter-Regular.otf in Resources */,
-				8479CF7C2C926F82000D0DFE /* Inter-Light.otf in Resources */,
+				7CDB468D2C928C2500DD9529 /* Inter-Regular.otf in Resources */,
+				7CDB468E2C928C2B00DD9529 /* Inter-SemiBold.otf in Resources */,
 				7CA180802C9238B400D94D68 /* favoritsTableViewCell.xib in Resources */,
 				8479CF742C9209C3000D0DFE /* CountryTableViewCell.xib in Resources */,
 				847089152C7FD5D100202753 /* Assets.xcassets in Resources */,
 				847089182C7FD5D100202753 /* Base in Resources */,
+				7CDB468B2C928C1E00DD9529 /* Inter-Light.otf in Resources */,
 				7CA1808C2C924B7B00D94D68 /* FavouriteListCell.xib in Resources */,
+				7CDB468C2C928C2100DD9529 /* Inter-Medium.otf in Resources */,
 				7CA1805D2C91C96B00D94D68 /* HomeTableViewCell.xib in Resources */,
-				8479CF7B2C926F82000D0DFE /* Inter-SemiBold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +484,7 @@
 				841D97012C928A670086A6B3 /* ProfileVC.swift in Sources */,
 				84D3A0382C91A85100EE6604 /* ChangePasswordVC.swift in Sources */,
 				843B09562C9139E2002E50B5 /* BackSignInVC.swift in Sources */,
+				7CDB46862C92878B00DD9529 /* TabBarVC.swift in Sources */,
 				843B09542C913189002E50B5 /* SignInVC.swift in Sources */,
 				843B09632C91458D002E50B5 /* ErrorVC.swift in Sources */,
 				84FD3A8A2C8DE314008C2373 /* FirstOnBoardingVC.swift in Sources */,
