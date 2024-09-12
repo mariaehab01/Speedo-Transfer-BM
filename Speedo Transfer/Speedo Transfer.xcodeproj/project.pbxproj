@@ -22,6 +22,7 @@
 		7CACEEA12C8FAA5F0058F66A /* TransfersAmountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CACEEA02C8FAA5F0058F66A /* TransfersAmountVC.swift */; };
 		7CDB467E2C9269F500DD9529 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847089112C7FD5D000202753 /* Main.storyboard */; };
 		8413E0212C90DB8C00EB5A59 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8413E0202C90DB8C00EB5A59 /* CustomTextField.swift */; };
+		841D97012C928A670086A6B3 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D97002C928A670086A6B3 /* ProfileVC.swift */; };
 		8423A3A92C8E4846003FA02B /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423A3A82C8E4846003FA02B /* UIViewController+Alert.swift */; };
 		8423A3AB2C8E4BA4003FA02B /* UITextField+custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423A3AA2C8E4BA4003FA02B /* UITextField+custom.swift */; };
 		843B09522C911C74002E50B5 /* UIButton+underline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B09512C911C74002E50B5 /* UIButton+underline.swift */; };
@@ -77,6 +78,7 @@
 		7CA1808A2C924B7B00D94D68 /* FavouriteListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteListCell.xib; sourceTree = "<group>"; };
 		7CACEEA02C8FAA5F0058F66A /* TransfersAmountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersAmountVC.swift; sourceTree = "<group>"; };
 		8413E0202C90DB8C00EB5A59 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		841D97002C928A670086A6B3 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		8423A3A82C8E4846003FA02B /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		8423A3AA2C8E4BA4003FA02B /* UITextField+custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+custom.swift"; sourceTree = "<group>"; };
 		843B09512C911C74002E50B5 /* UIButton+underline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+underline.swift"; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 				84D3A0372C91A85100EE6604 /* ChangePasswordVC.swift */,
 				8479CF702C9208C7000D0DFE /* CountryListVC.swift */,
 				8479CF812C927608000D0DFE /* EditProfileVC.swift */,
+				841D97002C928A670086A6B3 /* ProfileVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -468,6 +471,7 @@
 				847089232C7FDBD900202753 /* SignUpVC.swift in Sources */,
 				8423A3A92C8E4846003FA02B /* UIViewController+Alert.swift in Sources */,
 				84FD3A902C8DE38E008C2373 /* OnboardingHelper.swift in Sources */,
+				841D97012C928A670086A6B3 /* ProfileVC.swift in Sources */,
 				84D3A0382C91A85100EE6604 /* ChangePasswordVC.swift in Sources */,
 				843B09562C9139E2002E50B5 /* BackSignInVC.swift in Sources */,
 				843B09542C913189002E50B5 /* SignInVC.swift in Sources */,
