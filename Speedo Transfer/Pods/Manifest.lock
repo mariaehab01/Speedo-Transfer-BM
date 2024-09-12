@@ -2,23 +2,27 @@ PODS:
   - Alamofire (5.9.1)
   - FittedSheets (2.6.1)
   - IQKeyboardManagerSwift (7.1.1)
+  - RAMAnimatedTabBarController (5.2.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.9)
   - FittedSheets
   - IQKeyboardManagerSwift
+  - RAMAnimatedTabBarController
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - FittedSheets
     - IQKeyboardManagerSwift
+    - RAMAnimatedTabBarController
 
 SPEC CHECKSUMS:
   Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
   FittedSheets: 37e35f105c531f3845075f1788dd8517a35315c4
   IQKeyboardManagerSwift: d7f3d3a562c237a0e7335e657cd598c452f57f1b
+  RAMAnimatedTabBarController: 6863a386e7ae2ab227cd60aa73ab8ff56cdacfdd
 
-PODFILE CHECKSUM: d446e799db9c3918754b2faa5667db693884be96
+PODFILE CHECKSUM: 9c2cf11cd50f66b76e37e92ed63f237af303dbb1
 
 COCOAPODS: 1.15.2

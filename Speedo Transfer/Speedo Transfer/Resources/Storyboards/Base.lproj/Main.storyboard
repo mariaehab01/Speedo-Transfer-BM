@@ -1477,7 +1477,7 @@
         <scene sceneID="TRS-bg-IiN">
             <objects>
                 <navigationController id="akD-YJ-tfe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="More" image="More" selectedImage="More 1" id="Kk9-SZ-1Ik"/>
+                    <tabBarItem key="tabBarItem" title="More" image="More" selectedImage="More 1" id="Kk9-SZ-1Ik" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cQL-hX-51J">
                         <rect key="frame" x="0.0" y="59" width="430" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
