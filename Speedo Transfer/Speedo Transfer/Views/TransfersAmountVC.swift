@@ -38,14 +38,14 @@ class TransfersAmountVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        amountLabel.font = UIFont(name: Fonts.inter , size: 16)
-        amountLabelTop.font = UIFont(name: Fonts.inter , size: 14)
-        ConfirmationLabel.font = UIFont(name: Fonts.inter , size: 14)
-        PaymentLabel.font = UIFont(name: Fonts.inter , size: 14)
-        HMLabel.font = UIFont(name: Fonts.inter , size: 20)
-        RILabel.font = UIFont(name: Fonts.inter , size: 16)
-        RecipientAccountLabel.font = UIFont(name: Fonts.inter , size: 16)
-        RNameLabel.font = UIFont(name: Fonts.inter , size: 16)
+        amountLabel.font = UIFont(name: Fonts.regularInter , size: 16)
+        amountLabelTop.font = UIFont(name: Fonts.regularInter , size: 14)
+        ConfirmationLabel.font = UIFont(name: Fonts.regularInter , size: 14)
+        PaymentLabel.font = UIFont(name: Fonts.regularInter , size: 14)
+        HMLabel.font = UIFont(name: Fonts.regularInter , size: 20)
+        RILabel.font = UIFont(name: Fonts.regularInter , size: 16)
+        RecipientAccountLabel.font = UIFont(name: Fonts.regularInter , size: 16)
+        RNameLabel.font = UIFont(name: Fonts.regularInter , size: 16)
         
        applyGradientBgYellowToRed()
         
