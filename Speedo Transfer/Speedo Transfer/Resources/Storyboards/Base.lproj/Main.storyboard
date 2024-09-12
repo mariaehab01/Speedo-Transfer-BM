@@ -594,7 +594,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dzW-p9-n11">
-                                <rect key="frame" x="0.0" y="59" width="375" height="759"/>
+                                <rect key="frame" x="0.0" y="59" width="375" height="839"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R1f-t5-y3k">
                                         <rect key="frame" x="11.666666666666657" y="0.0" width="352" height="220"/>
@@ -681,7 +681,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e0W-QM-sth">
-                                        <rect key="frame" x="0.0" y="436" width="375" height="323"/>
+                                        <rect key="frame" x="0.0" y="436" width="375" height="403"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCw-QP-NAM">
                                                 <rect key="frame" x="16" y="40" width="343" height="51"/>
@@ -1257,7 +1257,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ViO-F3-d11">
-                                <rect key="frame" x="16" y="328.33333333333331" width="343" height="51"/>
+                                <rect key="frame" x="16" y="284.33333333333331" width="343" height="51"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="ElN-iM-dvK"/>
                                     <constraint firstAttribute="height" constant="51" id="OtK-sq-nd2"/>
@@ -1269,7 +1269,7 @@
                                 </buttonConfiguration>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dBb-eB-1Y3">
-                                <rect key="frame" x="16" y="127.00000000000001" width="343" height="171.33333333333337"/>
+                                <rect key="frame" x="16" y="83.000000000000014" width="343" height="171.33333333333337"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uw2-du-1am">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="19.333333333333332"/>
@@ -1278,7 +1278,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="APq-t4-NLg">
-                                        <rect key="frame" x="0.0" y="27.333333333333343" width="343" height="52"/>
+                                        <rect key="frame" x="0.0" y="27.333333333333329" width="343" height="52"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="52" id="O6B-JW-1R8"/>
                                             <constraint firstAttribute="width" constant="343" id="SF9-89-53K"/>
@@ -1332,7 +1332,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s7H-BF-pCA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2930" y="3391"/>
+            <point key="canvasLocation" x="-2297" y="3391"/>
         </scene>
         <!--Country ListVC-->
         <scene sceneID="ofL-se-DA3">
@@ -1430,7 +1430,7 @@
         <scene sceneID="f07-zU-ahI">
             <objects>
                 <navigationController id="elm-5m-ZLM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Transactions" selectedImage="transactions" id="Krh-Pd-UUQ"/>
+                    <tabBarItem key="tabBarItem" title="Transactions" image="transactions2" landscapeImage="transactions2" largeContentSizeImage="transactions2" selectedImage="transactions" id="Krh-Pd-UUQ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bli-3U-wLc">
                         <rect key="frame" x="0.0" y="59" width="430" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -2664,7 +2664,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title=""/>
                                         <connections>
-                                            <segue destination="uY1-Rl-CKn" kind="show" id="0T3-RY-GbI"/>
+                                            <segue destination="PEG-CD-96b" kind="show" id="xH3-Ns-hUz"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -2846,6 +2846,137 @@
             </objects>
             <point key="canvasLocation" x="-3823" y="3391"/>
         </scene>
+        <!--Edit ProfileVC-->
+        <scene sceneID="yRl-To-5nM">
+            <objects>
+                <viewController storyboardIdentifier="EditProfileVC" id="PEG-CD-96b" customClass="EditProfileVC" customModule="Speedo_Transfer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H3B-TS-h71" customClass="GradientBackgroundView2" customModule="Speedo_Transfer" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IuP-j0-sd3">
+                                <rect key="frame" x="16" y="126.99999999999997" width="343" height="355.33333333333326"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nl2-tX-gVb">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="19.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Cardholder Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IBK-Bt-KJa" customClass="CustomTextField" customModule="Speedo_Transfer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="27.333333333333343" width="343" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="343" id="P6V-OH-VWI"/>
+                                            <constraint firstAttribute="height" constant="52" id="uGh-iu-4uN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="STS-xT-XB7">
+                                        <rect key="frame" x="0.0" y="87.333333333333343" width="343" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="cZd-8Q-CSC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Cardholder Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vdb-9K-lgZ" customClass="CustomTextField" customModule="Speedo_Transfer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="119.33333333333334" width="343" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="343" id="qHo-jk-is9"/>
+                                            <constraint firstAttribute="height" constant="52" id="tcY-TR-aAA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mA-Mb-NCW">
+                                        <rect key="frame" x="0.0" y="179.33333333333331" width="343" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="SFd-Mw-Lne"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Egypt" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2U8-TN-9f3" customClass="CustomTextField" customModule="Speedo_Transfer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="211.33333333333331" width="343" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="SRi-dK-Gtk"/>
+                                            <constraint firstAttribute="width" constant="343" id="jWl-ng-YXL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Of Brith" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YC5-0E-dmd">
+                                        <rect key="frame" x="0.0" y="271.33333333333331" width="343" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="YgP-se-nZG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="12/02/2000" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Drn-cZ-KzH" customClass="CustomTextField" customModule="Speedo_Transfer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="303.33333333333331" width="343" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="343" id="2H0-Ka-aNE"/>
+                                            <constraint firstAttribute="height" constant="52" id="IhG-Lh-qPc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="vdb-9K-lgZ" firstAttribute="width" secondItem="IBK-Bt-KJa" secondAttribute="width" id="V2s-wB-Fjr"/>
+                                    <constraint firstAttribute="height" constant="355.32999999999998" id="inb-dv-lhX"/>
+                                    <constraint firstItem="vdb-9K-lgZ" firstAttribute="height" secondItem="IBK-Bt-KJa" secondAttribute="height" id="uCz-tz-zO6"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K90-9A-crn">
+                                <rect key="frame" x="16" y="506.33333333333326" width="343" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="FZr-ZK-hfE"/>
+                                    <constraint firstAttribute="height" constant="51" id="yNF-82-KJw"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Save">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                    <color key="baseBackgroundColor" red="0.52941176469999995" green="0.1176470588" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="saveBtnTapped:" destination="PEG-CD-96b" eventType="touchUpInside" id="BMZ-n0-FZr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Zwb-sq-CHq"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="K90-9A-crn" firstAttribute="centerX" secondItem="H3B-TS-h71" secondAttribute="centerX" id="8PI-A4-09R"/>
+                            <constraint firstItem="K90-9A-crn" firstAttribute="top" secondItem="Drn-cZ-KzH" secondAttribute="bottom" constant="24" id="HOI-mn-cAI"/>
+                            <constraint firstItem="K90-9A-crn" firstAttribute="trailing" secondItem="Drn-cZ-KzH" secondAttribute="trailing" id="L4n-QJ-WDO"/>
+                            <constraint firstItem="IuP-j0-sd3" firstAttribute="top" secondItem="Zwb-sq-CHq" secondAttribute="top" constant="24" id="LHH-FI-Ipc"/>
+                            <constraint firstItem="K90-9A-crn" firstAttribute="leading" secondItem="Drn-cZ-KzH" secondAttribute="leading" id="V2N-kL-GVi"/>
+                            <constraint firstItem="IuP-j0-sd3" firstAttribute="leading" secondItem="Zwb-sq-CHq" secondAttribute="leading" constant="16" id="fRx-TK-Asq"/>
+                            <constraint firstAttribute="trailing" secondItem="IuP-j0-sd3" secondAttribute="trailing" constant="16" id="jJ2-us-gy0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="WSN-RY-QSn"/>
+                    <connections>
+                        <outlet property="countryLabel" destination="9mA-Mb-NCW" id="88r-VE-wgz"/>
+                        <outlet property="countryTextField" destination="2U8-TN-9f3" id="ca8-Wc-thn"/>
+                        <outlet property="dobLabel" destination="YC5-0E-dmd" id="Dkk-BC-ZSv"/>
+                        <outlet property="dobTextField" destination="Drn-cZ-KzH" id="Zn3-JG-lJd"/>
+                        <outlet property="emailLabel" destination="STS-xT-XB7" id="2Kh-ja-Aqe"/>
+                        <outlet property="emailTextField" destination="vdb-9K-lgZ" id="B0d-74-MBL"/>
+                        <outlet property="nameLabel" destination="STS-xT-XB7" id="4Xz-kc-lZk"/>
+                        <outlet property="nameTextField" destination="IBK-Bt-KJa" id="F8j-ZL-JxS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JUk-fr-yPe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3049" y="3391"/>
+        </scene>
     </scenes>
     <resources>
         <image name="404-error" width="274" height="195"/>
@@ -2881,6 +3012,7 @@
         <image name="profile" width="24" height="24"/>
         <image name="sahmRight" width="24.333333969116211" height="24.333333969116211"/>
         <image name="transactions" width="19" height="20"/>
+        <image name="transactions2" width="20" height="20"/>
         <image name="transfer from web" width="24" height="24"/>
         <namedColor name="ButtonColor">
             <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>

@@ -19,6 +19,7 @@ struct Colors {
     static let textFieldBorderColor = UIColor(hex: "#B0AFAE")
     static let backBtnColor = UIColor(hex: "#24221E")
     static let countryCellColor = UIColor(hex: "#F3E9EB")
+    static let placeHolderColor = UIColor(hex: "#3C3A37")
     
     
     static var whiteRedGradient: CAGradientLayer {

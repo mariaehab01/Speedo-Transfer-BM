@@ -9,8 +9,8 @@ import UIKit
 
 class ChangePasswordVC: UIViewController {
 
-    @IBOutlet weak var currentPassTextField: UITextField!
-    @IBOutlet weak var newPassTextField: UITextField!
+    @IBOutlet weak var currentPassTextField: CustomTextField!
+    @IBOutlet weak var newPassTextField: CustomTextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,10 +23,8 @@ class ChangePasswordVC: UIViewController {
 
     func configureTextFields() {
 
-        currentPassTextField.addRightIcon(image: UIImage(named: "eyeImage")!, padding: 16.0)
-        currentPassTextField.setBorder(color: Colors.textFieldBorderColor)
-        newPassTextField.addRightIcon(image: UIImage(named: "eyeImage")!, padding: 16.0)
-        newPassTextField.setBorder(color: Colors.textFieldBorderColor)
+        currentPassTextField.setType(.password)
+        newPassTextField.setType(.password)
         
     }
     
@@ -45,5 +43,6 @@ class ChangePasswordVC: UIViewController {
 //        navigationItem.leftItemsSupplementBackButton = false
 //        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
     }
+    
 
 }

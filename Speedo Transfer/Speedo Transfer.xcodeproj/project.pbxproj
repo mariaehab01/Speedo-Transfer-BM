@@ -41,6 +41,7 @@
 		8479CF7C2C926F82000D0DFE /* Inter-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8479CF782C926F82000D0DFE /* Inter-Light.otf */; };
 		8479CF7D2C926F82000D0DFE /* Inter-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8479CF792C926F82000D0DFE /* Inter-Regular.otf */; };
 		8479CF7E2C926F82000D0DFE /* Inter-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8479CF7A2C926F82000D0DFE /* Inter-Medium.otf */; };
+		8479CF822C927608000D0DFE /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479CF812C927608000D0DFE /* EditProfileVC.swift */; };
 		848EF4102C8B2CD100F8D977 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848EF40F2C8B2CD100F8D977 /* Colors.swift */; };
 		848EF4152C8B301200F8D977 /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848EF4142C8B301200F8D977 /* UIColor+hex.swift */; };
 		84B4D94E2C8B0CF700DD70A9 /* UIViewController+GradientBg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4D94D2C8B0CF700DD70A9 /* UIViewController+GradientBg.swift */; };
@@ -98,6 +99,7 @@
 		8479CF782C926F82000D0DFE /* Inter-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Light.otf"; path = "../../../../../../../Downloads/Inter-4.0 (1)/extras/otf/Inter-Light.otf"; sourceTree = "<group>"; };
 		8479CF792C926F82000D0DFE /* Inter-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Regular.otf"; path = "../../../../../../../Downloads/Inter-4.0 (1)/extras/otf/Inter-Regular.otf"; sourceTree = "<group>"; };
 		8479CF7A2C926F82000D0DFE /* Inter-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Medium.otf"; path = "../../../../../../../Downloads/Inter-4.0 (1)/extras/otf/Inter-Medium.otf"; sourceTree = "<group>"; };
+		8479CF812C927608000D0DFE /* EditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
 		848EF40F2C8B2CD100F8D977 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		848EF4142C8B301200F8D977 /* UIColor+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+hex.swift"; sourceTree = "<group>"; };
 		84B4D94D2C8B0CF700DD70A9 /* UIViewController+GradientBg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+GradientBg.swift"; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 				843B09622C91458D002E50B5 /* ErrorVC.swift */,
 				84D3A0372C91A85100EE6604 /* ChangePasswordVC.swift */,
 				8479CF702C9208C7000D0DFE /* CountryListVC.swift */,
+				8479CF812C927608000D0DFE /* EditProfileVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -470,6 +473,7 @@
 				843B09542C913189002E50B5 /* SignInVC.swift in Sources */,
 				843B09632C91458D002E50B5 /* ErrorVC.swift in Sources */,
 				84FD3A8A2C8DE314008C2373 /* FirstOnBoardingVC.swift in Sources */,
+				8479CF822C927608000D0DFE /* EditProfileVC.swift in Sources */,
 				8479CF752C9209C3000D0DFE /* CountryTableViewCell.swift in Sources */,
 				7CA1805C2C91C96B00D94D68 /* HomeTableViewCell.swift in Sources */,
 				847089202C7FDA9D00202753 /* SplashScreenVC.swift in Sources */,
