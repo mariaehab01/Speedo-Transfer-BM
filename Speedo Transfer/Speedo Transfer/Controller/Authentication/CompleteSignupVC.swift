@@ -8,7 +8,7 @@
 import UIKit
 import FittedSheets
 
-class CompleteSignupVC: UIViewController, CountrySelectionDelegate{
+class CompleteSignupVC: UIViewController {
     
     var user: User!
 
@@ -30,7 +30,7 @@ class CompleteSignupVC: UIViewController, CountrySelectionDelegate{
         countryTextField.isUserInteractionEnabled = true
         dobTextField.isUserInteractionEnabled = true
 
-        
+        setupNavBar()
         configureTextFields()
         
     }
@@ -44,30 +44,44 @@ class CompleteSignupVC: UIViewController, CountrySelectionDelegate{
         
     }
     
-    @IBAction func continueBtnTapped(_ sender: Any) {
-        guard let user = user else {
-            return
+    
+    @IBAction func continueBtnTapped(_ sender: UIButton) {
+        if isValidData() {
+            self.goToSignInScreen()
         }
-        
-        let name = user.name
-        let email = user.email
-        let password = user.password
-        let country = countryTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
-        let dateOfBirth = dobTextField.text ?? ""
-        
-        self.goToSignInScreen()
-
     }
     
+    private func isValidData() -> Bool {
+        guard let country = countryTextField.text, !country.isEmpty else {
+            showAlert(title: "Sorry", message: "Please enter your country!")
+            return false
+        }
+        guard let dob = dobTextField.text, !dob.isEmpty else {
+            showAlert(title: "Sorry", message: "Please enter your date of birth!")
+            return false
+        }
+        return true
+    }
 
-    @IBAction func signInBtnTapped(_ sender: Any) {
-        goToSignInScreen()
+    @IBAction func signInBtnTapped(_ sender: UIButton) {
+        self.goToSignInScreen()
     }
     
     private func goToSignInScreen() {
-        let signInVC = self.storyboard?.instantiateViewController(withIdentifier: VCS.signInVC) as! SignInVC
+        let sb = UIStoryboard(name: Storyboards.main, bundle: nil)
+        let signInVC = sb.instantiateViewController(withIdentifier: VCS.signInVC) as! SignInVC
         self.navigationController?.pushViewController(signInVC, animated: true)
     }
+    
+    private func setupNavBar() {
+        let backButton = UIBarButtonItem()
+        self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
+        self.navigationController?.navigationBar.tintColor = Colors.backBtnColor
+    }
+
+}
+
+extension CompleteSignupVC: CountrySelectionDelegate {
     
     @objc func showCountryPicker() {
         guard let countrylist = storyboard?.instantiateViewController(withIdentifier: "CountryListVC") as? CountryListVC else {
@@ -85,7 +99,4 @@ class CompleteSignupVC: UIViewController, CountrySelectionDelegate{
     func didSelectCountry(country: Country) {
         countryTextField.text = country.label
     }
-
 }
-
-

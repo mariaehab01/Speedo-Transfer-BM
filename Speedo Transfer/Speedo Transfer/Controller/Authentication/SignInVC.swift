@@ -2,7 +2,7 @@
 //  SignInVC.swift
 //  Speedo Transfer
 //
-//  Created by Maria Ehab on 11/09/2024.
+//  Created by Maria Ehab
 //
 
 import UIKit
@@ -31,6 +31,7 @@ class SignInVC: UIViewController {
         configureTextFields()
         setupNavBar()
         applyGradientBgWhiteToRed()
+        UserDefaultsManager.shared().isLoggedIn = false
     }
     
     func configureTextFields() {
@@ -51,8 +52,8 @@ class SignInVC: UIViewController {
            let savedUser = try? JSONDecoder().decode(User.self, from: savedUserData) {
             if email == savedUser.email && password == savedUser.password {
                 let sb = UIStoryboard(name: Storyboards.main, bundle: nil)
-                let backSignInVC = self.storyboard?.instantiateViewController(withIdentifier: VCS.backSignInVC) as! BackSignInVC
-                self.navigationController?.pushViewController(backSignInVC, animated: true)
+                let homeVC = sb.instantiateViewController(withIdentifier: "TabBarVC") as! TabBarVC
+                self.navigationController?.pushViewController(homeVC, animated: true)
             } else {
                 showAlert(title: "Sorry", message: "Incorrect email or password.")
             }
@@ -61,7 +62,7 @@ class SignInVC: UIViewController {
         }
     }
     
-    
+  
     @IBAction func signUpBtnPressed(_ sender: UIButton) {
         let signUpVC = self.storyboard?.instantiateViewController(withIdentifier: VCS.signUpVC) as! SignUpVC
         self.navigationController?.pushViewController(signUpVC, animated: true)

@@ -21,4 +21,5 @@ struct VCS {
     static let completeSignUpVC = "CompleteSignupVC"
     static let signInVC = "SignInVC"
     static let backSignInVC = "BackSignInVC"
+    static let transferHomeVC = "TransfersHomeVC"
 }

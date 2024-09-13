@@ -22,8 +22,17 @@ class TransfersHomeVC: UIViewController {
         let nib = UINib(nibName: "HomeTableViewCell", bundle: nil)
         HomeTableView.register(nib, forCellReuseIdentifier: "HomeTableViewCell")
         
+        self.navigationItem.hidesBackButton = true
         applyGradientBgYellowToRed()
+        UserDefaultsManager.shared().isLoggedIn = true
 
+    }
+    
+    @IBAction func viewAllBtnTapped(_ sender: UIButton) {
+    }
+    
+    
+    @IBAction func notifictationBtnTapped(_ sender: UIButton) {
     }
 }
 extension TransfersHomeVC : UITableViewDelegate , UITableViewDataSource {
@@ -42,6 +51,7 @@ extension TransfersHomeVC : UITableViewDelegate , UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
+    
     
     
 }

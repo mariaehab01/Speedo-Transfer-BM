@@ -22,6 +22,7 @@ struct Colors {
     static let placeHolderColor = UIColor(hex: "#3C3A37")
     static let NormalTabBarColor = UIColor(hex: "#7C7A78")
     static let TappedColor = UIColor(hex: "#871E35")
+    static let tabBarColor = UIColor(hex: "#7C7A78")
     
     // MARK: - Gradient
     static var whiteRedGradient: CAGradientLayer {

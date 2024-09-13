@@ -12,6 +12,7 @@ import UIKit
 class SplashScreenVC: UIViewController {
 
     @IBOutlet weak var splashLabel: UILabel!
+    let sb = UIStoryboard(name: Storyboards.main, bundle: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,44 +37,81 @@ class SplashScreenVC: UIViewController {
 
     func decideNextScreen() {
         if let hasSeenOnboarding = UserDefaultsManager.shared().hasSeenOnboarding, hasSeenOnboarding {
-            self.moveToRegistrationScreen()
+            if let isLoggedIn = UserDefaultsManager.shared().isLoggedIn {
+                if isLoggedIn {
+                    self.moveToHomeScreen()
+                } else {
+                    self.moveToLoginScreen()
+                }
+            } else {
+                self.moveToRegistrationScreen()
+            }
+            
         } else {
             self.moveToOnboardingScreen()
         }
     }
 
-    func moveToOnboardingScreen() {
-        let sb = UIStoryboard(name: Storyboards.main, bundle: nil)
+    private func moveToOnboardingScreen() {
         let firstOnboardingVC = sb.instantiateViewController(withIdentifier: VCS.firstOnboardingScreen) as! FirstOnBoardingVC
-        
         UIView.animate(withDuration: 1.0, animations: {
             self.splashLabel.alpha = 0.0
         }, completion: { _ in
-            self.navigationController?.pushViewController(firstOnboardingVC, animated: true)
+            let transition = CATransition()
+            transition.duration = 0.5
+            transition.type = .fade
+            transition.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
+            
+            self.navigationController?.view.layer.add(transition, forKey: nil)
+            self.navigationController?.pushViewController(firstOnboardingVC, animated: false)
         })
     }
         
-    func moveToRegistrationScreen() {
-        let sb = UIStoryboard(name: Storyboards.main, bundle: nil)
+    private func moveToRegistrationScreen() {
         let registrationVC = sb.instantiateViewController(withIdentifier: VCS.signUpVC) as! SignUpVC
+        UIView.animate(withDuration: 1.0, animations: {
+            self.splashLabel.alpha = 0.0
+        }, completion: { _ in
+            let transition = CATransition()
+            transition.duration = 0.5
+            transition.type = .fade
+            transition.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
+            
+            self.navigationController?.view.layer.add(transition, forKey: nil)
+            self.navigationController?.pushViewController(registrationVC, animated: false)
+        })
+    }
+    
+    private func moveToHomeScreen(){
+        let homeVC = sb.instantiateViewController(withIdentifier: "TabBarVC") as! TabBarVC
         
         UIView.animate(withDuration: 1.0, animations: {
             self.splashLabel.alpha = 0.0
         }, completion: { _ in
-            self.navigationController?.pushViewController(registrationVC, animated: true)
+            let transition = CATransition()
+            transition.duration = 0.5
+            transition.type = .fade
+            transition.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
+            
+            self.navigationController?.view.layer.add(transition, forKey: nil)
+            self.navigationController?.pushViewController(homeVC, animated: false)
         })
     }
-
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func moveToLoginScreen(){
+        let signInVC = sb.instantiateViewController(withIdentifier: "SignInVC") as! SignInVC
+        
+        UIView.animate(withDuration: 1.0, animations: {
+            self.splashLabel.alpha = 0.0
+        }, completion: { _ in
+            let transition = CATransition()
+            transition.duration = 0.5
+            transition.type = .fade
+            transition.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
+            
+            self.navigationController?.view.layer.add(transition, forKey: nil)
+            self.navigationController?.pushViewController(signInVC, animated: false)
+        })
     }
-    */
 
 }

@@ -30,6 +30,7 @@
 		841D97212C92AD070086A6B3 /* Inter-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 841D97202C92ACFF0086A6B3 /* Inter-SemiBold.otf */; };
 		8423A3A92C8E4846003FA02B /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423A3A82C8E4846003FA02B /* UIViewController+Alert.swift */; };
 		8423A3AB2C8E4BA4003FA02B /* UITextField+custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8423A3AA2C8E4BA4003FA02B /* UITextField+custom.swift */; };
+		8429DB372C93FEC800520A37 /* CardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8429DB362C93FEC800520A37 /* CardsVC.swift */; };
 		843B09522C911C74002E50B5 /* UIButton+underline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B09512C911C74002E50B5 /* UIButton+underline.swift */; };
 		843B09542C913189002E50B5 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B09532C913189002E50B5 /* SignInVC.swift */; };
 		843B09562C9139E2002E50B5 /* BackSignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B09552C9139E2002E50B5 /* BackSignInVC.swift */; };
@@ -94,6 +95,7 @@
 		841D97202C92ACFF0086A6B3 /* Inter-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-SemiBold.otf"; path = "../../../../../../../Downloads/Inter-SemiBold.otf"; sourceTree = "<group>"; };
 		8423A3A82C8E4846003FA02B /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		8423A3AA2C8E4BA4003FA02B /* UITextField+custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+custom.swift"; sourceTree = "<group>"; };
+		8429DB362C93FEC800520A37 /* CardsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsVC.swift; sourceTree = "<group>"; };
 		843B09512C911C74002E50B5 /* UIButton+underline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+underline.swift"; sourceTree = "<group>"; };
 		843B09532C913189002E50B5 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		843B09552C9139E2002E50B5 /* BackSignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackSignInVC.swift; sourceTree = "<group>"; };
@@ -298,6 +300,7 @@
 				841D97232C92AF950086A6B3 /* Authentication */,
 				841D97262C92B08E0086A6B3 /* Error */,
 				841D97272C92B0DF0086A6B3 /* Profile */,
+				84CC83DD2C94860200B4F939 /* Cards */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -379,6 +382,14 @@
 				84FD3A8F2C8DE38E008C2373 /* OnboardingHelper.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		84CC83DD2C94860200B4F939 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				8429DB362C93FEC800520A37 /* CardsVC.swift */,
+			);
+			path = Cards;
 			sourceTree = "<group>";
 		};
 		84FD3A802C8DB890008C2373 /* Manager */ = {
@@ -569,6 +580,7 @@
 				843B09632C91458D002E50B5 /* ErrorVC.swift in Sources */,
 				84FD3A8A2C8DE314008C2373 /* FirstOnBoardingVC.swift in Sources */,
 				8479CF822C927608000D0DFE /* EditProfileVC.swift in Sources */,
+				8429DB372C93FEC800520A37 /* CardsVC.swift in Sources */,
 				848FD93C2C92E62900EF9777 /* TransactionsDetails.swift in Sources */,
 				8479CF752C9209C3000D0DFE /* CountryTableViewCell.swift in Sources */,
 				7CA1805C2C91C96B00D94D68 /* HomeTableViewCell.swift in Sources */,
