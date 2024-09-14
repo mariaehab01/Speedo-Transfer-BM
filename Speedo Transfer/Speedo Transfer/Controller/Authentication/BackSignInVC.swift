@@ -2,56 +2,50 @@
 //  BackSignInVC.swift
 //  Speedo Transfer
 //
-//  Created by Maria Ehab
+//  Created by Maria Ehab on 11/09/2024.
 //
 
 import UIKit
 
 class BackSignInVC: UIViewController {
+    var user: User?
 
-    @IBOutlet weak var emailTextField: CustomTextField!
-    @IBOutlet weak var passwordTextField: CustomTextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var welcomeBackLabel: UILabel!
     @IBOutlet weak var loginToYourAccountLabel: UILabel!
-    @IBOutlet weak var popUpLabel: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         welcomeBackLabel.font = UIFont(name: Fonts.semiBoldInter, size: 24.0)
         loginToYourAccountLabel.font = UIFont(name: Fonts.regularInter, size: 16.0)
-        popUpLabel.font = UIFont(name: Fonts.mediumInter, size: 12.0)
-
-        self.navigationItem.hidesBackButton = true
 
         configureTextFields()
+        setupNavBar()
         applyGradientBgWhiteToRed()
     }
     
     func configureTextFields() {
-        emailTextField.setType(.email)
-        passwordTextField.setType(.password)
+        emailTextField.addRightIcon(image: UIImage(named: "emaiImage")!, padding: 16.0)
+        emailTextField.setBorder(color: Colors.textFieldBorderColor)
+        passwordTextField.addRightIcon(image: UIImage(named: "eyeImage")!, padding: 16.0)
+        passwordTextField.setBorder(color: Colors.textFieldBorderColor)
     }
     
     @IBAction func signInBtnPressed(_ sender: UIButton) {
-        guard let email = emailTextField.text?.trimmed, !email.isEmpty,
-              let password = passwordTextField.text?.trimmed, !password.isEmpty else {
-            showAlert(title: "Sorry", message: "Please fill all fields")
-            return
-        }
-        
-        let def = UserDefaults.standard
-        if let savedUserData = def.data(forKey: "user"),
-           let savedUser = try? JSONDecoder().decode(User.self, from: savedUserData) {
-            if email == savedUser.email && password == savedUser.password {
-                let sb = UIStoryboard(name: Storyboards.main, bundle: nil)
-                let backSignInVC = sb.instantiateViewController(withIdentifier: VCS.backSignInVC) as! BackSignInVC
-                self.navigationController?.pushViewController(backSignInVC, animated: true)
-            } else {
-                showAlert(title: "Sorry", message: "Incorrect email or password.")
-            }
-        } else {
-            showAlert(title: "sorry", message: "No user data found.")
-        }
+        let changePasswordVC = self.storyboard?.instantiateViewController(withIdentifier: "ChangePasswordVC") as! ChangePasswordVC
+        self.navigationController?.pushViewController(changePasswordVC, animated: true)
     }
+    
+    private func setupNavBar() {
+        self.navigationController?.navigationBar.backIndicatorImage = UIImage(named: "back-arrow")
+        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "back-arrow")
+        
+        navigationItem.leftItemsSupplementBackButton = false
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
+    }
+    // MARK: - Navigation
+
+    
+
 }

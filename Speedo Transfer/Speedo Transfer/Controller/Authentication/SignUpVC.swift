@@ -14,6 +14,8 @@ class SignUpVC: UIViewController {
     @IBOutlet weak var emailTextField: CustomTextField!
     @IBOutlet weak var pass1TextField: CustomTextField!
     @IBOutlet weak var pass2TextField: CustomTextField!
+    
+    
     @IBOutlet weak var speedoTransferLabel: UILabel!
     
     @IBOutlet weak var signInButton: UIButton!
@@ -46,7 +48,15 @@ class SignUpVC: UIViewController {
     }
     
     @IBAction func SignUpBtnPressed(_ sender: UIButton) {
+        
         if isValidData() {
+            let fullName = nameTextField.text?.trimmed ?? ""
+            let email = emailTextField.text?.trimmed ?? ""
+            let password1 = pass1TextField.text?.trimmed ?? ""
+            let password2 = pass2TextField.text?.trimmed ?? ""
+            
+            let user = User(name: fullName, email: email, password: password1)
+            saveUserToUserDefaults(user: user)
             goToCompleteRegisterScreen()
         }
     }
@@ -56,7 +66,7 @@ class SignUpVC: UIViewController {
         do {
             let encodedData = try JSONEncoder().encode(user)
             
-            def.set(encodedData, forKey: "user")
+            def.set(encodedData, forKey: "savedUser")
         } catch {
             print("Failed to encode user: \(error)")
         }
@@ -68,8 +78,7 @@ class SignUpVC: UIViewController {
     }
     
     private func goToCompleteRegisterScreen() {
-        let sb = UIStoryboard(name: Storyboards.main, bundle: nil)
-        let completeSignupVC = sb.instantiateViewController(withIdentifier: VCS.completeSignUpVC) as! CompleteSignupVC
+        let completeSignupVC = self.storyboard?.instantiateViewController(withIdentifier: VCS.completeSignUpVC) as! CompleteSignupVC
         self.navigationController?.pushViewController(completeSignupVC, animated: true)
     }
     
@@ -80,20 +89,10 @@ class SignUpVC: UIViewController {
             return false
         }
         
-        guard let email = emailTextField.text?.trimmed, !email.isEmpty else {
-            showAlert(title: "Sorry", message: "Please enter your email!")
-            return false
-        }
-        
         let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.com"
         let emailPredicate = NSPredicate(format: "SELF MATCHES %@", emailRegex)
         guard let email = emailTextField.text?.trimmed, !email.isEmpty, emailPredicate.evaluate(with: email) else {
             showAlert(title: "Sorry", message: "Please enter a valid email address!")
-            return false
-        }
-        
-        guard let password = pass1TextField.text?.trimmed, !password.isEmpty else {
-            showAlert(title: "Sorry", message: "Please enter your password!")
             return false
         }
         
@@ -113,8 +112,6 @@ class SignUpVC: UIViewController {
             showAlert(title: "Sorry", message: "Passwords do not match!")
             return false
         }
-        let user = User(name: name, email: email, password: password1)
-        saveUserToUserDefaults(user: user)
         
         return true
     }
