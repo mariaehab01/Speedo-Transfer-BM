@@ -2,31 +2,28 @@
 //  MoreVC.swift
 //  Speedo Transfer
 //
-//  Created by 1234 on 12/09/2024.
 //
 
 import UIKit
 
 class MoreVC: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
 
         applyGradientBgYellowToRed()
 
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func logoutBtnTapped(_ sender: UIButton) {
+        let sb = UIStoryboard(name: Storyboards.main, bundle: nil)
+        let loginVC = sb.instantiateViewController(withIdentifier: "SignInVC") as! SignInVC
+        
+        loginVC.hidesBottomBarWhenPushed = true
+        
+        if let navigationController = self.navigationController {
+            navigationController.setViewControllers([loginVC], animated: true)
+        }
     }
-    */
 
 }

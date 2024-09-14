@@ -9,8 +9,48 @@ import UIKit
 
 class TransfersAmountVC: UIViewController {
     
-    @IBAction func FavouriteBtn(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    @IBOutlet weak var amountLabelTop: UILabel!
+    @IBOutlet weak var ConfirmationLabel: UILabel!
+    @IBOutlet weak var HMLabel: UILabel!
+    @IBOutlet weak var RILabel: UILabel!
+    @IBOutlet weak var PaymentLabel: UILabel!
+    @IBOutlet weak var RecipientAccountLabel: UILabel!
+    @IBOutlet weak var amountLabel: UILabel!
+    @IBOutlet weak var RNameLabel: UILabel!
+    
+    @IBOutlet weak var amountTextField: UITextField!
+    @IBOutlet weak var recipientNameTextField: UITextField!
+    @IBOutlet weak var recipientAccountTextField: UITextField!
+    
+    
+    @IBAction func continueBtnTapped(_ sender: UIButton) {
+        if isValidData() {
+            let sb = UIStoryboard(name: Storyboards.main, bundle: nil)
+            let transfersAmount2VC = sb.instantiateViewController(withIdentifier: "TransfersAmount2VC") as! TransfersAmount2VC
+            self.navigationController?.pushViewController(transfersAmount2VC, animated: true)
+        }
+    }
+    
+    private func isValidData() -> Bool {
+        guard let amount = amountTextField.text?.trimmed, !amount.isEmpty else {
+            showAlert(title: "Sorry", message: "Please enter an amount!")
+            return false
+        }
+        
+        guard let recipientName = recipientNameTextField.text?.trimmed, !recipientName.isEmpty else {
+            showAlert(title: "Sorry", message: "Please enter a recipient name!")
+            return false
+        }
+        
+        guard let recipientAccount = recipientAccountTextField.text?.trimmed, !recipientAccount.isEmpty else {
+            showAlert(title: "Sorry", message: "Please enter a recipient account!")
+            return false
+        }
+        return true
+    }
+    
+    @IBAction func FavouriteBtnTapped(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: Storyboards.main, bundle: nil)
         
         guard let destinationController = storyboard.instantiateViewController(withIdentifier: "FavouritesListVC") as? FavouritesListVC else { return }
 
@@ -20,20 +60,7 @@ class TransfersAmountVC: UIViewController {
             presentationController.prefersGrabberVisible = true
         }
         self.present(destinationController, animated: true)
-        
     }
-    
-    @IBAction func ContinueBtn(_ sender: Any) {
-    }
-    
-    @IBOutlet weak var amountLabelTop: UILabel!
-    @IBOutlet weak var ConfirmationLabel: UILabel!
-    @IBOutlet weak var HMLabel: UILabel!
-    @IBOutlet weak var RILabel: UILabel!
-    @IBOutlet weak var PaymentLabel: UILabel!
-    @IBOutlet weak var RecipientAccountLabel: UILabel!
-    @IBOutlet weak var amountLabel: UILabel!
-    @IBOutlet weak var RNameLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()

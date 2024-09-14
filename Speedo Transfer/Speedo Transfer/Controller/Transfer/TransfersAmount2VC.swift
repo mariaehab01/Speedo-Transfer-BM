@@ -2,16 +2,12 @@
 //  TransfersAmount2VC.swift
 //  Speedo Transfer
 //
-//  Created by 1234 on 10/09/2024.
+//  Created by 1234
 //
 
 import UIKit
 
-class TransfersAmount2VC:
-    
-    UIViewController {
-    @IBAction func continueBtn(_ sender: Any) {
-    }
+class TransfersAmount2VC: UIViewController {
     
     @IBOutlet weak var amountLabelTop: UILabel!
     @IBOutlet weak var confirmationLabel: UILabel!
@@ -25,5 +21,12 @@ class TransfersAmount2VC:
         let backButton = UIBarButtonItem()
         self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
         self.navigationController?.navigationBar.tintColor = UIColor.black
+    }
+    
+    
+    @IBAction func previousBtnTapped(_ sender: UIButton) {
+        let sb = UIStoryboard(name: Storyboards.main, bundle: nil)
+        let transfersAmountVC = sb.instantiateViewController(withIdentifier: VCS.transfersAmountVC) as! TransfersAmountVC
+        self.navigationController?.pushViewController(transfersAmountVC, animated: true)
     }
 }
