@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingVC" customModule="Speedo_Transfer" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="kTw-j8-CBa" id="e4h-Nd-rPl"/>
+                <outlet property="pageControl" destination="FFC-tu-uHb" id="59W-fE-0dI"/>
+                <outlet property="view" destination="xZy-cK-lYM" id="dB6-cg-sjF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="xZy-cK-lYM">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="kTw-j8-CBa">
+                    <rect key="frame" x="0.0" y="116" width="393" height="539.66666666666663"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="HAY-oE-vhL">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="v7C-le-3kC"/>
+                        <outlet property="delegate" destination="-1" id="rVJ-hm-zNB"/>
+                    </connections>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eng-qP-ylg">
+                    <rect key="frame" x="16" y="736.66666666666663" width="361" height="38.333333333333371"/>
+                    <color key="backgroundColor" red="0.52941179275512695" green="0.11764705181121826" blue="0.2078431248664856" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Next"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="nextBtnTapped:" destination="-1" eventType="touchUpInside" id="9H2-hl-6VJ"/>
+                    </connections>
+                </button>
+                <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="FFC-tu-uHb">
+                    <rect key="frame" x="100" y="671.66666666666663" width="193" height="26"/>
+                    <color key="pageIndicatorTintColor" red="0.80784320831298828" green="0.63921570777893066" blue="0.67450982332229614" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="currentPageIndicatorTintColor" red="0.52941176470588236" green="0.11764705882352941" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </pageControl>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pl0-Nv-n9x">
+                    <rect key="frame" x="312" y="69" width="57" height="39"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Skip"/>
+                    <connections>
+                        <action selector="skipBtnTapped:" destination="-1" eventType="touchUpInside" id="mSM-tJ-yne"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Jrl-p0-MwO"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="kTw-j8-CBa" firstAttribute="top" secondItem="Jrl-p0-MwO" secondAttribute="top" constant="57" id="26L-Oe-5xt"/>
+                <constraint firstItem="eng-qP-ylg" firstAttribute="leading" secondItem="Jrl-p0-MwO" secondAttribute="leading" constant="16" id="8y6-kP-PfS"/>
+                <constraint firstItem="FFC-tu-uHb" firstAttribute="top" secondItem="kTw-j8-CBa" secondAttribute="bottom" constant="16" id="CIZ-hn-aWU"/>
+                <constraint firstItem="Jrl-p0-MwO" firstAttribute="trailing" secondItem="pl0-Nv-n9x" secondAttribute="trailing" constant="24" id="Cdi-w4-dQI"/>
+                <constraint firstItem="eng-qP-ylg" firstAttribute="top" secondItem="FFC-tu-uHb" secondAttribute="bottom" constant="39" id="GWz-95-7Ba"/>
+                <constraint firstItem="kTw-j8-CBa" firstAttribute="leading" secondItem="Jrl-p0-MwO" secondAttribute="leading" id="LXf-Ah-Zff"/>
+                <constraint firstItem="FFC-tu-uHb" firstAttribute="leading" secondItem="Jrl-p0-MwO" secondAttribute="leading" constant="100" id="VFv-uf-eRe"/>
+                <constraint firstItem="Jrl-p0-MwO" firstAttribute="trailing" secondItem="kTw-j8-CBa" secondAttribute="trailing" id="aG4-Pf-sbK"/>
+                <constraint firstItem="Jrl-p0-MwO" firstAttribute="trailing" secondItem="eng-qP-ylg" secondAttribute="trailing" constant="16" id="cLV-3Y-ZNU"/>
+                <constraint firstItem="Jrl-p0-MwO" firstAttribute="trailing" secondItem="FFC-tu-uHb" secondAttribute="trailing" constant="100" id="eAN-sc-rui"/>
+                <constraint firstItem="pl0-Nv-n9x" firstAttribute="top" secondItem="xZy-cK-lYM" secondAttribute="topMargin" constant="10" id="s8X-NG-hBi"/>
+                <constraint firstItem="Jrl-p0-MwO" firstAttribute="bottom" secondItem="eng-qP-ylg" secondAttribute="bottom" constant="43" id="w6R-SM-pqT"/>
+            </constraints>
+            <point key="canvasLocation" x="70.992366412213741" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
