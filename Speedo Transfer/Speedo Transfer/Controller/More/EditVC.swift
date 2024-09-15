@@ -9,21 +9,39 @@ import UIKit
 
 class EditVC: UIViewController {
 
+    @IBOutlet weak var accountTextField: CustomTextField!
+    @IBOutlet weak var nameTextField: CustomTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
+    @IBAction func saveBtnTapped(_ sender: UIButton) {
+        if validateTextFields() {
+            let alert = UIAlertController(title: "Done", message: "Favourite list updated successfully!", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default) { _ in
+                let sb = UIStoryboard(name: Storyboards.main, bundle: nil)
+                self.navigationController?.popViewController(animated: true)
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+            }
+            alert.addAction(okAction)
+            self.present(alert, animated: true, completion: nil)
+        }
     }
-    */
+    
+    private func validateTextFields() -> Bool {
+        guard let accountText = accountTextField.text?.trimmed, !accountText.isEmpty else {
+            showAlert(title: "Sorry", message: "Please enter your account.")
+            return false
+        }
+        
+        guard let nameText = nameTextField.text?.trimmed, !nameText.isEmpty else {
+            showAlert(title: "Sorry", message: "Please enter your name.")
+            return false
+        }
+        
+        return true
+    }
 
 }

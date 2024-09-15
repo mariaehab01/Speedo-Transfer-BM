@@ -53,12 +53,70 @@ class EditProfileVC: UIViewController, CountrySelectionDelegate {
         configureTextFields()
         applyGradientBgYellowToRed()
         setupNavBar()
-        self.tabBarController?.tabBar.isHidden = true
+        self.tabBarController?.tabBar.isHidden = false
         
     }
     
     @IBAction func saveBtnTapped(_ sender: Any) {
+        if isValidData() {
+            updateUserInUserDefaults()
+            
+            let alert = UIAlertController(title: "Done", message: "Profile updated successfully!", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default) { _ in
+                let sb = UIStoryboard(name: Storyboards.main, bundle: nil)
+                self.navigationController?.popViewController(animated: true)
+            }
+            alert.addAction(okAction)
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
+    
+    private func isValidData() -> Bool {
+        guard let name = nameTextField.text?.trimmed, !name.isEmpty else {
+            showAlert(title: "Sorry", message: "Please enter your name!")
+            return false
+        }
         
+        guard let email = emailTextField.text?.trimmed, !email.isEmpty else {
+            showAlert(title: "Sorry", message: "Please enter your email!")
+            return false
+        }
+        
+        let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.com"
+        let emailPredicate = NSPredicate(format: "SELF MATCHES %@", emailRegex)
+        guard let email = emailTextField.text?.trimmed, !email.isEmpty, emailPredicate.evaluate(with: email) else {
+            showAlert(title: "Sorry", message: "Please enter a valid email address!")
+            return false
+        }
+        
+        guard let country = countryTextField.text, !country.isEmpty else {
+            showAlert(title: "Sorry", message: "Please enter your country!")
+            return false
+        }
+        guard let dob = dobTextField.text, !dob.isEmpty else {
+            showAlert(title: "Sorry", message: "Please enter your date of birth!")
+            return false
+        }
+        
+        return true
+    }
+    
+    private func updateUserInUserDefaults() {
+        guard let savedUserData = UserDefaults.standard.data(forKey: "user"),
+              var savedUser = try? JSONDecoder().decode(User.self, from: savedUserData) else {
+            return
+        }
+        
+        if let name = nameTextField.text?.trimmed {
+            savedUser.name = name
+        }
+        if let email = emailTextField.text?.trimmed {
+            savedUser.email = email
+        }
+        
+        if let updatedUserData = try? JSONEncoder().encode(savedUser) {
+            UserDefaults.standard.set(updatedUserData, forKey: "user")
+        }
     }
     
     func configureTextFields() {

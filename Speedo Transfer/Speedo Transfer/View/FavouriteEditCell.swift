@@ -9,7 +9,8 @@ import UIKit
 import FittedSheets
 
 protocol FavouriteEditCellDelegate: AnyObject {
-    func didTapIcon(in cell: FavouriteEditCell)
+    func didTapEdit(in cell: FavouriteEditCell)
+    func didTapDelete(in cell: FavouriteEditCell)
 }
 
 class FavouriteEditCell: UITableViewCell {
@@ -19,19 +20,18 @@ class FavouriteEditCell: UITableViewCell {
         
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
     @IBAction func editButtonTapped(_ sender: Any) {
-        delegate?.didTapIcon(in: self)
+        delegate?.didTapEdit(in: self)
 
     }
     
-    
+    @IBAction func deleteBtnTapped(_ sender: Any) {
+        delegate?.didTapDelete(in: self)
+    }
 }
