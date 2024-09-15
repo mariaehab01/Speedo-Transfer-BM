@@ -11,6 +11,8 @@ import FittedSheets
 class FavouriteEditVC: UIViewController {
     @IBOutlet weak var TableViewFavList: UITableView!
     
+    private var numberOfRows: Int = 10
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,7 +33,7 @@ class FavouriteEditVC: UIViewController {
 
 extension FavouriteEditVC : UITableViewDelegate, UITableViewDataSource, FavouriteEditCellDelegate {
     
-    func didTapIcon(in cell: FavouriteEditCell) {
+    func didTapEdit(in cell: FavouriteEditCell) {
            
         let storyboard = UIStoryboard(name: Storyboards.main , bundle: nil)
         
@@ -46,9 +48,25 @@ extension FavouriteEditVC : UITableViewDelegate, UITableViewDataSource, Favourit
         
     }
     
+    func didTapDelete(in cell: FavouriteEditCell) {
+        guard let indexPath = TableViewFavList.indexPath(for: cell) else {
+            return
+        }
+        
+        let alert = UIAlertController(title: "Confirm Delete", message: "Are you sure you want to delete this item?", preferredStyle: .alert)
+        let deleteAction = UIAlertAction(title: "Delete", style: .destructive) { _ in
+            self.numberOfRows -= 1
+            self.TableViewFavList.deleteRows(at: [indexPath], with: .automatic)
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        alert.addAction(deleteAction)
+        alert.addAction(cancelAction)
+        self.present(alert, animated: true, completion: nil)
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return numberOfRows
         
     }
     
@@ -62,6 +80,5 @@ extension FavouriteEditVC : UITableViewDelegate, UITableViewDataSource, Favourit
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 110
     }
-    
     
 }

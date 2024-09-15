@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Onboarding" id="O9A-Lj-4Af" customClass="OnboardingCollectionViewCell" customModule="SpeedoTransfer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="391" height="609"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="391" height="609"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="on boarding IMG 1" translatesAutoresizingMaskIntoConstraints="NO" id="QMV-hX-03C">
+                        <rect key="frame" x="12" y="8" width="350" height="303"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="303" id="eax-fi-uW4"/>
+                            <constraint firstAttribute="width" constant="350" id="oAJ-4M-5pZ"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="j1H-Va-76A">
+                        <rect key="frame" x="16" y="388" width="359" height="82"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v6Y-8t-dzr">
+                                <rect key="frame" x="143.33333333333334" y="0.0" width="72.333333333333343" height="25.333333333333332"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="0.14117647059999999" green="0.1333333333" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send money fast with simple steps. Create account, Confirmation, Payment. Simple." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvy-5g-Rb2" userLabel="Content Label">
+                                <rect key="frame" x="15.333333333333343" y="41.333333333333314" width="328.33333333333326" height="40.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.23529411764705882" green="0.22745098039215686" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="Wpl-Io-ixg"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="j1H-Va-76A" firstAttribute="leading" secondItem="O9A-Lj-4Af" secondAttribute="leading" constant="16" id="83v-iN-nXL"/>
+                <constraint firstAttribute="trailing" secondItem="QMV-hX-03C" secondAttribute="trailing" constant="13" id="FB4-7Q-6uj"/>
+                <constraint firstItem="QMV-hX-03C" firstAttribute="centerX" secondItem="O9A-Lj-4Af" secondAttribute="centerX" id="Izk-bH-mRj"/>
+                <constraint firstItem="j1H-Va-76A" firstAttribute="top" secondItem="QMV-hX-03C" secondAttribute="bottom" constant="77" id="OmA-ib-T9z"/>
+                <constraint firstItem="QMV-hX-03C" firstAttribute="leading" secondItem="O9A-Lj-4Af" secondAttribute="leading" constant="12" id="Q5f-kF-UTV"/>
+                <constraint firstAttribute="trailing" secondItem="j1H-Va-76A" secondAttribute="trailing" constant="16" id="WgI-JF-eG5"/>
+                <constraint firstItem="QMV-hX-03C" firstAttribute="top" secondItem="O9A-Lj-4Af" secondAttribute="top" constant="8" id="ZDt-Js-vDl"/>
+            </constraints>
+            <size key="customSize" width="391" height="609"/>
+            <connections>
+                <outlet property="onboardingContentLabel" destination="uvy-5g-Rb2" id="Sm5-py-2KW"/>
+                <outlet property="onboardingImgView" destination="QMV-hX-03C" id="p38-op-gwN"/>
+                <outlet property="onboardingTitleLabel" destination="v6Y-8t-dzr" id="5oi-wv-QSq"/>
+            </connections>
+            <point key="canvasLocation" x="19.083969465648853" y="29.929577464788736"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="on boarding IMG 1" width="700" height="606"/>
+    </resources>
+</document>

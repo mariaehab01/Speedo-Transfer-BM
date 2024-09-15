@@ -14,7 +14,7 @@ class PersonalInfoVC: UIViewController {
 
         setupNavBar()
         applyGradientBgYellowToRed()
-        self.tabBarController?.tabBar.isHidden = true
+        self.tabBarController?.tabBar.isHidden = false
 
     }
     

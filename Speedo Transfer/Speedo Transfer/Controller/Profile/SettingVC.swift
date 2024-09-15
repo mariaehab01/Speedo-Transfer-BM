@@ -2,7 +2,7 @@
 //  SettingVC.swift
 //  Speedo Transfer
 //
-//  Created by Maria Ehab on 12/09/2024.
+//  Created by Maria Ehab on 11/09/2024.
 //
 
 import UIKit
@@ -14,7 +14,7 @@ class SettingVC: UIViewController {
         
         setupNavBar()
         applyGradientBgYellowToRed()
-        self.tabBarController?.tabBar.isHidden = true
+        self.tabBarController?.tabBar.isHidden = false
     }
     
 

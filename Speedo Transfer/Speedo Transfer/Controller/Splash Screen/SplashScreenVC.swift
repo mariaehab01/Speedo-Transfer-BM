@@ -53,7 +53,8 @@ class SplashScreenVC: UIViewController {
     }
 
     private func moveToOnboardingScreen() {
-        let firstOnboardingVC = sb.instantiateViewController(withIdentifier: VCS.firstOnboardingScreen) as! FirstOnBoardingVC
+        let onboardingVC = OnboardingVC(nibName: "OnboardingVC", bundle: nil)
+        //        let firstOnboardingVC = sb.instantiateViewController(withIdentifier: VCS.firstOnboardingScreen) as! FirstOnBoardingVC
         UIView.animate(withDuration: 1.0, animations: {
             self.splashLabel.alpha = 0.0
         }, completion: { _ in
@@ -63,7 +64,7 @@ class SplashScreenVC: UIViewController {
             transition.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
             
             self.navigationController?.view.layer.add(transition, forKey: nil)
-            self.navigationController?.pushViewController(firstOnboardingVC, animated: false)
+            self.navigationController?.pushViewController(onboardingVC, animated: false)
         })
     }
         

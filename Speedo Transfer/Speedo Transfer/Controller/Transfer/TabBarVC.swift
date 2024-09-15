@@ -8,12 +8,14 @@ import RAMAnimatedTabBarController
 
 class TabBarVC: RAMAnimatedTabBarController {
     
+    // MARK: - Properties
     var homeNavigation = UINavigationController()
     var transferNavigation = UINavigationController()
     var transactionNavigation = UINavigationController()
     var cardNavigation = UINavigationController()
     var moreNavigation = UINavigationController()
     
+    // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setUpVCs()
@@ -22,6 +24,8 @@ class TabBarVC: RAMAnimatedTabBarController {
     }
     
 }
+
+// MARK: - Private Methods
 extension TabBarVC {
     
     private func setUpTabBarView(){
@@ -37,7 +41,7 @@ extension TabBarVC {
             return
         }
         self.homeNavigation = UINavigationController(rootViewController: homeVC)
-        self.homeNavigation.tabBarItem = createTabBarItem(image: UIImage(named: "home"), title: "Home", tag: 0, animation: RAMBounceAnimation())
+        self.homeNavigation.tabBarItem = createTabBarItem(image: UIImage(named: "home 2"), title: "Home", tag: 0, animation: RAMBounceAnimation())
         homeNavigation.viewControllers = [homeVC]
     }
     

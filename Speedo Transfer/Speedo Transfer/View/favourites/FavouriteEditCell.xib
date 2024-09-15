@@ -51,6 +51,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="delete"/>
+                                <connections>
+                                    <action selector="deleteBtnTapped:" destination="QYb-7E-gNb" eventType="touchUpInside" id="BdN-Ip-kCq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cw9-rk-a5M">
                                 <rect key="frame" x="269" y="32" width="24" height="24"/>
