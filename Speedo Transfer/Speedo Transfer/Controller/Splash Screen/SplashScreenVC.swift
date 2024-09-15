@@ -86,16 +86,19 @@ class SplashScreenVC: UIViewController {
     private func moveToHomeScreen(){
         let homeVC = sb.instantiateViewController(withIdentifier: "TabBarVC") as! TabBarVC
         
+        if let window = UIApplication.shared.windows.first(where: { $0.isKeyWindow }) {
+                let transition = CATransition()
+                transition.duration = 0.5
+                transition.type = .fade
+                transition.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
+ 
+                window.layer.add(transition, forKey: kCATransition)
+                window.rootViewController = homeVC
+                window.makeKeyAndVisible()
+            }
+        
         UIView.animate(withDuration: 1.0, animations: {
             self.splashLabel.alpha = 0.0
-        }, completion: { _ in
-            let transition = CATransition()
-            transition.duration = 0.5
-            transition.type = .fade
-            transition.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
-            
-            self.navigationController?.view.layer.add(transition, forKey: nil)
-            self.navigationController?.pushViewController(homeVC, animated: false)
         })
     }
     

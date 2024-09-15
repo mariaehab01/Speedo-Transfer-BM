@@ -66,9 +66,11 @@ class SignInVC: UIViewController {
                          print("Failed to instantiate TabBarVC")
                          return
                      }
-                     self.navigationController?.setViewControllers([homeVC], animated: true)
-                     
-                     
+//                     self.navigationController?.setViewControllers([homeVC], animated: true)
+//                     
+                     homeVC.modalPresentationStyle = .fullScreen
+                     self.present(homeVC, animated: true, completion: nil)
+
                      
                  case .failure(let error):
                      // Instantiate the ErrorViewController from storyboard
