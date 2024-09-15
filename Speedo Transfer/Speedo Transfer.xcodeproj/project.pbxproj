@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C49C5702C96515C005580C7 /* NetworkManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C49C56F2C96515C005580C7 /* NetworkManger.swift */; };
 		7C8903522C9073F1002B8970 /* TransfersHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8903512C9073F1002B8970 /* TransfersHomeVC.swift */; };
 		7C8903542C9098EC002B8970 /* TransfersAmount2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8903532C9098EC002B8970 /* TransfersAmount2VC.swift */; };
 		7CA1805C2C91C96B00D94D68 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA1805A2C91C96B00D94D68 /* HomeTableViewCell.swift */; };
@@ -73,6 +74,7 @@
 		1640DDEFBBEE85F5E7C8EE77 /* Pods_Speedo_Transfer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Speedo_Transfer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A18DCEC83C7DB74A305E82A /* Pods-Speedo Transfer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Speedo Transfer.release.xcconfig"; path = "Target Support Files/Pods-Speedo Transfer/Pods-Speedo Transfer.release.xcconfig"; sourceTree = "<group>"; };
 		4BA42372B8A398814D92C235 /* Pods-Speedo Transfer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Speedo Transfer.debug.xcconfig"; path = "Target Support Files/Pods-Speedo Transfer/Pods-Speedo Transfer.debug.xcconfig"; sourceTree = "<group>"; };
+		7C49C56F2C96515C005580C7 /* NetworkManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManger.swift; sourceTree = "<group>"; };
 		7C8903512C9073F1002B8970 /* TransfersHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersHomeVC.swift; sourceTree = "<group>"; };
 		7C8903532C9098EC002B8970 /* TransfersAmount2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersAmount2VC.swift; sourceTree = "<group>"; };
 		7CA1805A2C91C96B00D94D68 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
@@ -89,9 +91,9 @@
 		841D97002C928A670086A6B3 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		841D97022C928CFE0086A6B3 /* PersonalInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoVC.swift; sourceTree = "<group>"; };
 		841D97042C92940F0086A6B3 /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
-		841D971A2C92AC500086A6B3 /* Inter-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Light.otf"; path = "../../../../../../../Downloads/Inter-4.0 (1)/extras/otf/Inter-Light.otf"; sourceTree = "<group>"; };
-		841D971B2C92AC500086A6B3 /* Inter-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Medium.otf"; path = "../../../../../../../.Trash/Inter-Medium.otf"; sourceTree = "<group>"; };
-		841D971C2C92AC510086A6B3 /* Inter-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Regular.otf"; path = "../../../../../../../Downloads/Inter-4.0 (1)/extras/otf/Inter-Regular.otf"; sourceTree = "<group>"; };
+		841D971A2C92AC500086A6B3 /* Inter-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Light.otf"; path = "../../../../../../../Downloads/Inter-Light.otf"; sourceTree = "<group>"; };
+		841D971B2C92AC500086A6B3 /* Inter-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Medium.otf"; path = "../../../../../../../Downloads/Inter-Medium.otf"; sourceTree = "<group>"; };
+		841D971C2C92AC510086A6B3 /* Inter-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Regular.otf"; path = "../../../../../../../Downloads/Inter-Regular.otf"; sourceTree = "<group>"; };
 		841D97202C92ACFF0086A6B3 /* Inter-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-SemiBold.otf"; path = "../../../../../../../Downloads/Inter-SemiBold.otf"; sourceTree = "<group>"; };
 		8423A3A82C8E4846003FA02B /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		8423A3AA2C8E4BA4003FA02B /* UITextField+custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+custom.swift"; sourceTree = "<group>"; };
@@ -242,15 +244,16 @@
 		841D97292C92B11E0086A6B3 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				7C49C56F2C96515C005580C7 /* NetworkManger.swift */,
 			);
-			path = Network;
+			name = Network;
 			sourceTree = "<group>";
 		};
 		841D972A2C92B1360086A6B3 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Presenter;
+			name = Presenter;
 			sourceTree = "<group>";
 		};
 		847088FF2C7FD5CF00202753 = {
@@ -587,6 +590,7 @@
 				847089202C7FDA9D00202753 /* SplashScreenVC.swift in Sources */,
 				848FD93A2C92E14400EF9777 /* LastTransactionsVC.swift in Sources */,
 				7CACEEA12C8FAA5F0058F66A /* TransfersAmountVC.swift in Sources */,
+				7C49C5702C96515C005580C7 /* NetworkManger.swift in Sources */,
 				848EF4102C8B2CD100F8D977 /* Colors.swift in Sources */,
 				843B09522C911C74002E50B5 /* UIButton+underline.swift in Sources */,
 				84CE75932C8F9FC40003C8A1 /* CompleteSignupVC.swift in Sources */,

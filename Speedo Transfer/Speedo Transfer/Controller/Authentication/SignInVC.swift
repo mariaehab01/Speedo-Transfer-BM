@@ -47,6 +47,36 @@ class SignInVC: UIViewController {
             return
         }
         
+        NetworkManager.shared.loginUser(email: email, password: password) { result in
+             DispatchQueue.main.async {
+                 switch result {
+                 case .success:
+                     
+                     let def = UserDefaults.standard
+                     let user = User(name: "", email: email, password: password, pass2: "") // Adjust as needed
+                     do {
+                         let encodedData = try JSONEncoder().encode(user)
+                         def.set(encodedData, forKey: "user")
+                     } catch {
+                         print("Failed to encode user: \(error)")
+                     }
+
+                     let sb = UIStoryboard(name: "Main", bundle: nil)
+                     guard let homeVC = sb.instantiateViewController(withIdentifier: "TabBarVC") as? TabBarVC else {
+                         print("Failed to instantiate TabBarVC")
+                         return
+                     }
+                     self.navigationController?.pushViewController(homeVC, animated: true)
+                     
+                     
+                     
+                 case .failure(let error):
+                     // Show alert on error
+                     self.showAlert(title: "Error", message: error.localizedDescription)
+                 }
+             }
+         }
+        
         let def = UserDefaults.standard
         if let savedUserData = def.data(forKey: "user"),
            let savedUser = try? JSONDecoder().decode(User.self, from: savedUserData) {

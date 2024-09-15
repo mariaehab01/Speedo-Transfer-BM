@@ -70,10 +70,11 @@ class SignUpVC: UIViewController {
     private func goToCompleteRegisterScreen() {
         let sb = UIStoryboard(name: Storyboards.main, bundle: nil)
         let completeSignupVC = sb.instantiateViewController(withIdentifier: VCS.completeSignUpVC) as! CompleteSignupVC
+        let user = User(name: nameTextField.text!.trimmed, email: emailTextField.text!.trimmed, password: pass1TextField.text!.trimmed, pass2: pass2TextField.text!.trimmed)
+        completeSignupVC.user = user // Pass the user object
         self.navigationController?.pushViewController(completeSignupVC, animated: true)
     }
-    
-    
+
     private func isValidData() -> Bool {
         guard let name = nameTextField.text?.trimmed, !name.isEmpty else {
             showAlert(title: "Sorry", message: "Please enter your name!")
@@ -113,7 +114,7 @@ class SignUpVC: UIViewController {
             showAlert(title: "Sorry", message: "Passwords do not match!")
             return false
         }
-        let user = User(name: name, email: email, password: password1)
+        let user = User(name: name, email: email, password: password1, pass2: password2)
         saveUserToUserDefaults(user: user)
         
         return true

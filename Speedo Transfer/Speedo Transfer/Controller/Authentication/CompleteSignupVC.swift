@@ -44,12 +44,32 @@ class CompleteSignupVC: UIViewController {
         
     }
     
-    
     @IBAction func continueBtnTapped(_ sender: UIButton) {
         if isValidData() {
-            self.goToSignInScreen()
+            guard let user = user else {
+                showAlert(title: "Error", message: "User data is missing")
+                return
+            }
+            
+            let country = countryTextField.text!.trimmed
+            let dob = dobTextField.text!.trimmed
+            
+            // Call the API using NetworkManager
+            NetworkManager.shared.registerUser(user: user, country: country, dob: dob) { result in
+                DispatchQueue.main.async {
+                    switch result {
+                    case .success:
+//                        self.showAlert(title: "Success", message: "Registration completed!")
+                        self.goToSignInScreen()
+                    case .failure(let error):
+                        self.showAlert(title: "Error", message: error.localizedDescription)
+                    }
+                }
+            }
+//            self.goToSignInScreen()
         }
     }
+
     
     private func isValidData() -> Bool {
         guard let country = countryTextField.text, !country.isEmpty else {
