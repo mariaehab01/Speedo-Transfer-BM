@@ -66,13 +66,18 @@ class SignInVC: UIViewController {
                          print("Failed to instantiate TabBarVC")
                          return
                      }
-                     self.navigationController?.pushViewController(homeVC, animated: true)
+                     self.navigationController?.setViewControllers([homeVC], animated: true)
                      
                      
                      
                  case .failure(let error):
-                     // Show alert on error
-                     self.showAlert(title: "Error", message: error.localizedDescription)
+                     // Instantiate the ErrorViewController from storyboard
+                     let storyboard = UIStoryboard(name: "Main", bundle: nil) // Ensure your storyboard name is correct
+                     if let errorVC = storyboard.instantiateViewController(withIdentifier: "ErrorVC") as? ErrorVC {
+                         
+                         self.present(errorVC, animated: true, completion: nil)
+                     }
+
                  }
              }
          }
@@ -83,12 +88,8 @@ class SignInVC: UIViewController {
             if email == savedUser.email && password == savedUser.password {
                 let sb = UIStoryboard(name: Storyboards.main, bundle: nil)
                 let homeVC = sb.instantiateViewController(withIdentifier: "TabBarVC") as! TabBarVC
-                self.navigationController?.pushViewController(homeVC, animated: true)
-            } else {
-                showAlert(title: "Sorry", message: "Incorrect email or password.")
+                
             }
-        } else {
-            showAlert(title: "sorry", message: "No user data found.")
         }
     }
     
@@ -106,15 +107,4 @@ class SignInVC: UIViewController {
         titleLabel.sizeToFit()
         self.navigationItem.titleView = titleLabel
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

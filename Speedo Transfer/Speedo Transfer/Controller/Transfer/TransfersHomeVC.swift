@@ -25,7 +25,7 @@ class TransfersHomeVC: UIViewController {
         self.navigationItem.hidesBackButton = true
         applyGradientBgYellowToRed()
         UserDefaultsManager.shared().isLoggedIn = true
-
+        
     }
     
     @IBAction func viewAllBtnTapped(_ sender: UIButton) {
@@ -41,8 +41,8 @@ extension TransfersHomeVC : UITableViewDelegate , UITableViewDataSource {
         return 10
         
     }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
         let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTableViewCell" , for: indexPath)
         cell.selectionStyle = .none
         return cell

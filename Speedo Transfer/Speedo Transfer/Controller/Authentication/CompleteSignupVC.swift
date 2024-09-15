@@ -66,7 +66,6 @@ class CompleteSignupVC: UIViewController {
                     }
                 }
             }
-//            self.goToSignInScreen()
         }
     }
 
@@ -107,16 +106,18 @@ extension CompleteSignupVC: CountrySelectionDelegate {
         guard let countrylist = storyboard?.instantiateViewController(withIdentifier: "CountryListVC") as? CountryListVC else {
             return
         }
-        
-        countrylist.delegate = self
-        
-        let sheetController = SheetViewController(controller: countrylist, sizes: [.fixed(500), .percent(0.5), .intrinsic])
-        sheetController.cornerRadius = 50
-        sheetController.gripColor = UIColor(named: "LabelColor")
-        self.present(sheetController, animated: true, completion: nil)
+       
+        if let presentationController = countrylist.presentationController as? UISheetPresentationController {
+            presentationController.detents = [.medium(), .large() ]
+            presentationController.preferredCornerRadius = 50
+            presentationController.prefersGrabberVisible = true
+        }
+        self.present(countrylist, animated: true)
     }
     
     func didSelectCountry(country: Country) {
         countryTextField.text = country.label
     }
 }
+
+    
