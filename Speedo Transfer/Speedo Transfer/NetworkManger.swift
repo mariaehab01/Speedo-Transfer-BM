@@ -17,18 +17,21 @@ class NetworkManager {
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
-        // Format the date of birth
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd"
+        let inputDateFormatter = DateFormatter()
+            inputDateFormatter.dateFormat = "dd/MM/yyyy"
+        
+        let outputDateFormatter = DateFormatter()
+           outputDateFormatter.dateFormat = "yyyy-MM-dd"
         
         // Convert dob string to Date
-        guard let dobDate = dateFormatter.date(from: dob) else {
-            completion(.failure(NSError(domain: "", code: 0, userInfo: [NSLocalizedDescriptionKey: "Invalid date format"])))
-            return
-        }
+        guard let dobDate = inputDateFormatter.date(from: dob) else {
+                print("Failed to parse date with format dd/MM/yyyy")
+                completion(.failure(NSError(domain: "", code: 0, userInfo: [NSLocalizedDescriptionKey: "Invalid date format. Expected dd/MM/yyyy."])))
+                return
+            }
         
         // Format the date back to string
-        let formattedDob = dateFormatter.string(from: dobDate)
+        let formattedDob = outputDateFormatter.string(from: dobDate)
         
         let userData: [String: Any] = [
             "name": user.name,
