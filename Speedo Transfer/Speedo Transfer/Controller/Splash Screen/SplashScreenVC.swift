@@ -2,7 +2,7 @@
 //  SplashScreenVC.swift
 //  Speedo Transfer
 //
-//  Created by Maria Ehab on 29/08/2024.
+//  Created by Maria Ehab 
 //
 
 import UIKit

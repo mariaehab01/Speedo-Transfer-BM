@@ -2,7 +2,7 @@
 //  TransfersAmountVC.swift
 //  Speedo Transfer
 //
-//  Created by 1234 on 10/09/2024.
+//  Created by 1234 
 //
 
 import UIKit

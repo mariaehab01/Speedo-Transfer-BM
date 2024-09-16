@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let splashScreenVC = sb.instantiateViewController(withIdentifier: VCS.splashScreenVC) as! SplashScreenVC
         let navVC = UINavigationController(rootViewController: splashScreenVC)
         window?.rootViewController = navVC
-//        
+        
         IQKeyboardManager.shared.enable = true
 
         return true

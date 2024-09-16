@@ -1,9 +1,14 @@
+//
+// Speedo Transfer
+//
+
 import Foundation
 
 class NetworkManager {
     
     static let shared = NetworkManager()
     
+    // MARK: - Registration
     func registerUser(user: User, country: String, dob: String, completion: @escaping (Result<Void, Error>) -> Void) {
         
         let baseURL = "http://13.60.187.217:8080/api/v1/auth/register"
@@ -30,7 +35,6 @@ class NetworkManager {
                 return
             }
         
-        // Format the date back to string
         let formattedDob = outputDateFormatter.string(from: dobDate)
         
         let userData: [String: Any] = [
@@ -56,11 +60,9 @@ class NetworkManager {
             }
             
             if let httpResponse = response as? HTTPURLResponse {
-                print("Status Code: \(httpResponse.statusCode)")  // Log the status code
+                print("Status Code: \(httpResponse.statusCode)")
                 
-                // If the status code is outside the successful range, print the response
                 if !(200...299).contains(httpResponse.statusCode) {
-                    // Log the server's response body for more details
                     if let data = data, let responseString = String(data: data, encoding: .utf8) {
                         print("Server Response: \(responseString)") // Log the error message from the server
                     }
@@ -76,6 +78,7 @@ class NetworkManager {
         task.resume()
     }
 
+    // MARK: - Login
     func loginUser(email: String, password: String, completion: @escaping (Result<Void, Error>) -> Void) {
         let loginURL = "http://13.60.187.217:8080/api/v1/auth/login" 
         
@@ -107,19 +110,18 @@ class NetworkManager {
             }
             
             if let httpResponse = response as? HTTPURLResponse {
-                print("Status Code: \(httpResponse.statusCode)")  // Log the status code
+                print("Status Code: \(httpResponse.statusCode)")
                 
-                // If the status code is outside the successful range, print the response
                 if !(200...299).contains(httpResponse.statusCode) {
                     if let data = data, let responseString = String(data: data, encoding: .utf8) {
-                        print("Server Response: \(responseString)") // Log the error message from the server
+                        print("Server Response: \(responseString)")
+                        
                     }
                     completion(.failure(NSError(domain: "", code: httpResponse.statusCode, userInfo: [NSLocalizedDescriptionKey: "Server error with status code: \(httpResponse.statusCode)"])))
                     return
                 }
             }
             
-            // Success: Proceed
             completion(.success(()))
         }
         

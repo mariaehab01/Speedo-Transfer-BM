@@ -2,22 +2,29 @@
 //  FavouriteEditCell.swift
 //  Speedo Transfer
 //
-//  Created by Maria Ehab on 12/09/2024.
+//  Created by Maria Ehab
 //
 
 import UIKit
 import FittedSheets
 
+// MARK: - FavouriteEditCellDelegate
+// Delegate protocol for handling actions in the FavouriteEditCell
 protocol FavouriteEditCellDelegate: AnyObject {
     func didTapEdit(in cell: FavouriteEditCell)
     func didTapDelete(in cell: FavouriteEditCell)
 }
 
+// MARK: - FavouriteEditCell
+
 class FavouriteEditCell: UITableViewCell {
 
-    // Delegate property
+    // MARK: - Properties
+
     weak var delegate: FavouriteEditCellDelegate?
         
+    // MARK: - Lifecycle
+
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -26,6 +33,8 @@ class FavouriteEditCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
+    // MARK: - Actions
+
     @IBAction func editButtonTapped(_ sender: Any) {
         delegate?.didTapEdit(in: self)
 

@@ -2,7 +2,7 @@
 //  NotificationDetailsVC.swift
 //  Speedo Transfer
 //
-//  Created by 1234 on 15/09/2024.
+//  Created by 1234 
 //
 
 import UIKit

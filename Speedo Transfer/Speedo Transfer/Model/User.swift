@@ -7,12 +7,16 @@
 
 import Foundation
 
+// MARK: - User Model
+
 struct User: Codable {
     var name: String
     var email: String
     var password: String
     var pass2: String
 }
+
+// MARK: - Login Response
 
 struct LoginResponse: Codable {
     let token: String
@@ -21,6 +25,8 @@ struct LoginResponse: Codable {
     let status: String
     let mainAccount: MainAccount
 }
+
+// MARK: - Main Account
 
 struct MainAccount: Codable {
     let accountNumber: String
@@ -34,6 +40,8 @@ struct MainAccount: Codable {
     let updatedAt: String
     let transactions: [Transaction]
 }
+
+// MARK: - Transaction
 
 struct Transaction: Codable {
     let senderAccount: String

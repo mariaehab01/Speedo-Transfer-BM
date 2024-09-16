@@ -5,6 +5,8 @@
 //  Created by Maria Ehab
 //
 
+// MARK: - Onboarding Page
+
 import Foundation
 import UIKit
 

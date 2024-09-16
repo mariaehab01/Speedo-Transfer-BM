@@ -22,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="kTw-j8-CBa">
-                    <rect key="frame" x="0.0" y="116" width="393" height="539.66666666666663"/>
+                    <rect key="frame" x="0.0" y="116" width="393" height="550"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="HAY-oE-vhL">
@@ -37,8 +37,11 @@
                     </connections>
                 </collectionView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eng-qP-ylg">
-                    <rect key="frame" x="16" y="736.66666666666663" width="361" height="38.333333333333371"/>
+                    <rect key="frame" x="16" y="747" width="361" height="51"/>
                     <color key="backgroundColor" red="0.52941179275512695" green="0.11764705181121826" blue="0.2078431248664856" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="51" id="PIs-U5-vAy"/>
+                    </constraints>
                     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Next"/>
@@ -52,7 +55,7 @@
                     </connections>
                 </button>
                 <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="FFC-tu-uHb">
-                    <rect key="frame" x="100" y="671.66666666666663" width="193" height="26"/>
+                    <rect key="frame" x="100" y="682" width="193" height="26"/>
                     <color key="pageIndicatorTintColor" red="0.80784320831298828" green="0.63921570777893066" blue="0.67450982332229614" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <color key="currentPageIndicatorTintColor" red="0.52941176470588236" green="0.11764705882352941" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </pageControl>
@@ -80,7 +83,7 @@
                 <constraint firstItem="Jrl-p0-MwO" firstAttribute="trailing" secondItem="eng-qP-ylg" secondAttribute="trailing" constant="16" id="cLV-3Y-ZNU"/>
                 <constraint firstItem="Jrl-p0-MwO" firstAttribute="trailing" secondItem="FFC-tu-uHb" secondAttribute="trailing" constant="100" id="eAN-sc-rui"/>
                 <constraint firstItem="pl0-Nv-n9x" firstAttribute="top" secondItem="xZy-cK-lYM" secondAttribute="topMargin" constant="10" id="s8X-NG-hBi"/>
-                <constraint firstItem="Jrl-p0-MwO" firstAttribute="bottom" secondItem="eng-qP-ylg" secondAttribute="bottom" constant="43" id="w6R-SM-pqT"/>
+                <constraint firstItem="Jrl-p0-MwO" firstAttribute="bottom" secondItem="eng-qP-ylg" secondAttribute="bottom" constant="20" id="w6R-SM-pqT"/>
             </constraints>
             <point key="canvasLocation" x="70.992366412213741" y="19.718309859154932"/>
         </view>

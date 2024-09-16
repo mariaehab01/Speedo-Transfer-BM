@@ -10,6 +10,7 @@ import UIKit
 
 extension UIViewController {
 
+    // MARK: - Gradient Background Methods
     func applyGradientBgYellowToRed() {
         let gradientLayer = Colors.yellowRedGradient
         gradientLayer.frame = view.bounds

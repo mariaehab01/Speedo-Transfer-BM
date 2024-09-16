@@ -2,8 +2,7 @@
 //  FavouritesVC.swift
 //  Speedo Transfer
 //
-//  Created by 1234 on 11/09/2024.
-//
+//  Created by 1234 
 
 import UIKit
 

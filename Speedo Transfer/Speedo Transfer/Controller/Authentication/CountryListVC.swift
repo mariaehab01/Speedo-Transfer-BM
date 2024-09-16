@@ -22,7 +22,7 @@ class CountryListVC: UIViewController,UITableViewDelegate,UITableViewDataSource{
     
     weak var delegate: CountrySelectionDelegate?
     
-    var countries: [Country] = [Country(image: UIImage(named: "unitedStates")!, label: "unitedStates")]
+    var countries: [Country] = [Country(image: UIImage(named: "unitedStates")!, label: "United States")]
     
     @IBOutlet weak var countryListTableView: UITableView!
     

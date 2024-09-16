@@ -2,16 +2,17 @@
 //  HomeTableViewCell.swift
 //  Speedo Transfer
 //
-//  Created by 1234 on 11/09/2024.
+//  Created by 1234
 //
 
 import UIKit
+
+// MARK: - HomeTableViewCell
 
 class HomeTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
